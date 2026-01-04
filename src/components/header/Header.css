@@ -1,0 +1,50 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 25px;
+    left: 0;
+    z-index: 10;
+}
+
+.header-container {
+    background-color: #fff0eb;
+    margin: 0 50px;
+    border-radius: 50px;
+    border: 3px solid #e0e0e0;
+    padding: 15px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: #1d1d1f33 0px 4px 6px -1px, #1d1d1f1a 0px 2px 4px -1px;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.nav {
+    display: flex;
+    gap: 22px;
+}
+
+.nav a {
+    font-size: 17px;
+    font-weight: 500;
+    color: #1d1d1f;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #ff6a00;
+}
+
+.quote-btn {
+    background: #ff6a00;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}

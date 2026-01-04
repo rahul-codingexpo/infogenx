@@ -1,0 +1,229 @@
+.hero {
+    min-height: 150vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #fff0eb;
+    display: flex;
+    align-items: center;
+}
+
+.hero-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    /* padding: 140px 24px 0; */
+    padding: 0 24px 200px 24px;
+}
+
+.hero-heading {
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    /* ExtraBold */
+    font-size: 65px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: center;
+    margin-bottom: 16px;
+
+    /* Gradient text */
+    background: linear-gradient(89.95deg,
+            #081256 8.97%,
+            #011BDD 33.19%,
+            #EB632A 89.61%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.hero-subheading {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    /* Medium */
+    font-size: 45px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: center;
+    margin: 0 0 20px 0;
+
+    color: #000e68;
+    /* background color converted to text color */
+}
+
+.hero-description {
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    /* SemiBold */
+    font-size: 22px;
+    line-height: 160%;
+    letter-spacing: 0;
+    text-align: center;
+
+    color: #000E68;
+    /* neutral readable text */
+    max-width: 820px;
+    margin: 0 auto 28px;
+}
+
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.primary-btn {
+    width: 273px;
+    height: 50px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px 30px;
+    border-radius: 50px;
+    border: none;
+
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    color: #ffffff;
+
+    cursor: pointer;
+
+    /* 🔥 Gradient exactly like screenshot */
+    /* background: linear-gradient(45.6deg,
+            #081256 0%,
+            #03133a 50%,
+            #eb632a 70%,
+            #f36b2a 100%); */
+
+            background: conic-gradient(at 50% 0%,
+                        #AC3300 0deg,
+                        #EB632A 90deg,
+                        #a53606 110deg,
+                        #00123C 150deg,
+                        #00123C 180deg);
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.primary-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 1.5);
+}
+.secondary-btn {
+    width: 220px;
+    height: 50px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px 30px;
+    border-radius: 50px;
+
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+
+    background: transparent;
+    color: #00123c;
+    cursor: pointer;
+
+    /* 🔥 Gradient border */
+    border: 3px solid transparent;
+    background-image:
+        linear-gradient(#ffffff, #ffffff),
+        linear-gradient(110deg,
+            #081256 0%,
+            #001b5e 35%,
+            #eb632a 70%,
+            #f36b2a 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+    transition: all 0.2s ease;
+}
+.secondary-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.85);
+}
+
+.hero-floating-icons {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    
+}
+
+.float-icon1 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+}
+.float-icon2 {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    opacity: 1;
+}
+.float-icon3 {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    opacity: 1;
+}
+
+@keyframes floatVertical {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.float-vertical {
+    animation: floatVertical 4s ease-in-out infinite;
+}
+@keyframes floatHorizontal {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.float-horizontal {
+    animation: floatHorizontal 5s ease-in-out infinite;
+}
+
+.icon-1 {
+    top: 570px;
+    left: 120px;
+}
+
+.icon-2 {
+    top: 220px;
+    right: 370px;
+}
+
+.icon-3 {
+    top: 540px;
+    right: 10%;
+}
