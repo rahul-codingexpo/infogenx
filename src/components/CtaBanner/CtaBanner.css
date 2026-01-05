@@ -84,3 +84,75 @@ background: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110de
     color: #081256;
 }
 
+/* Responsive Design for tablet */
+
+@media (max-width: 1024px) {
+    .cta-section {
+        padding: 80px 0;
+    }
+
+    .cta-container {
+        padding: 60px 30px;
+    }
+
+    .cta-subtitle {
+        font-size: 28px;
+    }
+
+    .cta-title {
+        font-size: 44px;
+    }
+}
+
+/* Responsive Design for mobile */
+
+@media (max-width: 768px) {
+    .cta-section {
+        padding: 60px 20px;
+    }
+
+    .cta-container {
+        padding: 50px 20px;
+        border-radius: 20px;
+    }
+
+    .cta-subtitle {
+        font-size: 22px;
+        line-height: 130%;
+    }
+
+    .cta-title {
+        font-size: 34px;
+        line-height: 120%;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .cta-primary,
+    .cta-secondary {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+}
+
+/*for smaller devices*/
+
+@media (max-width: 480px) {
+    .cta-subtitle {
+        font-size: 18px;
+    }
+
+    .cta-title {
+        font-size: 28px;
+    }
+
+    .cta-primary,
+    .cta-secondary {
+        font-size: 14px;
+        padding: 12px 24px;
+    }
+}

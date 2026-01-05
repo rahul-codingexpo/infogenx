@@ -227,3 +227,128 @@
     top: 540px;
     right: 10%;
 }
+
+/* Responsive Design for tablet */
+
+@media (max-width: 1024px) {
+    .hero {
+        min-height: 110vh;
+    }
+
+    .hero-heading {
+        font-size: 52px;
+    }
+
+    .hero-subheading {
+        font-size: 34px;
+    }
+
+    .hero-description {
+        font-size: 18px;
+        max-width: 700px;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        height: 48px;
+    }
+
+    /* Floating icons resize & reposition */
+    .float-icon1 {
+        width: 80px;
+        height: 80px;
+    }
+
+    .icon-1 {
+        top: 420px;
+        left: 60px;
+    }
+
+    .icon-2 {
+        top: 180px;
+        right: 180px;
+    }
+
+    .icon-3 {
+        top: 460px;
+        right: 6%;
+    }
+}
+
+/* Responsive Design for mobile */
+@media (max-width: 768px) {
+    .hero {
+        height: 100vh;
+        min-height: auto;
+        padding: 120px 0 80px;
+    }
+
+    .hero-container {
+        padding: 0 20px;
+    }
+
+    .hero-heading {
+        font-size: 38px;
+        line-height: 110%;
+    }
+
+    .hero-subheading {
+        font-size: 26px;
+        line-height: 120%;
+    }
+
+    .hero-description {
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    /* ❌ Hide floating icons on mobile */
+    .hero-floating-icons {
+        display: none;
+    }
+          .icon-1 {
+              top: 670px;
+              left: 90px;
+              width: 60px;
+              height: 60px;
+          }
+    
+          .icon-2 {
+            top: 160px;
+            right: 256px;
+          }
+    
+          .icon-3 {
+            height: 40px;
+                width: 40px;
+                top: 472px;
+                right: 16%;
+          }
+}
+
+/*for smaller devices*/
+
+@media (max-width: 480px) {
+    .hero-heading {
+        font-size: 32px;
+    }
+
+    .hero-subheading {
+        font-size: 22px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+}

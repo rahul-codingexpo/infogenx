@@ -21,7 +21,7 @@
 }
 
 .footer-brand img {
-    height: 36px;
+    height: 25px;
     margin-bottom: 14px;
 }
 
@@ -80,8 +80,13 @@
 .footer-links li {
     font-size: 17px;
     margin-bottom: 10px;
-    opacity: 0.9;
+    opacity: 0.8;
     cursor: pointer;
+}
+
+.footer-links li a{
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .footer-links li:hover {
@@ -94,4 +99,95 @@
     opacity: 0.8;
     font-weight: 600;
     color: black;
+}
+
+/* Responsive Design for tablet */
+
+@media (max-width: 1024px) {
+    .footer-container {
+        padding: 60px 60px 30px;
+    }
+
+    .footer-brand {
+        max-width: 480px;
+    }
+
+    .footer-brand p {
+        font-size: 15px;
+    }
+
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+/* Responsive Design for mobile */
+
+@media (max-width: 768px) {
+    .footer-container {
+        text-align: left;
+        padding: 50px 20px 25px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 25px;
+        /* align-items: center;
+        text-align: center; */
+    }
+
+    .footer-brand {
+        max-width: 100%;
+    }
+
+    .footer-brand img {
+        margin: 0 auto 12px;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: 0px;
+        /* text-align: center; */
+    }
+
+    .footer-links h4 {
+        font-size: 15px;
+    }
+
+    .footer-links li {
+        font-size: 15px;
+    }
+
+    .footer-bottom {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+}
+
+/*for smaller devices*/
+
+@media (max-width: 480px) {
+    .footer-brand p {
+        font-size: 14px;
+    }
+
+    .footer-links li {
+        font-size: 14px;
+    }
+
+    .footer-social a {
+        width: 36px;
+        height: 36px;
+    }
+
+    .footer-social a svg {
+        width: 20px;
+        height: 20px;
+    }
 }

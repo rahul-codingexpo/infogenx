@@ -41,7 +41,7 @@ const Testimonials = () => {
       <div className="testimonial-slider">
         <div
           className="testimonial-track"
-          style={{ transform: `translateX(-${active * 360}px)` }}
+          style={{ transform: `translateX(-${active * 480}px)` }}
         >
           {testimonials.map((item, index) => (
             <div className="testimonial-card" key={index}>

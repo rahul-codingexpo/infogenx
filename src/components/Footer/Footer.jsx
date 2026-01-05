@@ -42,34 +42,82 @@ const Footer = () => {
           <div>
             <h4>INFOGENX</h4>
             <ul>
-              <li>About Us</li>
-              <li>Partner</li>
-              <li>Careers</li>
-              <li>Privacy Policy</li>
-              <li>Terms and Conditions</li>
+              <li>
+                {" "}
+                <a href="">About Us</a>
+              </li>
+              <li>
+                {" "}
+                <a href="">Partner</a>
+              </li>
+              <li>
+                {" "}
+                <a href="">Careers</a>
+              </li>
+              <li>
+                {" "}
+                <a href="">Privacy Policy</a>
+              </li>
+              <li>
+                {" "}
+                <a href="">Terms and Conditions</a>
+              </li>
             </ul>
           </div>
 
           <div>
             <h4>SERVICES</h4>
             <ul>
-              <li>Application & Web Development</li>
-              <li>Data Engineering & Analytics</li>
-              <li>Intelligent Process Automation</li>
-              <li>AI-Powered Cloud Solutions</li>
-              <li>Offshore Software Development</li>
+              <li>
+                {" "}
+                <a href="">Application & Web Development</a>
+              </li>
+              <li>
+                {" "}
+                <a href="">Data Engineering & Analytics</a>
+              </li>
+              <li>
+                {" "}
+                <a href="">Intelligent Process Automation</a>
+              </li>
+              <li>
+                {" "}
+                <a href="">AI-Powered Cloud Solutions</a>
+              </li>
+              <li>
+                {" "}
+                <a href="">Offshore Software Development</a>
+              </li>
             </ul>
           </div>
 
           <div>
             <h4>TECHNOLOGIES</h4>
             <ul>
-              <li>Frontend Development</li>
-              <li>Backend Development</li>
-              <li>Mobile App Development</li>
-              <li>Data Engineering & Analytics</li>
-              <li>Artificial Intelligence</li>
-              <li>Smart Automation</li>
+              <li>
+                {" "}
+                <a href="">Frontend Development</a>
+              </li>
+              <li>
+                {" "}
+                <a href="">Backend Development</a>
+              </li>
+              <li>
+                {" "}
+                <a href="">Mobile App Development</a>
+              </li>
+              <li>
+                {" "}
+                <a href="">Data Engineering & Analytics</a>
+              </li>
+              <li>
+                {" "}
+                <a href="">Artificial Intelligence</a>
+              </li>
+              <li>
+                {" "}
+                <a href="">Smart Automation</a>
+              </li>
               <li>Cloud Computing</li>
             </ul>
           </div>
@@ -77,12 +125,30 @@ const Footer = () => {
           <div>
             <h4>INDUSTRIES</h4>
             <ul>
-              <li>Healthcare</li>
-              <li>Retail</li>
-              <li>Manufacturing</li>
-              <li>Transport and Logistics</li>
-              <li>E-Commerce</li>
-              <li>Finance</li>
+              <li>
+                {" "}
+                <a href="">Healthcare</a>
+              </li>
+              <li>
+                {" "}
+                <a href="">Retail</a>
+              </li>
+              <li>
+                {" "}
+                <a href="">Manufacturing</a>
+              </li>
+              <li>
+                {" "}
+                <a href="">Transport and Logistics</a>
+              </li>
+              <li>
+                {" "}
+                <a href="">E-Commerce</a>
+              </li>
+              <li>
+                {" "}
+                <a href="">Finance</a>
+              </li>
             </ul>
           </div>
         </div>
