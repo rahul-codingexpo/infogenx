@@ -1,0 +1,66 @@
+.business-impact-section {
+    padding: 120px 0;
+    background: #fff7f2;
+}
+
+.business-impact-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* HEADER */
+.business-impact-header {
+    max-width: 520px;
+    margin-bottom: 50px;
+}
+
+.section-label {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ff6a00;
+}
+
+.business-impact-header h2 {
+    font-family: "Manrope", sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+    color: #0b1f4d;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* GRID */
+.business-impact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px 80px;
+}
+
+/* CARD */
+.impact-card{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.impact-card img {
+    width: 180px;
+    height: 180px;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    object-fit: cover;
+}
+
+.impact-card h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #0b1f4d;
+}
+
+.impact-card p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 160%;
+    color: #555;
+}

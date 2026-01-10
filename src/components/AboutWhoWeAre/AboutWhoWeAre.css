@@ -1,0 +1,119 @@
+.about-who-section {
+    background: #fff6f0;
+    padding: 80px 0 40px 0;
+}
+
+.about-who-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+/* ---------- TOP ---------- */
+.about-who-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-bottom: 80px;
+}
+
+.about-who-left h2 {
+    font-family: "Manrope", sans-serif;
+    font-size: 39px;
+    font-weight: 800;
+    line-height: 120%;
+    margin-top: 0;
+    color: #171D27;
+}
+
+.about-label {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    /* color: #ff6a00; */
+    background: linear-gradient(89.95deg, #030307 8.97%, #05060f 33.19%, #EB632A 89.61%);
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    margin-bottom: 12px;
+}
+
+.about-who-right {
+    max-width: 520px;
+}
+
+.about-who-right h4 {
+    font-family: "Manrope", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #474B52;
+    margin-bottom: 20px;
+}
+
+.about-who-right p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 160%;
+    color: #555;
+}
+
+/* ---------- IMAGE ---------- */
+.about-who-image {
+    margin-bottom: 100px;
+}
+
+.about-who-image img {
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+/* ---------- BOTTOM ---------- */
+.about-who-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    /* padding-top: 60px; */
+    /* border-top: 1px solid #ddd; */
+}
+.about-who-bottom-left{
+    max-width: 620px;
+}
+
+.about-who-bottom h3 {
+    font-family: "Manrope", sans-serif;
+    font-size: 39px;
+    margin-top: 0;
+    font-weight: 800;
+    color: #171D27;
+}
+.about-who-bottom h3 span{
+    background: linear-gradient(89.95deg, #171d27 8.97%, #1b222f 33.19%, #f57037 89.61%);
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+}
+
+
+.about-who-points {
+    max-width: 520px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.about-who-points ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.about-who-points li {
+    /* font-size: 15px; */
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.about-who-points p {
+    font-size: 14px;
+    line-height: 160%;
+    color: #555;
+}

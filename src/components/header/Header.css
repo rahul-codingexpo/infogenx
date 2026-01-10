@@ -7,8 +7,9 @@
 }
 
 .header-container {
-    background-color: #fff0eb;
-    margin: 0 50px;
+    background-color: #f6ebeb86;
+    backdrop-filter: blur(25px);
+    margin: 0 30px;
     border-radius: 50px;
     border: 3px solid #e0e0e0;
     padding: 15px 24px;
@@ -26,6 +27,17 @@
     display: flex;
     gap: 22px;
 }
+/* .nav-item {
+    position: relative;
+
+} */
+
+.nav-link {
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
+    color: #1d1d1f;
+}
 
 .nav a {
     font-size: 17px;
@@ -33,7 +45,9 @@
     color: #1d1d1f;
     text-decoration: none;
 }
-
+.nav-link:hover{
+    color: #ff6a00;
+}
 .nav a:hover {
     color: #ff6a00;
 }
@@ -48,7 +62,9 @@
     font-weight: 600;
     cursor: pointer;
 }
-
+.hamburger{
+    display: none;
+}
 /* Responsive Design for tablet */
 
 @media (max-width: 1024px) {

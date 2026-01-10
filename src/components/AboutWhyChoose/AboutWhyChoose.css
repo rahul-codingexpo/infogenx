@@ -1,0 +1,70 @@
+.why-choose-section {
+    background: #fff6f0;
+    padding: 0px 0 40px 0;
+}
+
+.why-choose-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Main dark card */
+.why-choose-container {
+    background: linear-gradient(180deg,
+            #0c121a,
+            #141b26);
+    border-radius: 24px;
+    padding: 40px 70px;
+    color: #ffffff;
+}
+
+/* Label */
+.why-choose-label {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    /* color: #ff6a00; */
+    background: linear-gradient(89.95deg, #faa87b 8.97%, #e58033 33.19%, #f05d1d 89.61%);
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    margin-bottom: 40px;
+}
+
+/* Grid */
+.why-choose-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+}
+
+/* Cards */
+.why-card h3 {
+    font-family: "Manrope", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 14px;
+}
+
+.why-card p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 160%;
+    color: #e5e7eb;
+}
+
+.why-card .muted {
+    margin-top: 10px;
+    color: #b8bcc4;
+}
+
+/* Divider */
+.why-divider {
+    height: 1px;
+    background: linear-gradient(90deg,
+            transparent,
+            #ff6a00,
+            transparent);
+    margin: 50px 0;
+}

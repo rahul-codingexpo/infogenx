@@ -1,0 +1,125 @@
+.about-hero {
+    min-height: 120vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    max-width: 100%;
+}
+.about-corner-accent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 230px;
+    height: auto;
+}
+/* Dark overlay for readability */
+.about-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgb(17 17 17 / 17%), rgb(0 0 0 / 82%));
+}
+
+.about-hero-container {
+    position: relative;
+    z-index: 2;
+
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 200px 0px 80px;
+
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-end; */
+    gap: 200px;
+}
+
+/* .about-hero-left, .about-hero-right {
+    flex: 1;
+    width: 700px;
+} */
+
+/* Left side */
+.about-hero-left h1 {
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 115%;
+    margin-bottom: 100px;
+}
+
+/* Buttons */
+.about-hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.about-primary-btn {
+    padding: 14px 30px;
+    border-radius: 50px;
+    border: none;
+
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+
+    background: #ffffff;
+    color: #0b1f4d;
+    cursor: pointer;
+}
+
+.about-secondary-btn {
+    padding: 14px 26px;
+    border-radius: 50px;
+
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #ff6a00;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    cursor: pointer;
+    
+}
+
+.about-secondary-btn span {
+    font-size: 16px;
+    color: #ff6a00;
+}
+
+.about-primary-btn:hover{
+
+    transition: all 0.3s ease;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 25px rgba(236, 236, 236, 0.45);
+}
+
+.about-secondary-btn:hover{
+
+    transition: all 0.3s ease;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 25px rgba(236, 236, 236, 0.45);
+}
+
+/* Right side */
+.about-hero-right {
+    margin-top: 30px;
+    max-width: 420px;
+}
+
+.about-hero-right p {
+    font-family: "Manrope", sans-serif;
+    font-size: 20px;
+    line-height: 160%;
+    font-weight: 500;
+    color: #f1f1f1;
+}
