@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import "./Header.css";
 import logo from "../../assets/images/logo.png";
 import ServicesDropdown from "./ServicesDropdown";
+import TechnologiesDropdown from "./TechnologiesDropdown";
+import IndustriesDropdown from "./IndustriesDropdown";
+// import ProductsDropdown from "./productsDropdown";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
@@ -43,7 +46,9 @@ const Header = () => {
           >
             <span className="nav-link">Technologies</span>
             {technologiesOpen && (
-              <ServicesDropdown closeMenu={() => setTechnologiesOpen(false)} />
+              <TechnologiesDropdown
+                closeMenu={() => setTechnologiesOpen(false)}
+              />
             )}
           </div>
           <div
@@ -53,7 +58,7 @@ const Header = () => {
           >
             <span className="nav-link">Industries</span>
             {industriesOpen && (
-              <ServicesDropdown closeMenu={() => setIndustriesOpen(false)} />
+              <IndustriesDropdown closeMenu={() => setIndustriesOpen(false)} />
             )}
           </div>
           <div
@@ -66,12 +71,11 @@ const Header = () => {
               <ServicesDropdown closeMenu={() => setProductsOpen(false)} />
             )}
           </div>
-          <Link to="/portfolio">Portfolio</Link>
-          <Link to="/blog">Blog</Link>
+          {/* <Link to="/portfolio">Portfolio</Link>
+          <Link to="/blog">Blog</Link> */}
           <Link to="/contact">Contact</Link>
+          <button className="quote-btn desktop-only">Request a Quote</button>
         </nav>
-
-        <button className="quote-btn desktop-only">Request a Quote</button>
 
         {/* Hamburger */}
         <div

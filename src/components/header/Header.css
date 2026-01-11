@@ -26,6 +26,7 @@
 .nav {
     display: flex;
     gap: 22px;
+    align-items: center;
 }
 /* .nav-item {
     position: relative;
