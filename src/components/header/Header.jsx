@@ -5,13 +5,12 @@ import logo from "../../assets/images/logo.png";
 import ServicesDropdown from "./ServicesDropdown";
 import TechnologiesDropdown from "./TechnologiesDropdown";
 import IndustriesDropdown from "./IndustriesDropdown";
-// import ProductsDropdown from "./productsDropdown";
+
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [technologiesOpen, setTechnologiesOpen] = useState(false);
   const [industriesOpen, setIndustriesOpen] = useState(false);
-  const [productsOpen, setProductsOpen] = useState(false);
 
   return (
     <header className="header">
@@ -61,20 +60,15 @@ const Header = () => {
               <IndustriesDropdown closeMenu={() => setIndustriesOpen(false)} />
             )}
           </div>
-          <div
-            className="nav-item"
-            onMouseEnter={() => setProductsOpen(true)}
-            onMouseLeave={() => setProductsOpen(false)}
-          >
-            <span className="nav-link">Products</span>
-            {productsOpen && (
-              <ServicesDropdown closeMenu={() => setProductsOpen(false)} />
-            )}
-          </div>
+          <Link to="/products" onClick={() => setMenuOpen(false)}>
+            Products
+          </Link>
           {/* <Link to="/portfolio">Portfolio</Link>
           <Link to="/blog">Blog</Link> */}
           <Link to="/contact">Contact</Link>
-          <button className="quote-btn desktop-only">Request a Quote</button>
+          <Link to="/contact" className="quote-btn desktop-only">
+            Request a Quote
+          </Link>
         </nav>
 
         {/* Hamburger */}

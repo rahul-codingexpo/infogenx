@@ -1,0 +1,74 @@
+.appdev-hero {
+  background: #fff6f0;
+  padding: 160px 0 0px;
+}
+
+.appdev-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+/* ---------- LEFT ---------- */
+.appdev-left {
+  max-width: 620px;
+}
+
+.appdev-left h1 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 49px;
+  line-height: 120%;
+  margin-top: 0;
+  color: #171D27;
+  margin-bottom: 20px;
+}
+
+.appdev-left p {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  line-height: 160%;
+  color: #555;
+  margin-bottom: 32px;
+}
+
+/* Buttons reuse your global styles */
+.appdev-buttons {
+  display: flex;
+  gap: 18px;
+}
+
+/* ---------- RIGHT ---------- */
+
+.appdev-video-wrapper {
+    position: relative;
+    width: 485px;
+    height: 500px;
+}
+
+.bg {
+    position: absolute;
+    width: 455px;
+    height: 455px;
+    top: 30px;
+    right: 20px;
+    left: 0;
+    bottom: 0;
+    background: #d33e00;
+    border-radius: 50px;
+}
+
+.appdev-video {
+    position: relative;
+    width: 464px;
+    height: 464px;
+    float: right;
+    object-fit: cover;
+    border-radius: 40px;
+    z-index: 2;
+}

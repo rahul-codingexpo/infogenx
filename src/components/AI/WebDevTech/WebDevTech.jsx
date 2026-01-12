@@ -6,7 +6,7 @@ const WebDevTech = () => {
       <div className="tech-web-container">
         {/* WHAT WE OFFER */}
         <div className="tech-web-header">
-          <span className="section-label">What We Offer</span>
+          <span className="app-section-label">What We Offer</span>
           <h2>What Web Development Means</h2>
 
           <p className="tech-web-desc">
@@ -87,7 +87,7 @@ const WebDevTech = () => {
         <hr />
         {/* APPROACH */}
         <div className="tech-approach">
-          <span className="section-label">Approach</span>
+          <span className="app-section-label">Approach</span>
           <h3>Our Web Development Approach</h3>
 
           <div className="tech-approach-grid">

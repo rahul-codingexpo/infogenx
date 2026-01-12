@@ -48,7 +48,7 @@ const AppDevApproach = () => {
             </div>
           ))}
         </div>
-        <hr />
+        <hr style={{ margin: "50px 0px", "background-color": "#ff6a00" }} />
         <div className="business-outcome">
           <h1>Business Outcomes</h1>
           <div className="outcome-container">

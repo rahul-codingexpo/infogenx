@@ -1,9 +1,9 @@
 import Header from "../../../components/header/Header";
-import AppDevHero from "../../../components/AppDevelopment/AppDevHero/AppDevHero";
-import AppDevExpertise from "../../../components/AppDevelopment/AppDevExpertise/AppDevExpertise";
-import AppDevApproach from "../../../components/AppDevelopment/AppDevApproach/AppDevApproach";
-import AppDevBusinessImpact from "../../../components/AppDevelopment/AppDevBusinessImpact/AppDevBusinessImpact";
-import AppDevImpactCTA from "../../../components/AppDevelopment/AppDevImpactCTA/AppDevImpactCTA";
+import AppDevHero from "../../../components/Retail/AppDevHero/AppDevHero";
+import AppDevExpertise from "../../../components/Retail/AppDevExpertise/AppDevExpertise";
+import AppDevApproach from "../../../components/Retail/AppDevApproach/AppDevApproach";
+import AppDevBusinessImpact from "../../../components/Retail/AppDevBusinessImpact/AppDevBusinessImpact";
+import AppDevImpactCTA from "../../../components/Retail/AppDevImpactCTA/AppDevImpactCTA";
 import Footer from "../../../components/Footer/Footer";
 const ApplicationDev = () => {
   return (

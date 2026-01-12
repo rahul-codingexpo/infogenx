@@ -1,7 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
-import ApplicationDev from "./pages/Services/ApplicationDev/ApplicationDev";
+import Products from "./pages/Products/Products";
+import Contact from "./pages/Contact/Contact";
+import AppDevelopment from "./pages/Services/AppDevelopment/ApplicationDev";
 import Automation from "./pages/Services/Automation/Automation";
 import Analytics from "./pages/Services/Analytics/Analytics";
 import ITPartner from "./pages/Services/ITPartner/ITPartner";
@@ -24,9 +26,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/contact" element={<Contact />} />
           <Route
             path="/services/application-development"
-            element={<ApplicationDev />}
+            element={<AppDevelopment />}
           />
           <Route path="/services/automation" element={<Automation />} />
           <Route path="/services/analytics" element={<Analytics />} />
