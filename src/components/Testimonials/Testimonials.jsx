@@ -115,6 +115,13 @@ const testimonials = [
     logo: riteWheelzLogo,
   },
   {
+    text: "It makes us feel happy every time we click over it. And because the website is designed to be flexible, I can update it super easily whenever we want. Thank you Infogenx.",
+    company: "Cherami",
+    name: "Leon Leslie",
+    location: "Australia",
+    logo: cheramiLogo,
+  },
+  {
     text: "Infogenx is superior in keeping up their promises. Good in delivering the services on time frame. I am gratified with my Ecommerce project, done with Infogenx people. Thanks!!",
     company: "Rite Wheelz",
     name: "Rite Wheelz",
@@ -149,6 +156,10 @@ const Testimonials = () => {
     testimonials[0],
   ];
 
+  const CARD_WIDTH = 450;
+  const GAP = 40;
+  const MOVE_X = CARD_WIDTH + GAP;
+
   /* AUTO SLIDE */
   useEffect(() => {
     const timer = setInterval(() => {
@@ -170,7 +181,7 @@ const Testimonials = () => {
     if (index === 0) {
       setTimeout(() => {
         setAnimate(false);
-        setIndex(slides.length - 2);
+        setIndex(slides.length - 1);
       }, 800);
     }
   }, [index, slides.length]);
@@ -190,10 +201,18 @@ const Testimonials = () => {
       </p>
 
       <div className="testimonial-slider">
-        <div
+        {/* <div
           ref={trackRef}
           className={`testimonial-track ${animate ? "animate" : ""}`}
           style={{ transform: `translateX(-${index * 50}%)` }}
+        > */}
+
+        <div
+          ref={trackRef}
+          className={`testimonial-track ${animate ? "animate" : ""}`}
+          style={{
+            transform: `translateX(-${index * MOVE_X}px)`,
+          }}
         >
           {slides.map((item, i) => (
             <div className="testimonial-card" key={i}>
