@@ -88,7 +88,17 @@
         right: 0;
         width: 230px;
 }
-
+.business-outcome h1{
+    background: linear-gradient(45deg, #f99530, #ff5521);
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+}
 .outcome-container{
     display: flex;
+}
+.outcome-container h3{
+    color: #ffffff;
+}
+.business-outcome-item p{
+    color: #cbd2e1;
 }

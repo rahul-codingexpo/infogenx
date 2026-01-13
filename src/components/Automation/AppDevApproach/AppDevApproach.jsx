@@ -52,19 +52,19 @@ const AppDevApproach = () => {
         <div className="business-outcome">
           <h1>Business Outcomes</h1>
           <div className="outcome-container">
-            <div className="outcome-item">
+            <div className="business-outcome-item">
               <h3>Increase Efficiency</h3>
               <p>Eliminate manual tasks and accelerate cycle times.</p>
             </div>
-            <div className="outcome-item">
+            <div className="business-outcome-item">
               <h3>Boost Accuracy</h3>
               <p>Reduce human errors and improve consistency.</p>
             </div>
-            <div className="outcome-item">
+            <div className="business-outcome-item">
               <h3>Enhance Productivity</h3>
               <p>Free up talent for higher-value activities.</p>
             </div>
-            <div className="outcome-item">
+            <div className="business-outcome-item">
               <h3>Drive Growth</h3>
               <p>Reallocate resources toward strategic initiatives.</p>
             </div>
