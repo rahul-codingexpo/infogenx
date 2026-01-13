@@ -1,0 +1,41 @@
+.polygon-network {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff5ef;
+    z-index: -1;
+}
+
+/* Lines */
+.mesh polyline {
+    fill: none;
+    stroke: #ff6a00;
+    stroke-width: 1.2;
+    opacity: 0.85;
+}
+
+/* Nodes */
+.mesh circle {
+    fill: #ff6a00;
+}
+
+/* VERY subtle motion (optional) */
+.mesh {
+    animation: drift 40s linear infinite;
+    transform-origin: center;
+}
+
+@keyframes drift {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-8px, 6px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}

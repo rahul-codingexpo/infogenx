@@ -1,12 +1,22 @@
 import "./Hero.css";
-import heroBg from "../../assets/images/hero-bg1.png";
+
 import aiIcon from "../../assets/images/aiIcon.png";
 import automationIcon from "../../assets/images/automationIcon.png";
 import analyticsIcon from "../../assets/images/analyticalIcon.png";
-
+import NetworkBackground from "../NetworkBackground/NetworkBackground";
+import heroVideo from "../../assets/videos/herovideobg.mp4";
 const Hero = () => {
   return (
-    <section className="hero" style={{ backgroundImage: `url(${heroBg})` }}>
+    <section className="hero">
+      <video
+        className="hero-video"
+        src={heroVideo}
+        autoPlay
+        muted
+        loop
+        playsInline
+      />
+      {/* <NetworkBackground /> */}
       <div className="hero-container">
         <h1 className="hero-heading">
           <span>Innovate</span>, <span>Automate</span>, and <span>Scale</span>
