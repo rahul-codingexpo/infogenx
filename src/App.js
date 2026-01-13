@@ -18,6 +18,7 @@ import Retail from "./pages/Industries/Retail/Retail";
 import ECommerce from "./pages/Industries/ECommerce/ECommerce";
 import Manufacturing from "./pages/Industries/Manufacturing/Manufacturing";
 import Transport from "./pages/Industries/Transport/Transport";
+import Portfolio from "./pages/Portfolio/Portfolio";
 import "./App.css";
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/portfolio" element={<Portfolio />} />
           <Route
             path="/services/application-development"
             element={<AppDevelopment />}

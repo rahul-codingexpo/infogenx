@@ -63,8 +63,8 @@ const Header = () => {
           <Link to="/products" onClick={() => setMenuOpen(false)}>
             Products
           </Link>
-          {/* <Link to="/portfolio">Portfolio</Link>
-          <Link to="/blog">Blog</Link> */}
+          <Link to="/portfolio">Portfolio</Link>
+          {/* <Link to="/blog">Blog</Link>  */}
           <Link to="/contact">Contact</Link>
           <Link to="/contact" className="quote-btn desktop-only">
             Request a Quote
