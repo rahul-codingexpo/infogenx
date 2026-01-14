@@ -89,16 +89,24 @@
         width: 230px;
 }
 .business-outcome h1{
-    background: linear-gradient(45deg, #f99530, #ff5521);
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+    color: #ffffff;
+    font-size: 42px;
+    max-width: 700px;
+    margin-bottom: 20px;
 }
+
 .outcome-container{
     display: flex;
+    justify-content: space-between;
+}
+.border-left{
+    border-left: 2px solid rgba(248, 138, 60, 0.792);
 }
 .outcome-container h3{
+    margin: 0 0 10px 15px;
     color: #ffffff;
 }
 .business-outcome-item p{
     color: #cbd2e1;
+    margin:0 0 0 15px;
 }

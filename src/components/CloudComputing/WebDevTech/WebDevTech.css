@@ -31,7 +31,7 @@
     font-size: 42px;
     font-weight: 800;
     color: #ffffff;
-    margin-bottom: 18px;
+    margin: 0 0 18px;
 }
 
 .tech-web-desc {
@@ -89,7 +89,7 @@
     font-size: 32px;
     font-weight: 800;
     color: #ffffff;
-    margin-bottom: 40px;
+    margin: 0 0 20px;
 }
 
 .tech-approach-grid {

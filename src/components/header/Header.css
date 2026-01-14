@@ -12,7 +12,7 @@
     margin: 0 30px;
     border-radius: 50px;
     border: 3px solid #e0e0e0;
-    padding: 15px 24px;
+    padding: 10px 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -74,6 +74,7 @@
     .header-container {
         margin: 0 20px;
         padding: 14px 20px;
+        border: none;
     }
 
         .nav {
@@ -136,19 +137,22 @@
 /* Responsive Design for mobile */
 
 @media (max-width: 768px) {
+
     .header {
         top: 10px;
     }
+    
 
     .header-container {
         margin: 0 12px;
         border-radius: 18px;
+        border: none;
     }
 
     /* Hide desktop elements */
     .nav {
         position: absolute;
-        top: 80px;
+        top: 60px;
         left: 0;
         right: 0;
 
@@ -211,6 +215,7 @@
     }
 
     .nav a {
+        top:60;
         font-size: 14px;
     }
 }

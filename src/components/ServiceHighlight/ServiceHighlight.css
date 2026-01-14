@@ -221,14 +221,25 @@
 @media (max-width: 768px) {
     .service-section {
         margin-top: 0px;
-        padding: 60px 20px;
+        padding: 0 20px;
     }
 
+        .service-sticky {
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
     .service-card {
-        flex-direction: column;
-        align-items: center;
-        padding: 30px 20px;
-        text-align: center;
+                flex-direction: column;
+                    align-items: center;
+                    padding: 30px 20px;
+                    text-align: center;
+                            margin-top: 125px;
+                                margin-bottom: 20px;
     }
 
     .service-content {

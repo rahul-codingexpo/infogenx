@@ -117,3 +117,105 @@
     line-height: 160%;
     color: #555;
 }
+
+@media (max-width: 1199px) {
+    .about-who-container {
+        padding: 0 24px;
+    }
+
+    /* Top section */
+    .about-who-top {
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 60px;
+    }
+
+    .about-who-left h2 {
+        font-size: 34px;
+    }
+
+    .about-who-right {
+        max-width: 100%;
+    }
+
+    .about-who-right h4 {
+        font-size: 20px;
+    }
+
+    /* Image */
+    .about-who-image {
+        margin-bottom: 70px;
+    }
+
+    /* Bottom section */
+    .about-who-bottom {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .about-who-bottom-left h3 {
+        font-size: 34px;
+    }
+
+    .about-who-points {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-who-section {
+        padding: 60px 0 30px;
+    }
+
+    .about-who-container {
+        padding: 0 20px;
+    }
+
+    /* Labels */
+    .about-label {
+        font-size: 14px;
+    }
+
+    /* Top section */
+    .about-who-left h2 {
+        font-size: 26px;
+        line-height: 125%;
+    }
+
+    .about-who-right h4 {
+        font-size: 18px;
+        line-height: 145%;
+    }
+
+    .about-who-right p {
+        font-size: 15px;
+    }
+
+    /* Image */
+    .about-who-image img {
+        border-radius: 12px;
+        height: 150px;
+    }
+
+    /* Bottom section */
+    .about-who-bottom-left h3 {
+        font-size: 26px;
+        line-height: 125%;
+    }
+
+    .about-who-points {
+        font-size: 15px;
+    }
+
+    .about-who-points li {
+        font-size: 15px;
+    }
+
+    .about-who-points p {
+        font-size: 14px;
+    }
+
+    hr {
+        margin-top: 60px !important;
+    }
+}

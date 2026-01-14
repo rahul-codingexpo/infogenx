@@ -1,5 +1,5 @@
 import "./AppDevApproach.css";
-import AppcornerAssent from "../../../assets/images/appcorner.png";
+import cornerAssent from "../../../assets/images/corner-accent.png";
 const steps = [
   {
     number: "1",
@@ -21,6 +21,11 @@ const steps = [
 const AppDevApproach = () => {
   return (
     <section className="approach-section">
+      <img
+        src={cornerAssent}
+        alt="corner accent"
+        className="automation-corner-accent"
+      />
       <div className="approach-container">
         {/* Header */}
         <div className="approach-header">
@@ -38,15 +43,34 @@ const AppDevApproach = () => {
             </div>
           ))}
         </div>
+        <hr
+          style={{
+            margin: "50px 0px",
+            border: "1px solid  rgba(248, 138, 60, 0.792)",
+          }}
+        />
+        <div className="business-outcome">
+          <h1>Business Outcomes</h1>
+          <div className="outcome-container">
+            <div className="business-outcome-item">
+              <h3>Increase Efficiency</h3>
+              <p>Eliminate manual tasks and accelerate cycle times.</p>
+            </div>
+            <div className="business-outcome-item border-left">
+              <h3>Boost Accuracy</h3>
+              <p>Reduce human errors and improve consistency.</p>
+            </div>
+            <div className="business-outcome-item border-left">
+              <h3>Enhance Productivity</h3>
+              <p>Free up talent for higher-value activities.</p>
+            </div>
+            <div className="business-outcome-item border-left">
+              <h3>Drive Growth</h3>
+              <p>Reallocate resources toward strategic initiatives.</p>
+            </div>
+          </div>
+        </div>
       </div>
-
-      {/* Corner Accent */}
-      {/* <div className="approach-accent" /> */}
-      <img
-        src={AppcornerAssent}
-        alt="corner accent"
-        className="app-corner-accent"
-      />
     </section>
   );
 };
