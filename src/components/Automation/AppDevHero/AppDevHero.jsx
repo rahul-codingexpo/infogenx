@@ -13,13 +13,11 @@ const AppDevHero = () => {
         {/* LEFT CONTENT */}
 
         <div className="appdev-left">
-          <h1>
-            Intelligent Process <br /> Automation for Smarter <br /> Operations
-          </h1>
+          <h1>Intelligent Process Automation</h1>
 
           <p>
-            Accelerate efficiency, reduce manual effort, and unlock operational
-            agility with automation that scales.
+            Workflow automation, low-code solutions, and AI-assisted process
+            optimisation using Microsoft Power Platform.
           </p>
 
           <div className="appdev-buttons">

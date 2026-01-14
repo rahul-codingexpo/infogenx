@@ -13,14 +13,11 @@ const AppDevHero = () => {
         {/* LEFT CONTENT */}
 
         <div className="appdev-left">
-          <h1>
-            Advanced Analytics & AI- <br />
-            Driven Insights
-          </h1>
+          <h1>Analytics & Data Engineering</h1>
 
           <p>
-            Deliver scalable, secure, and high-impact applications quickly using
-            low-code technologies and expert engineering.
+            Modern data platforms, BI, and AI-assisted insights using Azure,
+            Fabric, and Microsoft analytics ecosystems.
           </p>
 
           <div className="appdev-buttons">

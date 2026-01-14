@@ -13,15 +13,11 @@ const AppDevHero = () => {
         {/* LEFT CONTENT */}
 
         <div className="appdev-left">
-          <h1>
-            Application Development <br />
-            That Accelerates Growth <br />
-            and Innovation
-          </h1>
+          <h1>Applied Artificial Intelligence</h1>
 
           <p>
-            Deliver scalable, secure, and high-impact applications quickly using
-            low-code technologies and expert engineering.
+            Practical AI embedded into applications, automation, and
+            analytics—secure, responsible, and business-ready.
           </p>
 
           <div className="appdev-buttons">

@@ -19,16 +19,19 @@ const Hero = () => {
       {/* <NetworkBackground /> */}
       <div className="hero-container">
         <h1 className="hero-heading">
-          <span>Innovate</span>, <span>Automate</span>, and <span>Scale</span>
+          {/* <span>Innovate</span>, <span>Automate</span>, and <span>Scale</span> */}
+          <span>Apps</span>, <span>Automation</span>, <span>Analytics</span>,
+          <span>And AI</span>
         </h1>
 
         <h2 className="hero-subheading">
-          with Low-Code Systems Built for Real Businesses
+          AI-enabled application development, intelligent automation, and
+          analytics engineering—built on secure, cloud-native modern platforms.
         </h2>
 
         <p className="hero-description">
-          We design and integrate scalable applications, automation, and
-          analytics using Microsoft, Google, AWS, Zoho, and Odoo platforms.
+          From strategy to scalable delivery. Built for growth, governance, and
+          impact.
         </p>
 
         <div className="hero-buttons">
