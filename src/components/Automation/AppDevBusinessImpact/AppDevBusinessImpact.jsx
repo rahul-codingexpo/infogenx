@@ -1,4 +1,4 @@
-import "./AppDevBusinessImpact.css";
+import "./AutomationAppDevBusinessImpact.css";
 import Business1 from "../../../assets/images/businessimg1.png";
 import Business2 from "../../../assets/images/businessimg2.png";
 import Business3 from "../../../assets/images/businessimg3.png";

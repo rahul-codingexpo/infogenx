@@ -1,4 +1,4 @@
-import "./AppDevApproach.css";
+import "./EcommerceAppDevApproach.css";
 import AppcornerAssent from "../../../assets/images/appcorner.png";
 const steps = [
   {

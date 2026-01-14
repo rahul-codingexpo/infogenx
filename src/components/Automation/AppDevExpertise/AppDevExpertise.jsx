@@ -1,4 +1,4 @@
-import "./AppDevExpertise.css";
+import "./AutomationAppDevExpertise.css";
 import IconA from "../../../assets/images/icon1.png";
 import IconB from "../../../assets/images/icon2.png";
 import IconC from "../../../assets/images/icon3.png";

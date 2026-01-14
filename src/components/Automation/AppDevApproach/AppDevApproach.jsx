@@ -1,4 +1,4 @@
-import "./AppDevApproach.css";
+import "./AutomationAppDevApproach.css";
 import AppcornerAssent from "../../../assets/images/corner-accent.png";
 const steps = [
   {

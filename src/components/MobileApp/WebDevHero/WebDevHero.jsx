@@ -1,9 +1,13 @@
-import "./WebDevHero.css";
+import "./MobileWebDevHero.css";
 
 const WebDevHero = () => {
   return (
     <section className="WebDev-hero">
-      <img alt="corner accent" class="about-corner-accent" src="/static/media/about-corner-accent.69f6c2ba49b10849fff3.png"></img>
+      <img
+        alt="corner accent"
+        class="about-corner-accent"
+        src="/static/media/about-corner-accent.69f6c2ba49b10849fff3.png"
+      ></img>
       <div className="webDev-hero-container">
         <h1 className="WebDev-hero-heading">
           Mobile App Development for Digital Impact

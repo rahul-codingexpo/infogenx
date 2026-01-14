@@ -1,4 +1,4 @@
-import "./AppDevImpactCTA.css";
+import "./AutomationAppDevImpactCTA.css";
 import { FaCheckCircle } from "react-icons/fa";
 import Correct from "../../../assets/images/correct.png";
 const AppDevImpactCTA = () => {

@@ -1,4 +1,4 @@
-import "./WebDevTech.css";
+import "./AIWebDevTech.css";
 import AppcornerAssent from "../../../assets/images/corner-accent.png";
 const WebDevTech = () => {
   return (

@@ -1,4 +1,4 @@
-import "./AppDevHero.css";
+import "./AnalyticsAppDevHero.css";
 import appDevVideo from "../../../assets/videos/app-dev-hero.mp4";
 import AboutCornerAccent from "../../../assets/images/about-corner-accent.png";
 const AppDevHero = () => {

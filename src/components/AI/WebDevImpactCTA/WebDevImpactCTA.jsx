@@ -1,4 +1,4 @@
-import "./WebDevImpactCTA.css";
+import "./AIWebDevImpactCTA.css";
 import Correct from "../../../assets/images/correct.png";
 const WebDevImpactCTA = () => {
   return (

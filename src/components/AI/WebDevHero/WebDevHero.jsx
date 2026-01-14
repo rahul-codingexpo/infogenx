@@ -1,5 +1,4 @@
-import "./WebDevHero.css";
-
+import "./AIWebDevHero.css";
 const WebDevHero = () => {
   return (
     <section className="WebDev-hero">

@@ -176,8 +176,6 @@
 }
 
 
-/* Responsive Design for tablet */
-
 @media (max-width: 1024px) {
     .WebDev-hero {
         min-height: 110vh;
@@ -201,7 +199,7 @@
         height: 48px;
     }
 
-    
+
 }
 
 /* Responsive Design for mobile */
@@ -213,6 +211,7 @@
     }
 
     .WebDev-hero-container {
+        max-width: 500px;
         padding: 0 20px;
     }
 
@@ -241,6 +240,7 @@
         width: 100%;
         max-width: 320px;
     }
+
     .WebDev-secondary-btn {
         width: 100%;
         max-width: 320px;

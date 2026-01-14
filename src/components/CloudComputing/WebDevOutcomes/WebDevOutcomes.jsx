@@ -1,4 +1,4 @@
-import "./WebDevOutcomes.css";
+import "./CloudComputingWebDevOutcomes.css";
 import outcomeImage from "../../../assets/images/tech-outcomes.png";
 
 const WebDevOutcomes = () => {
