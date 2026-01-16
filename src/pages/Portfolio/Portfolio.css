@@ -333,7 +333,9 @@ font-family: "Manrope", sans-serif;
     .appdev-hero {
         padding: 130px 0 0;
     }
-
+        .portfolio-container{
+            padding: 0 20px 80px;
+        }
     .appdev-left h1 {
         font-size: 28px;
         line-height: 130%;
