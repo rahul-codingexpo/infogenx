@@ -72,7 +72,7 @@ const ServiceHighlight = () => {
 
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  });
 
   const service = services[activeIndex];
 

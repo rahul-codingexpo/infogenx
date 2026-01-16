@@ -1,9 +1,7 @@
 import "./Hero.css";
-
 import aiIcon from "../../assets/images/aiIcon.png";
 import automationIcon from "../../assets/images/automationIcon.png";
 import analyticsIcon from "../../assets/images/analyticalIcon.png";
-import NetworkBackground from "../NetworkBackground/NetworkBackground";
 import heroVideo from "../../assets/videos/herovideobg.mp4";
 const Hero = () => {
   return (
