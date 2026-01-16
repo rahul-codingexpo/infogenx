@@ -1,5 +1,5 @@
 import "./AppDevImpactCTA.css";
-import { FaCheckCircle } from "react-icons/fa";
+
 import Correct from "../../../assets/images/correct.png";
 const AppDevImpactCTA = () => {
   return (

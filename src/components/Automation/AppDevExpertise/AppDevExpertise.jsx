@@ -3,7 +3,6 @@ import IconA from "../../../assets/images/icon1.png";
 import IconB from "../../../assets/images/icon2.png";
 import IconC from "../../../assets/images/icon3.png";
 import IconD from "../../../assets/images/icon4.png";
-import IconE from "../../../assets/images/icon5.png";
 const AppDevExpertise = () => {
   return (
     <section className="appdev-expertise-section">

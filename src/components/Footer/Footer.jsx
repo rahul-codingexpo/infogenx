@@ -1,5 +1,6 @@
 import "./Footer.css";
 import Footerlogo from "../../assets/images/logo-footer.png";
+import { Link } from "react-router-dom";
 import {
   RiInstagramLine,
   RiFacebookBoxLine,
@@ -22,18 +23,24 @@ const Footer = () => {
           </div>
 
           <div className="footer-social">
-            <a href="#">
+            <Link
+              to="https://www.instagram.com/infogenx_pvt_ltd/"
+              target="_blank"
+            >
               <RiInstagramLine />
-            </a>
-            <a href="#">
+            </Link>
+            <Link
+              to="https://www.linkedin.com/company/infogenx-pvt-ltd/"
+              target="_blank"
+            >
               <RiLinkedinBoxLine />
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="https://www.facebook.com/Infogenx" target="_blank">
               <RiFacebookBoxLine />
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="https://x.com/Infogenx1" target="_blank">
               <RiTwitterXLine />
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -44,23 +51,23 @@ const Footer = () => {
             <ul>
               <li>
                 {" "}
-                <a href="">About Us</a>
+                <Link to="/about">About Us</Link>
               </li>
               <li>
                 {" "}
-                <a href="">Partner</a>
+                <Link to="/services/it-partner">Partner</Link>
               </li>
               <li>
                 {" "}
-                <a href="">Careers</a>
+                <Link to="/careers">Careers</Link>
               </li>
               <li>
                 {" "}
-                <a href="">Privacy Policy</a>
+                <Link to="/privacy-policy">Privacy Policy</Link>
               </li>
               <li>
                 {" "}
-                <a href="">Terms and Conditions</a>
+                <Link to="/term-conditions">Terms and Conditions</Link>
               </li>
             </ul>
           </div>
@@ -70,23 +77,31 @@ const Footer = () => {
             <ul>
               <li>
                 {" "}
-                <a href="">Application & Web Development</a>
+                <Link to="/services/application-development">
+                  Application & Web Development
+                </Link>
               </li>
               <li>
                 {" "}
-                <a href="">Data Engineering & Analytics</a>
+                <Link to="/services/analytics">
+                  Data Engineering & Analytics
+                </Link>
               </li>
               <li>
                 {" "}
-                <a href="">Intelligent Process Automation</a>
+                <Link to="/services/automation">
+                  Intelligent Process Automation
+                </Link>
               </li>
               <li>
                 {" "}
-                <a href="">AI-Powered Cloud Solutions</a>
+                <Link to="/services/cloud-ai">AI-Powered Cloud Solutions</Link>
               </li>
               <li>
                 {" "}
-                <a href="">Offshore Software Development</a>
+                <Link to="/services/it-partner">
+                  Offshore Software Development
+                </Link>
               </li>
             </ul>
           </div>
@@ -96,29 +111,43 @@ const Footer = () => {
             <ul>
               <li>
                 {" "}
-                <a href="">Frontend Development</a>
+                <Link to="/technologies/web-development">
+                  Frontend Development
+                </Link>
               </li>
               <li>
                 {" "}
-                <a href="">Backend Development</a>
+                <Link to="/technologies/web-development">
+                  Backend Development
+                </Link>
               </li>
               <li>
                 {" "}
-                <a href="">Mobile App Development</a>
+                <Link to="/technologies/mobile-app-development">
+                  Mobile App Development
+                </Link>
               </li>
               <li>
                 {" "}
-                <a href="">Data Engineering & Analytics</a>
+                <Link to="/services/analytics">
+                  Data Engineering & Analytics
+                </Link>
               </li>
               <li>
                 {" "}
-                <a href="">Artificial Intelligence</a>
+                <Link to="/technologies/artificial-intelligence">
+                  Artificial Intelligence
+                </Link>
               </li>
-              <li>
+              {/* <li>
                 {" "}
-                <a href="">Smart Automation</a>
+                <Link to="/technologies/smart-automation">
+                  Smart Automation
+                </Link>
+              </li> */}
+              <li>
+                <Link to="/technologies/cloud-computing">Cloud Computing</Link>
               </li>
-              <li>Cloud Computing</li>
             </ul>
           </div>
 
@@ -127,27 +156,31 @@ const Footer = () => {
             <ul>
               <li>
                 {" "}
-                <a href="">Healthcare</a>
+                <Link to="/industries/healthcare-solutions">Healthcare</Link>
               </li>
               <li>
                 {" "}
-                <a href="">Retail</a>
+                <Link to="/industries/retail-solutions">Retail</Link>
               </li>
               <li>
                 {" "}
-                <a href="">Manufacturing</a>
+                <Link to="/industries/manufacturing-solutions">
+                  Manufacturing
+                </Link>
               </li>
               <li>
                 {" "}
-                <a href="">Transport and Logistics</a>
+                <Link to="/industries/transport-logistics">
+                  Transport and Logistics
+                </Link>
               </li>
               <li>
                 {" "}
-                <a href="">E-Commerce</a>
+                <Link to="/industries/e-commerce-solutions">E-Commerce</Link>
               </li>
               <li>
                 {" "}
-                <a href="">Finance</a>
+                <Link to="/industries/finance-solutions">Finance</Link>
               </li>
             </ul>
           </div>
