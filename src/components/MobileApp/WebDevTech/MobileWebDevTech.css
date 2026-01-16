@@ -129,3 +129,95 @@
         right: 0;
         width: 230px;
 }
+
+@media (max-width: 1024px) {
+    .tech-web-section {
+        padding: 90px 0;
+    }
+
+    .tech-web-header h2 {
+        font-size: 36px;
+    }
+
+    .tech-stack-grid {
+        gap: 30px 40px;
+    }
+
+    .tech-approach-grid {
+        gap: 25px 40px;
+    }
+
+    .web-corner-accent {
+        width: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tech-web-section {
+        padding: 70px 0;
+    }
+
+    .tech-web-header {
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .tech-web-header h2 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .tech-web-desc {
+        font-size: 14px;
+    }
+
+    /* Stack cards vertically */
+    .tech-stack-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-bottom: 60px;
+    }
+
+    .tech-stack h3 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .tech-stack-card {
+        padding: 22px;
+    }
+
+    /* Approach section */
+    .tech-approach h3 {
+        font-size: 26px;
+    }
+
+    .tech-approach-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    /* Hide accent on small screens */
+    .web-corner-accent {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .tech-web-header h2 {
+        font-size: 26px;
+    }
+
+    .tech-approach h3 {
+        font-size: 24px;
+    }
+
+    .tech-stack-card h4 {
+        font-size: 16px;
+    }
+
+    .tech-stack-card p,
+    .tech-approach-grid p {
+        font-size: 13px;
+    }
+}

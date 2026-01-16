@@ -1,4 +1,4 @@
-.WebDev-hero {
+.product-WebDev-hero {
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -8,14 +8,14 @@
     align-items: center;
 }
 
-.webDev-hero-container {
+.product-WebDev-hero-container {
     max-width: 1280px;
     margin: 0 auto;
     /* padding: 140px 24px 0; */
     padding: 200px 150px 200px 150px;
 }
 
-.products-hero-heading {
+.product-products-hero-heading {
     font-family: "Manrope", sans-serif;
     font-weight: 800;
     /* ExtraBold */
@@ -28,7 +28,7 @@
     padding: 0 40px;
 }
 
-.WebDev-hero-subheading {
+.product-WebDev-hero-subheading {
     font-family: "Manrope", sans-serif;
     font-weight: 400;
     /* Medium */
@@ -42,7 +42,7 @@
     /* background color converted to text color */
 }
 
-.WebDev-hero-description {
+.product-WebDev-hero-description {
     font-family: "Manrope", sans-serif;
     font-weight: 600;
     /* SemiBold */
@@ -57,7 +57,7 @@
     margin: 0 auto 28px;
 }
 
-.WebDev-hero-description-bottom {
+.product-WebDev-hero-description-bottom {
 
     font-family: "Manrope", sans-serif;
     font-weight: 600;
@@ -73,14 +73,14 @@
     margin: 40px auto;
 }
 
-.WebDev-hero-buttons {
+.product-WebDev-hero-buttons {
     display: flex;
     gap: 16px;
     align-items: center;
     justify-content: center;
 }
 
-.WebDev-primary-btn {
+.product-WebDev-primary-btn {
     width: 273px;
     height: 50px;
 
@@ -117,12 +117,12 @@
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.WebDev-primary-btn:hover {
+.product-WebDev-primary-btn:hover {
     transform: translateY(-1px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 1.5);
 }
 
-.WebDev-secondary-btn {
+.product-WebDev-secondary-btn {
     /* width: 220px; */
     height: 50px;
 
@@ -157,12 +157,12 @@
     transition: all 0.2s ease;
 }
 
-.WebDev-secondary-btn:hover {
+.product-WebDev-secondary-btn:hover {
     transform: translateY(-1px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.85);
 }
 
-.WebDev-hero-floating-icons {
+.product-WebDev-hero-floating-icons {
     position: absolute;
     inset: 0;
     pointer-events: none;
@@ -173,25 +173,25 @@
 /* Responsive Design for tablet */
 
 @media (max-width: 1024px) {
-    .WebDev-hero {
+    .product-WebDev-hero {
         min-height: 110vh;
     }
 
-    .WebDev-hero-heading {
+    .product-WebDev-hero-heading {
         font-size: 52px;
     }
 
-    .WebDev-hero-subheading {
+    .product-WebDev-hero-subheading {
         font-size: 34px;
     }
 
-    .WebDev-hero-description {
+    .product-WebDev-hero-description {
         font-size: 18px;
         max-width: 700px;
     }
 
-    .WebDev-primary-btn,
-    .WebDev-secondary-btn {
+    .product-WebDev-primary-btn,
+    .product-WebDev-secondary-btn {
         height: 48px;
     }
 
@@ -200,49 +200,57 @@
 
 /* Responsive Design for mobile */
 @media (max-width: 768px) {
-    .WebDev-hero {
-        height: 100vh;
+    .product-WebDev-hero {
+       
         min-height: auto;
-        padding: 120px 0 80px;
+       
     }
 
-    .WebDev-hero-container {
-        padding: 0 20px;
+    .product-WebDev-hero-container {
+    padding: 140px 20px 60px;
+        gap: 40px;
     }
 
-    .WebDev-hero-heading {
+    .product-WebDev-hero-heading {
         font-size: 38px;
         line-height: 110%;
     }
+    .product-products-hero-heading{
+        font-size: 30px;
+            line-height: 120%;
+            margin-bottom: 35px;
+    }
 
-    .WebDev-hero-subheading {
+    .product-WebDev-hero-subheading {
         font-size: 26px;
         line-height: 120%;
     }
 
-    .WebDev-hero-description {
+    .product-WebDev-hero-description {
         font-size: 16px;
         line-height: 150%;
     }
-
-    .WebDev-hero-buttons {
+        .product-WebDev-hero-description-bottom{
+            display: none;
+        }
+    .product-WebDev-hero-buttons {
         flex-direction: column;
         gap: 14px;
     }
 
-    .WebDev-primary-btn,
-    .WebDev-secondary-btn {
+    .product-WebDev-primary-btn,
+    .product-WebDev-secondary-btn {
         width: 100%;
         max-width: 320px;
     }
 
-    .WebDev-secondary-btn {
+    .product-WebDev-secondary-btn {
         width: 100%;
         max-width: 320px;
     }
 
     /* ❌ Hide floating icons on mobile */
-    .WebDev-hero-floating-icons {
+    .product-WebDev-hero-floating-icons {
         display: none;
     }
 
@@ -269,15 +277,15 @@
 /*for smaller devices*/
 
 @media (max-width: 480px) {
-    .WebDev-hero-heading {
+    .product-WebDev-hero-heading {
         font-size: 32px;
     }
 
-    .WebDev-hero-subheading {
+    .product-WebDev-hero-subheading {
         font-size: 22px;
     }
 
-    .WebDev-hero-description {
+    .product-WebDev-hero-description {
         font-size: 15px;
     }
 }
@@ -379,4 +387,91 @@
     bottom: 0;
     right: 0;
     width: 230px;
+}
+
+@media (max-width: 1199px) {
+    .product-approach-section {
+        padding: 60px 0 70px;
+    }
+
+    .approach-header {
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .approach-header h2 {
+        font-size: 36px;
+    }
+
+    .approach-grid {
+        gap: 24px;
+    }
+
+    .product-approach-card {
+        padding: 26px 24px;
+    }
+
+    .product-approach-card h4 {
+        font-size: 17px;
+    }
+
+    .product-approach-card p {
+        font-size: 15px;
+    }
+
+    .product-step-number {
+        font-size: 54px;
+    }
+
+    .app-corner-accent {
+        width: 180px;
+    }
+}
+
+@media (max-width: 767px) {
+    .product-approach-section {
+        padding: 50px 0 60px;
+    }
+
+    .approach-container {
+        padding: 0 20px;
+    }
+
+    .app-section-label {
+        font-size: 14px;
+    }
+
+    .approach-header h2 {
+        font-size: 28px;
+        line-height: 125%;
+    }
+
+    .approach-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .product-approach-card {
+        padding: 22px 20px;
+        min-height: auto;
+    }
+
+    .product-step-number {
+        font-size: 44px;
+        margin-bottom: 6px;
+        display: block;
+    }
+
+    .product-approach-card h4 {
+        font-size: 16px;
+    }
+
+    .product-approach-card p {
+        font-size: 14px;
+    }
+
+    .app-corner-accent {
+        width: 120px;
+        opacity: 0.6;
+    }
 }

@@ -86,29 +86,31 @@ const Products = () => {
   return (
     <>
       <Header />
-      <section className="WebDev-hero">
+      <section className="product-WebDev-hero">
         <img
           alt="corner accent"
-          class="about-corner-accent"
+          className="about-corner-accent"
           src="/static/media/about-corner-accent.69f6c2ba49b10849fff3.png"
         ></img>
-        <div className="webDev-hero-container">
-          <h1 className="products-hero-heading">
+        <div className="product-WebDev-hero-container">
+          <h1 className="product-products-hero-heading">
             Products for all your Business Needs
           </h1>
 
-          <p className="WebDev-hero-description">
+          <p className="product-WebDev-hero-description">
             Business made easy and productive with our adaptable products, Now
             enjoy your business.
           </p>
 
           <div className="WebDev-hero-buttons">
-            <button className="WebDev-primary-btn">
+            <button className="product-WebDev-primary-btn">
               Get Your FREE Consultation
             </button>
-            <button className="WebDev-secondary-btn">Talk to an Expert</button>
+            <button className="product-WebDev-secondary-btn">
+              Talk to an Expert
+            </button>
           </div>
-          <p className="WebDev-hero-description-bottom">
+          <p className="product-WebDev-hero-description-bottom">
             At Infogenx, our products are designed to empower businesses across
             industries with intelligent, scalable, and ready-to-deploy digital
             solutions.

@@ -8,7 +8,7 @@ const WebDevHero = () => {
         class="about-corner-accent"
         src="/static/media/about-corner-accent.69f6c2ba49b10849fff3.png"
       ></img>
-      <div className="webDev-hero-container">
+      <div className="WebDev-hero-container">
         <h1 className="WebDev-hero-heading">
           Web Development Technology that Drives Digital Growth
         </h1>
