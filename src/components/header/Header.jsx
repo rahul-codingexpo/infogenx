@@ -11,6 +11,7 @@ const Header = () => {
   const [servicesOpen, setServicesOpen] = useState(false);
   const [technologiesOpen, setTechnologiesOpen] = useState(false);
   const [industriesOpen, setIndustriesOpen] = useState(false);
+  const [solutionsOpen, setSolutionsOpen] = useState(false);
 
   return (
     <header className="header">
@@ -32,10 +33,21 @@ const Header = () => {
             onMouseEnter={() => setServicesOpen(true)}
             onMouseLeave={() => setServicesOpen(false)}
           >
-            <span className="nav-link">Our Services</span>
+            <span className="nav-link">Services</span>
 
             {servicesOpen && (
               <ServicesDropdown closeMenu={() => setServicesOpen(false)} />
+            )}
+          </div>
+          <div
+            className="nav-item"
+            onMouseEnter={() => setSolutionsOpen(true)}
+            onMouseLeave={() => setSolutionsOpen(false)}
+          >
+            <span className="nav-link">Solutions</span>
+
+            {solutionsOpen && (
+              <ServicesDropdown closeMenu={() => setSolutionsOpen(false)} />
             )}
           </div>
           <div
