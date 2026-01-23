@@ -5,13 +5,15 @@ import logo from "../../assets/images/logo.png";
 import ServicesDropdown from "./ServicesDropdown";
 import TechnologiesDropdown from "./TechnologiesDropdown";
 import IndustriesDropdown from "./IndustriesDropdown";
-
+import SolutionsDropdown from "./SolutionsDropdown";
+import PlatformsDropdown from "./PlatformsDropdown";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [technologiesOpen, setTechnologiesOpen] = useState(false);
   const [industriesOpen, setIndustriesOpen] = useState(false);
   const [solutionsOpen, setSolutionsOpen] = useState(false);
+  const [platformsOpen, setPlatformsOpen] = useState(false);
 
   return (
     <header className="header">
@@ -21,13 +23,28 @@ const Header = () => {
         </Link>
 
         <nav className={`nav ${menuOpen ? "open" : ""}`}>
-          <Link to="/about" onClick={() => setMenuOpen(false)}>
-            About us
-          </Link>
-          {/* <Link to="/services">Our Services</Link>
-          <Link to="/technologies">Technologies</Link>
-          <Link to="/industries">Industries</Link>
-          <Link to="/products">Products</Link> */}
+          <div
+            className="nav-item"
+            onMouseEnter={() => setSolutionsOpen(true)}
+            onMouseLeave={() => setSolutionsOpen(false)}
+          >
+            <span className="nav-link">Solutions</span>
+
+            {solutionsOpen && (
+              <SolutionsDropdown closeMenu={() => setSolutionsOpen(false)} />
+            )}
+          </div>
+          <div
+            className="nav-item"
+            onMouseEnter={() => setPlatformsOpen(true)}
+            onMouseLeave={() => setPlatformsOpen(false)}
+          >
+            <span className="nav-link">Platforms</span>
+
+            {platformsOpen && (
+              <PlatformsDropdown closeMenu={() => setPlatformsOpen(false)} />
+            )}
+          </div>
           <div
             className="nav-item"
             onMouseEnter={() => setServicesOpen(true)}
@@ -39,17 +56,7 @@ const Header = () => {
               <ServicesDropdown closeMenu={() => setServicesOpen(false)} />
             )}
           </div>
-          <div
-            className="nav-item"
-            onMouseEnter={() => setSolutionsOpen(true)}
-            onMouseLeave={() => setSolutionsOpen(false)}
-          >
-            <span className="nav-link">Solutions</span>
 
-            {solutionsOpen && (
-              <ServicesDropdown closeMenu={() => setSolutionsOpen(false)} />
-            )}
-          </div>
           <div
             className="nav-item"
             onMouseEnter={() => setTechnologiesOpen(true)}
@@ -77,6 +84,8 @@ const Header = () => {
           </Link>
           <Link to="/portfolio">Portfolio</Link>
           {/* <Link to="/blog">Blog</Link>  */}
+          <Link to="/insights">Insights</Link>
+          <Link to="/about">About us</Link>
           <Link to="/contact">Contact</Link>
           <Link to="/contact" className="quote-btn desktop-only">
             Request a Quote

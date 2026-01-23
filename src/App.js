@@ -19,6 +19,15 @@ import ECommerce from "./pages/Industries/ECommerce/ECommerce";
 import Manufacturing from "./pages/Industries/Manufacturing/Manufacturing";
 import Transport from "./pages/Industries/Transport/Transport";
 import Portfolio from "./pages/Portfolio/Portfolio";
+import ApiIntegration from "./pages/Solutions/APIintegration/ApiIntegration";
+import DataAnalyticsAI from "./pages/Solutions/DataAnalyticsAI/DataAnalyticsAI";
+import DigitalTransformation from "./pages/Solutions/DigitalTransformation/DigitalTransformation";
+import IntelligentAutomation from "./pages/Solutions/IntelligentAutomation/IntelligentAutomation";
+import ModernApplication from "./pages/Solutions/ModernApplication/ModernApplication";
+import MicrosoftSolution from "./pages/Platforms/MicrosoftSolutions/MicrosoftSolution";
+import ZohoSolution from "./pages/Platforms/ZohoSolutions/ZohoSolution";
+import OdooSolution from "./pages/Platforms/OdooSolutions/OdooSolution";
+import Insights from "./pages/Insights/Insights";
 import "./App.css";
 function App() {
   return (
@@ -28,6 +37,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/insights" element={<Insights />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route
@@ -38,6 +48,32 @@ function App() {
           <Route path="/services/analytics" element={<Analytics />} />
           <Route path="/services/it-partner" element={<ITPartner />} />
           <Route path="/services/cloud-ai" element={<CloudAI />} />
+          <Route
+            path="/platforms/microsoft-solutions"
+            element={<MicrosoftSolution />}
+          />
+          <Route path="/platforms/zoho-solutions" element={<ZohoSolution />} />
+          <Route path="/platforms/odoo-solutions" element={<OdooSolution />} />
+          <Route
+            path="/solutions/api-integration"
+            element={<ApiIntegration />}
+          />
+          <Route
+            path="/solutions/data-analytics-ai"
+            element={<DataAnalyticsAI />}
+          />
+          <Route
+            path="/solutions/digital-transformation"
+            element={<DigitalTransformation />}
+          />
+          <Route
+            path="/solutions/intelligent-automation"
+            element={<IntelligentAutomation />}
+          />
+          <Route
+            path="/solutions/modern-application"
+            element={<ModernApplication />}
+          />
           <Route
             path="/technologies/web-development"
             element={<WebDevelopment />}
