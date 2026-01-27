@@ -5,7 +5,7 @@ const PlatformsDropdown = ({ closeMenu }) => {
   return (
     <div className="services-dropdown">
       <div className="services-grid">
-        <Link to="/platforms/microsoft-solutions" onClick={closeMenu}>
+        <Link to="/platforms/microsoft" onClick={closeMenu}>
           <div className="service-img">
             <img src={CodeBox} alt="Service-img" />
           </div>
@@ -18,7 +18,7 @@ const PlatformsDropdown = ({ closeMenu }) => {
           </div>
         </Link>
 
-        <Link to="/platforms/zoho-solutions" onClick={closeMenu}>
+        <Link to="/platforms/zoho" onClick={closeMenu}>
           <div className="service-img">
             <img src={CodeBox} alt="Service-img" />
           </div>
@@ -31,7 +31,7 @@ const PlatformsDropdown = ({ closeMenu }) => {
           </div>
         </Link>
 
-        <Link to="/platforms/odoo-solutions" onClick={closeMenu}>
+        <Link to="/platforms/odoo" onClick={closeMenu}>
           <div className="service-img">
             <img src={CodeBox} alt="Service-img" />
           </div>

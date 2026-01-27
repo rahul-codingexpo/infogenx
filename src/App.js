@@ -3,11 +3,11 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Products from "./pages/Products/Products";
 import Contact from "./pages/Contact/Contact";
-import AppDevelopment from "./pages/Services/AppDevelopment/ApplicationDev";
-import Automation from "./pages/Services/Automation/Automation";
-import Analytics from "./pages/Services/Analytics/Analytics";
-import ITPartner from "./pages/Services/ITPartner/ITPartner";
-import CloudAI from "./pages/Services/CloudAI/CloudAI";
+import ImplementationIntegration from "./pages/Services/ImplementationIntegration/ImplementationIntegration";
+// import Automation from "./pages/Services/Automation/Automation";
+import ConsultingAdvisory from "./pages/Services/Consulting&Advisory/Consulting&Advisory";
+import SupportOptimization from "./pages/Services/SupportOptimization/support-optimization";
+import ManagedServices from "./pages/Services/ManagedServices/managed-services";
 import WebDevelopment from "./pages/Technologies/WebDev/Webdev";
 import MobileAppDevelopment from "./pages/Technologies/MobileApp/MobileApp";
 import ArtificialIntelligence from "./pages/Technologies/AI/AI";
@@ -23,7 +23,7 @@ import ApiIntegration from "./pages/Solutions/APIintegration/ApiIntegration";
 import DataAnalyticsAI from "./pages/Solutions/DataAnalyticsAI/DataAnalyticsAI";
 import DigitalTransformation from "./pages/Solutions/DigitalTransformation/DigitalTransformation";
 import IntelligentAutomation from "./pages/Solutions/IntelligentAutomation/IntelligentAutomation";
-import ModernApplication from "./pages/Solutions/ModernApplication/ModernApplication";
+import ApplicationEngineering from "./pages/Solutions/ModernApplication/ModernApplication";
 import MicrosoftSolution from "./pages/Platforms/MicrosoftSolutions/MicrosoftSolution";
 import ZohoSolution from "./pages/Platforms/ZohoSolutions/ZohoSolution";
 import OdooSolution from "./pages/Platforms/OdooSolutions/OdooSolution";
@@ -41,19 +41,25 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route
-            path="/services/application-development"
-            element={<AppDevelopment />}
+            path="/services/implementation-integration"
+            element={<ImplementationIntegration />}
           />
-          <Route path="/services/automation" element={<Automation />} />
-          <Route path="/services/analytics" element={<Analytics />} />
-          <Route path="/services/it-partner" element={<ITPartner />} />
-          <Route path="/services/cloud-ai" element={<CloudAI />} />
           <Route
-            path="/platforms/microsoft-solutions"
-            element={<MicrosoftSolution />}
+            path="/services/managed-services"
+            element={<ManagedServices />}
           />
-          <Route path="/platforms/zoho-solutions" element={<ZohoSolution />} />
-          <Route path="/platforms/odoo-solutions" element={<OdooSolution />} />
+          <Route
+            path="/services/consulting-advisory"
+            element={<ConsultingAdvisory />}
+          />
+          <Route
+            path="/services/support-optimization"
+            element={<SupportOptimization />}
+          />
+          {/* <Route path="/services/cloud-ai" element={<CloudAI />} /> */}
+          <Route path="/platforms/microsoft" element={<MicrosoftSolution />} />
+          <Route path="/platforms/zoho" element={<ZohoSolution />} />
+          <Route path="/platforms/odoo" element={<OdooSolution />} />
           <Route
             path="/solutions/api-integration"
             element={<ApiIntegration />}
@@ -71,8 +77,8 @@ function App() {
             element={<IntelligentAutomation />}
           />
           <Route
-            path="/solutions/modern-application"
-            element={<ModernApplication />}
+            path="/solutions/application-engineering"
+            element={<ApplicationEngineering />}
           />
           <Route
             path="/technologies/web-development"

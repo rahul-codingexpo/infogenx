@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import "./Header.css";
 import logo from "../../assets/images/logo.png";
 import ServicesDropdown from "./ServicesDropdown";
-import TechnologiesDropdown from "./TechnologiesDropdown";
+// import TechnologiesDropdown from "./TechnologiesDropdown";
 import IndustriesDropdown from "./IndustriesDropdown";
 import SolutionsDropdown from "./SolutionsDropdown";
 import PlatformsDropdown from "./PlatformsDropdown";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
-  const [technologiesOpen, setTechnologiesOpen] = useState(false);
+  // const [technologiesOpen, setTechnologiesOpen] = useState(false);
   const [industriesOpen, setIndustriesOpen] = useState(false);
   const [solutionsOpen, setSolutionsOpen] = useState(false);
   const [platformsOpen, setPlatformsOpen] = useState(false);
@@ -57,7 +57,7 @@ const Header = () => {
             )}
           </div>
 
-          <div
+          {/* <div
             className="nav-item"
             onMouseEnter={() => setTechnologiesOpen(true)}
             onMouseLeave={() => setTechnologiesOpen(false)}
@@ -68,7 +68,7 @@ const Header = () => {
                 closeMenu={() => setTechnologiesOpen(false)}
               />
             )}
-          </div>
+          </div> */}
           <div
             className="nav-item"
             onMouseEnter={() => setIndustriesOpen(true)}
@@ -82,7 +82,7 @@ const Header = () => {
           <Link to="/products" onClick={() => setMenuOpen(false)}>
             Products
           </Link>
-          <Link to="/portfolio">Portfolio</Link>
+          <Link to="/portfolio">Our work</Link>
           {/* <Link to="/blog">Blog</Link>  */}
           <Link to="/insights">Insights</Link>
           <Link to="/about">About us</Link>

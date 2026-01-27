@@ -6,9 +6,21 @@ import AppDevApproach from "../../../components/Analytics/AppDevApproach/AppDevA
 import AppDevBusinessImpact from "../../../components/Analytics/AppDevBusinessImpact/AppDevBusinessImpact";
 // import AppDevImpactCTA from "../../../components/Analytics/AppDevImpactCTA/AppDevImpactCTA";
 import Footer from "../../../components/Footer/Footer";
+import { Helmet } from "react-helmet-async";
 const OdooSolution = () => {
   return (
     <>
+      <Helmet>
+        <title>Odoo ERP Implementation & Customisation | Infogenx</title>
+        <meta
+          name="description"
+          content="Infogenx delivers Odoo ERP implementation, custom modules, and workflow automation to streamline operations and improve business visibility. "
+        />
+        <meta
+          name="keywords"
+          content="Odoo ERP Australia, Odoo implementation, ERP automation"
+        />
+      </Helmet>
       <Header />
       <AppDevHero />
       <AppDevExpertise />

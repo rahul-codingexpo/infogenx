@@ -6,9 +6,23 @@ import AppDevApproach from "../../../components/AppDevelopment/AppDevApproach/Ap
 import AppDevBusinessImpact from "../../../components/AppDevelopment/AppDevBusinessImpact/AppDevBusinessImpact";
 import AppDevImpactCTA from "../../../components/AppDevelopment/AppDevImpactCTA/AppDevImpactCTA";
 import Footer from "../../../components/Footer/Footer";
+import { Helmet } from "react-helmet-async";
 const IntelligentAutomation = () => {
   return (
     <>
+      <Helmet>
+        <title>
+          Intelligent Automation & Workflow Solutions | Infogenx Australia
+        </title>
+        <meta
+          name="description"
+          content="Reduce manual work and improve efficiency with Infogenx’s AI-driven intelligent automation and workflow solutions for modern Australian enterprises. "
+        />
+        <meta
+          name="keywords"
+          content="intelligent automation Australia, workflow automation, AI-driven automation"
+        />
+      </Helmet>
       <Header />
       <AppDevHero />
       <AppDevExpertise />

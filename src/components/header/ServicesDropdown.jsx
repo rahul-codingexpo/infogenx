@@ -5,12 +5,12 @@ const ServicesDropdown = ({ closeMenu }) => {
   return (
     <div className="services-dropdown">
       <div className="services-grid">
-        <Link to="/services/application-development" onClick={closeMenu}>
+        <Link to="/services/implementation-integration" onClick={closeMenu}>
           <div className="service-img">
             <img src={CodeBox} alt="Service-img" />
           </div>
           <div className="service-info">
-            <h4>Application Development</h4>
+            <h4>Implementation & Integration</h4>
             <p>
               Build scalable web and application solutions tailored to your
               business needs.
@@ -18,12 +18,12 @@ const ServicesDropdown = ({ closeMenu }) => {
           </div>
         </Link>
 
-        <Link to="/services/automation" onClick={closeMenu}>
+        <Link to="/services/managed-services" onClick={closeMenu}>
           <div className="service-img">
             <img src={CodeBox} alt="Service-img" />
           </div>
           <div className="service-info">
-            <h4>Automation</h4>
+            <h4>Managed Services</h4>
             <p>
               Automate workflows to improve efficiency, accuracy, and
               operational speed.
@@ -31,12 +31,12 @@ const ServicesDropdown = ({ closeMenu }) => {
           </div>
         </Link>
 
-        <Link to="/services/analytics" onClick={closeMenu}>
+        <Link to="/services/consulting-advisory" onClick={closeMenu}>
           <div className="service-img">
             <img src={CodeBox} alt="Service-img" />
           </div>
           <div className="service-info">
-            <h4>Analytics Engineering</h4>
+            <h4>Consulting & Advisory</h4>
             <p>
               Transform raw data into reliable insights for smarter
               decision-making.
@@ -44,16 +44,16 @@ const ServicesDropdown = ({ closeMenu }) => {
           </div>
         </Link>
 
-        <Link to="/services/it-partner" onClick={closeMenu}>
+        <Link to="/services/support-optimization" onClick={closeMenu}>
           <div className="service-img">
             <img src={CodeBox} alt="Service-img" />
           </div>
           <div className="service-info">
-            <h4>IT Solutions Partner</h4>
+            <h4>Support & Optimization</h4>
             <p>Extend development capacity with reliable offshore teams.</p>
           </div>
         </Link>
-
+        {/* 
         <Link to="/services/cloud-ai" onClick={closeMenu}>
           <div className="service-img">
             <img src={CodeBox} alt="Service-img" />
@@ -64,7 +64,7 @@ const ServicesDropdown = ({ closeMenu }) => {
               Design secure, scalable cloud systems enhanced with intelligence.
             </p>
           </div>
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

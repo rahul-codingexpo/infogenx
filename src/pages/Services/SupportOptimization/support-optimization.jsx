@@ -5,9 +5,21 @@ import AppDevApproach from "../../../components/ITPartner/AppDevApproach/AppDevA
 import AppDevBusinessImpact from "../../../components/ITPartner/AppDevBusinessImpact/AppDevBusinessImpact";
 import AppDevImpactCTA from "../../../components/ITPartner/AppDevImpactCTA/AppDevImpactCTA";
 import Footer from "../../../components/Footer/Footer";
+import { Helmet } from "react-helmet-async";
 const ApplicationDev = () => {
   return (
     <>
+      <Helmet>
+        <title>IT Support & Continuous Optimization Services | Infogenx</title>
+        <meta
+          name="description"
+          content="Infogenx helps businesses resolve issues faster and continuously optimise systems through structured support and performance reporting."
+        />
+        <meta
+          name="keywords"
+          content="IT support Australia, system optimisation, performance monitoring"
+        />
+      </Helmet>
       <Header />
       <AppDevHero />
       <AppDevExpertise />
