@@ -68,9 +68,9 @@
 
 .hero-subheading {
     font-family: "Manrope", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     /* Medium */
-    font-size: 45px;
+    font-size: 30px;
     line-height: 100%;
     letter-spacing: 0;
     text-align: center;
@@ -84,7 +84,7 @@
     font-family: "Manrope", sans-serif;
     font-weight: 600;
     /* SemiBold */
-    font-size: 22px;
+    font-size: 20px;
     line-height: 160%;
     letter-spacing: 0;
     text-align: center;

@@ -18,13 +18,14 @@ const Hero = () => {
       <div className="hero-container">
         <h1 className="hero-heading">
           {/* <span>Innovate</span>, <span>Automate</span>, and <span>Scale</span> */}
-          <span>Apps</span>, <span>Automation</span>, <span>Analytics</span>,
-          <span>And AI</span>
+          {/* <span>Apps</span>, <span>Automation</span>, <span>Analytics</span>,
+          <span>And AI</span> */}
+          <span>Build Smarter. Automate Faster. Decide Better.</span>
         </h1>
 
         <h2 className="hero-subheading">
-          AI-enabled application development, intelligent automation, and
-          analytics engineering—built on secure, cloud-native modern platforms.
+          Your end-to-end partner for application development, automation, and
+          analytics engineering on Microsoft, Zoho, Shopify, and Odoo.
         </h2>
 
         <p className="hero-description">
