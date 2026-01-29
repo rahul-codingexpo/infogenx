@@ -26,10 +26,6 @@ import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { HiOutlineTrophy } from "react-icons/hi2";
 import { VscRemoteExplorer } from "react-icons/vsc";
 import { RiShieldCheckLine } from "react-icons/ri";
-import { IoDiamondOutline } from "react-icons/io5";
-import { MdOutlineRemoveRedEye } from "react-icons/md";
-import { GrUpdate } from "react-icons/gr";
-import { RxAvatar } from "react-icons/rx";
 
 const descItems = [
   {
@@ -61,38 +57,6 @@ const descItems = [
     icon: <RiShieldCheckLine />,
     title: "Open source CRM",
     text: "An open source CRM system make source code available to the public, enabling companies to make alterations at no cost to the company employing the system. Open source CRM systems also enable the addition and customization of data links on social media channels, assisting companies looking to improve social CRM practices.Open Source CRM platforms such as OroCRM, SuiteCRM and SugarCRM offer alternatives to the proprietary platforms from Salesforce, Microsoft and other.",
-  },
-];
-const features = [
-  {
-    icon: <IoDiamondOutline />,
-    title: "Real-Time Inventory Management",
-    text: "Seamlessly keep track of available stocks and make smart stock consumption decisions, as the Stock Management Software devastates crmsibilities of erroneous readings, and ensures harmony between physically available stock versus stocks in data. This methodical system allows recipe standardization and enables curbing cost of food production.",
-  },
-  {
-    icon: <MdOutlineRemoveRedEye />,
-    title: "Intuitive User Interface",
-    text: "Highly self-descriptive and intuitive software system that is easily accessible across the hierarchy of employees. The software allows multiple user account generation with ‘specific’ page roles and login credentials so that each user base is destined with a specific module to keep track of.",
-  },
-  {
-    icon: <GrUpdate />,
-    title: "Stock Taking",
-    text: "Utmost ease of product procurement with Stock Taking facility. Conveniently choose from the list of Suppliers and Product lists. In just a few clicks, your Suppliers receive Product Request mail which is then tracked in real-time on the Stock Management Software.",
-  },
-  {
-    icon: <RxAvatar />,
-    title: "Remote Management",
-    text: "One-stop solution to manage and maintain stocks across chain of restaurants where you can create Purchase Orders, track Stock Consumption and access Stock Requirement at one point and cater to the needs across the entire chain of restaurants with utmost ease.",
-  },
-  {
-    icon: <VscRemoteExplorer />,
-    title: "Raw Material Management",
-    text: "Get automatic alerts/reminders when your stocks go down. The Stock Management Software comes with ‘Threshold Switch’ to aid you with automatic re-ordering to ensure that your business is always up and running.",
-  },
-  {
-    icon: <RiShieldCheckLine />,
-    title: "Report And Analytics Generation",
-    text: "Stock Management Software dashboard produces concise data analytics on the total available stocks, total used, and revenue generation reports. Plus, the graphical weekly progress report gives you the bird’s eye view of stock usage, allowing clear acquaintance of the over-demanding stocks.",
   },
 ];
 
@@ -136,7 +100,7 @@ const CustomerRelation = () => {
           </div>
 
           <nav className="igx-nav-links">
-            <a className="active" href="#">
+            <a className="active" href="#about">
               About
             </a>
             <a href="#description">Description</a>
@@ -341,7 +305,7 @@ const CustomerRelation = () => {
                 <a href="#pricing">Pricing</a>
               </li>
               <li>
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -359,13 +323,13 @@ const CustomerRelation = () => {
 
             <div className="igx-social">
               <span>Get in touch:</span>
-              <a href="#">
+              <a href="https://www.facebook.com/Infogenx">
                 <FaFacebookF />
               </a>
-              <a href="#">
+              <a href="https://x.com/Infogenx1">
                 <FaTwitter />
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/company/infogenx-pvt-ltd/">
                 <FaLinkedinIn />
               </a>
             </div>

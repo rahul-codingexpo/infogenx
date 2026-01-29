@@ -136,7 +136,7 @@ const IgxStock = () => {
           </div>
 
           <nav className="igx-nav-links">
-            <a className="active" href="#">
+            <a className="active" href="#about">
               About
             </a>
             <a href="#description">Description</a>
@@ -352,7 +352,7 @@ const IgxStock = () => {
                 <a href="#pricing">Pricing</a>
               </li>
               <li>
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -370,13 +370,13 @@ const IgxStock = () => {
 
             <div className="igx-social">
               <span>Get in touch:</span>
-              <a href="#">
+              <a href="https://www.facebook.com/Infogenx">
                 <FaFacebookF />
               </a>
-              <a href="#">
+              <a href="https://x.com/Infogenx1">
                 <FaTwitter />
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/company/infogenx-pvt-ltd/">
                 <FaLinkedinIn />
               </a>
             </div>
