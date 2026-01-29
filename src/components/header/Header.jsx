@@ -7,6 +7,8 @@ import ServicesDropdown from "./ServicesDropdown";
 import IndustriesDropdown from "./IndustriesDropdown";
 import SolutionsDropdown from "./SolutionsDropdown";
 import PlatformsDropdown from "./PlatformsDropdown";
+import InsightDropdown from "./InsightDropdown";
+import ContactDropdown from "./ContactDropdown";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
@@ -14,6 +16,8 @@ const Header = () => {
   const [industriesOpen, setIndustriesOpen] = useState(false);
   const [solutionsOpen, setSolutionsOpen] = useState(false);
   const [platformsOpen, setPlatformsOpen] = useState(false);
+  const [insightOpen, setInsightOpen] = useState(false);
+  const [contactOpen, setContactOpen] = useState(false);
 
   return (
     <header className="header">
@@ -84,10 +88,33 @@ const Header = () => {
           </Link>
           <Link to="/portfolio">Our work</Link>
           {/* <Link to="/blog">Blog</Link>  */}
-          <Link to="/insights">Insights</Link>
+          {/* <Link to="/insights">Insights</Link> */}
+          <div
+            className="nav-item"
+            onMouseEnter={() => setInsightOpen(true)}
+            onMouseLeave={() => setInsightOpen(false)}
+          >
+            <span className="nav-link">Insights</span>
+            {insightOpen && (
+              <InsightDropdown closeMenu={() => setInsightOpen(false)} />
+            )}
+          </div>
           <Link to="/about">About us</Link>
-          <Link to="/contact">Contact</Link>
-          <Link to="/contact" className="quote-btn desktop-only">
+          {/* <Link to="/contact">Contact</Link> */}
+          <div
+            className="nav-item"
+            onMouseEnter={() => setContactOpen(true)}
+            onMouseLeave={() => setContactOpen(false)}
+          >
+            <span className="nav-link">Contact</span>
+            {contactOpen && (
+              <ContactDropdown closeMenu={() => setContactOpen(false)} />
+            )}
+          </div>
+          <Link
+            to="/contact-us/get-in-touch"
+            className="quote-btn desktop-only"
+          >
             Request a Quote
           </Link>
         </nav>

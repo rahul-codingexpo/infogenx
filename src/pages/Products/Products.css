@@ -341,6 +341,9 @@
 .product-approach-card {
     position: relative;
     background: #172337;
+    gap: 50px ;
+    display: flex;
+    flex-direction: column;
     border-radius: 16px;
     padding: 30px 28px;
     min-height: 180px;
@@ -381,6 +384,50 @@
     font-weight: 800;
     color: #eb632a;
 }
+.approach-card-button{
+    position: absolute;
+    bottom: 20px;
+    left: 28px;
+    display: flex;
+    gap: 50px;
+}
+.approach-card-content{
+    padding-bottom: 40px;
+
+}
+.approach-card-button .demo-btn{
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    background: #d33e00;
+    color: #ffffff;
+}
+.approach-card-button .try-btn {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    color: #d33e00;
+    background: #ffffff;
+}
+.approach-card-button .demo-btn:hover{
+    background: #a53606;
+    color: #ffffff;
+    transition: all 0.2s ease ;
+}
+.approach-card-button .try-btn:hover{
+    background: #b4b1b1;
+    color: #a53606;
+    transition: all 0.2s ease ;
+}
+
 /* ---------- ACCENT ---------- */
 .app-corner-accent {
     position: absolute;

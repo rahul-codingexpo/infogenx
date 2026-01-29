@@ -2,7 +2,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Products from "./pages/Products/Products";
-import Contact from "./pages/Contact/Contact";
+import GetinTouch from "./pages/Contact/GetinTouch/GetinTouch";
+import GlobalLocations from "./pages/Contact/GlobalLocations/GlobalLocations";
 import ImplementationIntegration from "./pages/Services/ImplementationIntegration/ImplementationIntegration";
 // import Automation from "./pages/Services/Automation/Automation";
 import ConsultingAdvisory from "./pages/Services/Consulting&Advisory/Consulting&Advisory";
@@ -27,7 +28,12 @@ import ApplicationEngineering from "./pages/Solutions/ModernApplication/ModernAp
 import MicrosoftSolution from "./pages/Platforms/MicrosoftSolutions/MicrosoftSolution";
 import ZohoSolution from "./pages/Platforms/ZohoSolutions/ZohoSolution";
 import OdooSolution from "./pages/Platforms/OdooSolutions/OdooSolution";
-import Insights from "./pages/Insights/Insights";
+import Blog from "./pages/Insights/Blog/Blog";
+import CaseStudies from "./pages/Insights/CaseStudies/CaseStudies";
+import IgxStock from "./pages/Products/IGXStock/IgxStock";
+import OdooErp from "./pages/Products/OdooErp/OdooErp";
+import RetailPos from "./pages/Products/RetailPos/RetailPos";
+import CustomerRelation from "./pages/Products/CustomerRelation/CustomerRelation";
 import "./App.css";
 function App() {
   return (
@@ -37,8 +43,29 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
-          <Route path="/insights" element={<Insights />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route
+            path="/products/stock-management-system"
+            element={<IgxStock />}
+          />
+          <Route
+            path="/products/odoo-erp-management-system"
+            element={<OdooErp />}
+          />
+          <Route
+            path="/products/retail-pos-management-system"
+            element={<RetailPos />}
+          />
+          <Route
+            path="/products/customer-relationship-management-system"
+            element={<CustomerRelation />}
+          />
+          <Route path="/insights/blog" element={<Blog />} />
+          <Route path="/insights/case-studies" element={<CaseStudies />} />
+          <Route path="/contact-us/get-in-touch" element={<GetinTouch />} />
+          <Route
+            path="/contact-us/global-locations"
+            element={<GlobalLocations />}
+          />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route
             path="/services/implementation-integration"

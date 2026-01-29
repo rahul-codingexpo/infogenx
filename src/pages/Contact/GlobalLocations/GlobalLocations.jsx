@@ -1,11 +1,11 @@
 import { useState } from "react";
-import "./Contact.css";
-import CustomerSupport from "../../assets/videos/customer-support.mp4";
-import AboutCornerAccent from "../../assets/images/about-corner-accent.png";
-import Header from "../../components/header/Header";
-import Footer from "../../components/Footer/Footer";
+import "../GetinTouch/GetinTouch.css";
+import CustomerSupport from "../../../assets/videos/customer-support.mp4";
+import AboutCornerAccent from "../../../assets/images/about-corner-accent.png";
+import Header from "../../../components/header/Header";
+import Footer from "../../../components/Footer/Footer";
 import { Helmet } from "react-helmet-async";
-const Contact = () => {
+const GetinTouch = () => {
   const [formData, setFormData] = useState({
     name: "",
     contactNumber: "",
@@ -178,7 +178,7 @@ const Contact = () => {
                   <span>+91 9787806366</span>
                 </div>
 
-                <div className="location-block">
+                {/* <div className="location-block">
                   <h4>Papua New Guinea</h4>
                   <p>
                     Po Box 1843, Konedobu,
@@ -188,7 +188,7 @@ const Contact = () => {
                     NCD-121 Papua New Guinea
                   </p>
                   <span>+6757 5917607</span>
-                </div>
+                </div> */}
 
                 <div className="location-block">
                   <h4>India - Chennai</h4>
@@ -206,7 +206,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="contact-form-container">
+            {/* <div className="contact-form-container">
               <h2 className="contact-title">Get In Touch</h2>
 
               {!showThankYou ? (
@@ -289,7 +289,7 @@ const Contact = () => {
                   </button>
                 </div>
               )}
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -298,4 +298,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default GetinTouch;

@@ -1,0 +1,668 @@
+/* NAVBAR */
+.igx-navbar {
+    background: #fff;
+    padding: 16px 0;
+}
+
+.igx-nav-container {
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.igx-nav-logo img {
+    height: 40px;
+}
+
+.igx-nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.igx-nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.igx-nav-links a.active {
+    color: #f04b3f;
+}
+
+.igx-nav-btn {
+    background: #f04b3f;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* HERO SECTION */
+.erp-hero {
+    position: relative;
+    min-height: calc(100vh - 80px);
+    background: url("../../../assets/images/products/erp-banner.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.igx-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0);
+}
+
+.igx-hero-container {
+    position: relative;
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+    padding-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    gap: 40px;
+}
+
+.igx-hero-content {
+    flex: 1;
+}
+
+.igx-hero-content h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.igx-hero-content p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.8;
+    max-width: 560px;
+    margin-bottom: 30px;
+}
+
+.igx-hero-btn {
+    background: #f04b3f;
+    border: none;
+    color: #fff;
+    padding: 14px 28px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* HERO IMAGE */
+.igx-hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.igx-hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===================== RESPONSIVE ===================== */
+
+/* TABLET */
+@media (max-width: 991px) {
+    .igx-nav-links {
+        display: none;
+    }
+
+    .igx-hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .igx-hero-content p {
+        margin: auto;
+    }
+
+    .igx-hero-image {
+        text-align: center;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+    .igx-hero-content h1 {
+        font-size: 28px;
+    }
+
+    .igx-hero-content p {
+        font-size: 14px;
+    }
+
+    .igx-hero-btn {
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+
+    .igx-nav-btn {
+        padding: 8px 14px;
+    }
+}
+
+.igx-description-section {
+    padding: 90px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.igx-description-section h2 {
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+
+.igx-description-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.igx-description-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.igx-description-card p {
+    font-size: 15px;
+    color: #666;
+    font-weight: 500;
+    word-spacing: 3px;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.igx-desc-icon svg {
+    width: 52px;
+    height: 52px;
+    color: #f04b3f;
+    margin: 0;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    .igx-description-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .igx-description-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.igx-experience-section {
+    padding: 20px 20px 90px;
+    background: #fff;
+    text-align: center;
+}
+
+.igx-experience-section h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.igx-subtitle {
+    color: #8c8c8c;
+    font-weight: 500;
+    max-width: 700px;
+    margin: 0 auto 60px;
+}
+
+.igx-experience-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.igx-experience-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.igx-experience-card:hover .igx-icon-box::after {
+    background: #f04b3f;
+}
+
+.igx-icon-box {
+    display: block;
+    position: relative;
+    margin: 0 0 90px;
+}
+
+.igx-icon-box::before {
+    width: 70px;
+    height: 70px;
+    background: #e74c3c;
+    border-radius: 10px;
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    z-index: 1;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.igx-icon-box::after {
+    width: 70px;
+    height: 70px;
+    background: #444;
+    border-radius: 10px;
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: 1;
+    -webkit-transform: translateX(-50%) rotate(-45deg);
+    -ms-transform: translateX(-50%) rotate(-45deg);
+    -moz-transform: translateX(-50%) rotate(-45deg);
+    transform: translateX(-50%) rotate(-45deg);
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.igx-icon-box::after:hover {
+    background: #f04b3f;
+}
+
+.igx-icon-box svg {
+    /* width: 36px;
+    height: 36px;
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    z-index: 2; */
+
+    width: 88px;
+    font-size: 36px;
+    top: 20px;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    line-height: 72px;
+    vertical-align: middle;
+    position: relative;
+    z-index: 3;
+}
+
+.igx-experience-content {
+    padding: 0 15px;
+}
+
+
+.igx-experience-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.igx-experience-card p {
+    font-size: 15px;
+    font-weight: 500;
+    word-spacing: 3px;
+    color: #666;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    .igx-experience-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .igx-experience-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.igx-tour-carousel-section {
+    padding: 20px 20px 80px;
+    text-align: center;
+    background: #fff;
+}
+
+.igx-tour-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+/* Frame */
+.igx-carousel-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Moving track */
+.igx-carousel-track {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+}
+
+/* 3 slides visible */
+.igx-carousel-slide {
+    flex: 0 0 calc(100% / 3);
+    display: flex;
+    justify-content: center;
+}
+
+.igx-carousel-slide img {
+    width: 90%;
+    max-width: 360px;
+    height: 280px;
+    border-radius: 6px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Dots */
+.igx-carousel-dots {
+    margin-top: 30px;
+}
+
+.igx-dot {
+    width: 26px;
+    height: 4px;
+    background: #ddd;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.igx-dot.active {
+    background: #f04b3f;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet → 2 visible */
+@media (max-width: 991px) {
+    .igx-carousel-slide {
+        flex: 0 0 50%;
+    }
+}
+
+/* Mobile → 1 visible */
+@media (max-width: 576px) {
+    .igx-carousel-slide {
+        flex: 0 0 100%;
+    }
+
+    .igx-tour-title {
+        font-size: 26px;
+    }
+}
+
+.igx-pricing-section {
+    padding: 20px 20px 90px;
+    text-align: center;
+    background: #fff;
+}
+
+.igx-pricing-title {
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+
+/* Cards container */
+.igx-pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Base card */
+.igx-pricing-card {
+    width: 400px;
+    padding: 40px 30px;
+    color: #fff;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.igx-pricing-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.igx-pricing-card ul {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.igx-pricing-card li {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    line-height: 1.8;
+}
+
+/* Plan styles */
+.igx-pricing-card.free {
+    background: #ef4b3f;
+}
+
+.igx-pricing-card.standard {
+    background: linear-gradient(180deg, #2b2626, #000);
+}
+
+/* Text styles */
+.igx-plan-name {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.igx-price {
+    font-size: 36px;
+    margin: 10px 0 20px;
+}
+
+.igx-highlight {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.igx-btn {
+    border: none;
+    padding: 12px 26px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.igx-btn.dark {
+    background: #2b2626;
+    color: #fff;
+}
+
+.igx-btn.primary {
+    background: #ef4b3f;
+    color: #fff;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 991px) {
+    .igx-pricing-cards {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .igx-pricing-title {
+        font-size: 26px;
+    }
+
+    .igx-pricing-card {
+        width: 100%;
+        max-width: 360px;
+    }
+}
+
+
+.erp-footer {
+    position: relative;
+    background: url("../../../assets/images/products/erp-banner.jpg") center/cover no-repeat;
+    color: #fff;
+}
+
+/* Dark overlay */
+.erp-footer-overlay {
+    position: absolute;
+
+    inset: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* Content */
+.igx-footer-container {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 20px 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.igx-footer-col h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.igx-footer-col p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.8;
+    color: #ddd;
+}
+
+/* Links */
+.igx-footer-col ul {
+    list-style: none;
+}
+
+.igx-footer-col li {
+    margin-bottom: 12px;
+}
+
+.igx-footer-col a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.igx-footer-col a:hover {
+    color: #f04b3f;
+}
+
+/* Contact */
+.igx-footer-col p svg {
+    margin-right: 10px;
+    color: #f04b3f;
+}
+
+/* Social */
+.igx-social {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.igx-social span {
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 6px;
+}
+
+.igx-social a {
+    width: 34px;
+    height: 34px;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.igx-social a:hover {
+    background: #f04b3f;
+    color: #fff;
+}
+
+/* Bottom bar */
+.igx-footer-bottom {
+    position: relative;
+    text-align: center;
+    padding: 18px;
+    font-weight: 500;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0);
+}
+
+/* Scroll top */
+.igx-scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background: #f04b3f;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 991px) {
+    .igx-footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .igx-footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .igx-social {
+        justify-content: center;
+    }
+}
