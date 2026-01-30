@@ -30,10 +30,10 @@ const Hero = () => {
           Zoho, and Odoo—engineered for growth, governance, and impact.
         </h2>
 
-        <p className="hero-description">
+        {/* <p className="hero-description">
           From strategy to scalable delivery. Built for growth, governance, and
           impact.
-        </p>
+        </p> */}
 
         <div className="hero-buttons">
           <button
