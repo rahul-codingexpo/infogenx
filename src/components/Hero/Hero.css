@@ -28,12 +28,10 @@
     position: absolute;
     top: 50%;
     left: 50%;
-
     width: 100%;
     height: 100%;
     min-width: 100%;
     min-height: 100%;
-
     object-fit: cover;
     transform: translate(-50%, -50%);
     z-index: -2;
@@ -51,10 +49,10 @@
     /* ExtraBold */
     font-size: 65px;
     line-height: 100%;
-    letter-spacing: 0;
+    word-spacing: 1px;
     text-align: center;
+    line-height: 1.1;
     margin-bottom: 16px;
-
     /* Gradient text */
     background: linear-gradient(89.95deg,
             #081256 8.97%,
@@ -79,6 +77,11 @@
     color: #000e68;
     /* background color converted to text color */
 }
+.hero-subheading span{
+    text-decoration: underline;
+    text-decoration-color:  #737373c0;
+    text-underline-offset: 2px;
+}
 
 .hero-description {
     font-family: "Manrope", sans-serif;
@@ -88,7 +91,6 @@
     line-height: 160%;
     letter-spacing: 0;
     text-align: center;
-
     color: #000E68;
     /* neutral readable text */
     max-width: 820px;
@@ -101,6 +103,7 @@
     gap: 16px;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .primary-btn {
@@ -143,6 +146,17 @@
 .primary-btn:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+    border: 3px solid transparent;
+    color: #00123c;
+background-image:
+        linear-gradient(#ffffff, #ffffff),
+        linear-gradient(110deg,
+            #081256 0%,
+            #001b5e 35%,
+            #eb632a 70%,
+            #f36b2a 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
     
 }
 .secondary-btn {
@@ -161,7 +175,7 @@
     font-size: 16px;
     line-height: 100%;
 
-    background: transparent;
+    /* background: transparent; */
     color: #00123c;
     cursor: pointer;
 

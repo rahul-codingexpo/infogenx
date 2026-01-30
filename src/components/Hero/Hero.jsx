@@ -26,28 +26,36 @@ const Hero = () => {
         </h1>
 
         <h2 className="hero-subheading">
-          AI-enabled applications, automation, and analytics for Microsoft,
-          Zoho, and Odoo—engineered for growth, governance, and impact.
+          AI-enabled applications, automation, and analytics for{" "}
+          <span>Microsoft, Zoho, and Odoo—engineered</span> for growth,
+          governance, and impact.
         </h2>
 
         {/* <p className="hero-description">
           From strategy to scalable delivery. Built for growth, governance, and
           impact.
         </p> */}
+        <div
+          style={{ textAlign: "center", fontWeight: "500", color: "#403f3f" }}
+        >
+          <div className="hero-buttons">
+            <button
+              className="primary-btn"
+              onClick={() => navigate("/contact-us/get-in-touch")}
+            >
+              Start Your Transformation
+            </button>
 
-        <div className="hero-buttons">
-          <button
-            className="primary-btn"
-            onClick={() => navigate("/contact-us/get-in-touch")}
-          >
-            Start Your Transformation
-          </button>
-          <button
-            className="secondary-btn"
-            onClick={() => navigate("/contact-us/get-in-touch")}
-          >
-            Talk to an Expert
-          </button>
+            <button
+              className="secondary-btn"
+              onClick={() => navigate("/contact-us/get-in-touch")}
+            >
+              Talk to an Expert
+            </button>
+          </div>
+          <p className="hero-proof">
+            Join 50+ Australian businesses scaling with AI.
+          </p>
         </div>
       </div>
 

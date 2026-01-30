@@ -18,9 +18,10 @@ const AboutHero = () => {
         {/* Left content */}
         <div className="about-hero-left">
           <h1>
-            Innovating Digital <br />
+            {/* Innovating Digital <br />
             Transformation Through <br />
-            Scalable Technology
+            Scalable Technology */}
+            Modernizing Australian Business with Intelligent Engineering.
           </h1>
 
           <div className="about-hero-buttons">
@@ -35,9 +36,12 @@ const AboutHero = () => {
         {/* Right content */}
         <div className="about-hero-right">
           <p>
-            We help businesses transform operations, improve efficiency, and
-            unlock growth with low-code, automation, analytics, and cloud
-            solutions.
+            At Infogenx, we believe technology should be an accelerator, not a
+            bottleneck. We specialize in transforming complex workflows into
+            seamless, AI-enabled applications. By combining analytics
+            engineering with deep platform expertise, we help businesses across
+            Australia turn raw data into decisive action and manual tasks into
+            automated growth.
           </p>
         </div>
       </div>

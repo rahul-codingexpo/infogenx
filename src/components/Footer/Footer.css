@@ -1,12 +1,13 @@
 .footer {
-            background: url('../../assets/images/footerbackground.png');
-    color: #ffffff;
+    /* background: url('../../assets/images/footerbackground.png'); */
+    background: linear-gradient(180deg, #FFEEE9 0%, #ffbfa3 100%);
+    color: #000E68;
+    font-weight: 500;
 }
 
 .footer-container {
-    
     margin: 0 auto;
-    padding: 70px 150px 30px;
+    padding: 70px 100px 30px;
 }
 
 .footer-top {
@@ -74,6 +75,7 @@
 .footer-links ul {
     list-style: none;
     padding: 0;
+    
     margin: 0;
 }
 
@@ -85,7 +87,8 @@
 }
 
 .footer-links li a{
-    color: #ffffff;
+    color: #000E68;
+    /* font-weight: 500; */
     text-decoration: none;
 }
 

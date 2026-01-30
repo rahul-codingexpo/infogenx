@@ -1,5 +1,5 @@
 import "./Footer.css";
-import Footerlogo from "../../assets/images/logo-footer.png";
+import Footerlogo from "../../assets/images/logo.png";
 import { Link } from "react-router-dom";
 import {
   RiInstagramLine,

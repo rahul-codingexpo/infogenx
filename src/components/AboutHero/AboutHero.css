@@ -97,10 +97,14 @@
 }
 
 .about-primary-btn:hover{
-
+border: 2px solid #ff6a00;
     transition: all 0.3s ease;
     transform: translateY(-1px);
     box-shadow: 0 10px 25px rgba(236, 236, 236, 0.45);
+    background: transparent;
+        color: #ffffff;
+        
+
 }
 
 .about-secondary-btn:hover{
@@ -108,6 +112,9 @@
     transition: all 0.3s ease;
     transform: translateY(-1px);
     box-shadow: 0 10px 25px rgba(236, 236, 236, 0.45);
+    background: #ffffff;
+        color: #0b1f4d;
+        border: none;
 }
 
 /* Right side */
@@ -118,7 +125,7 @@
 
 .about-hero-right p {
     font-family: "Manrope", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 160%;
     font-weight: 500;
     color: #f1f1f1;
