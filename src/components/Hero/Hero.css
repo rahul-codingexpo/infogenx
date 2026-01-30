@@ -138,10 +138,12 @@
                         #00123C 180deg);
 
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    
 }
 .primary-btn:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 1.5);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+    
 }
 .secondary-btn {
     /* width: 220px; */
@@ -178,8 +180,8 @@
     transition: all 0.2s ease;
 }
 .secondary-btn:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.85);
+    transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
 }
 
 .hero-floating-icons {

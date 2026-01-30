@@ -5,7 +5,7 @@ const PlatformsDropdown = ({ closeMenu }) => {
   return (
     <div className="insight-dropdown">
       <div className="insight-container">
-        <Link to="/insights/blog" onClick={closeMenu}>
+        <Link to="https://blog.infogenx.com/" onClick={closeMenu}>
           <div className="service-info">
             <h4>Blog</h4>
           </div>

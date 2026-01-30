@@ -3,7 +3,9 @@ import aiIcon from "../../assets/images/aiIcon.png";
 import automationIcon from "../../assets/images/automationIcon.png";
 import analyticsIcon from "../../assets/images/analyticalIcon.png";
 import heroVideo from "../../assets/videos/herovideobg.mp4";
+import { useNavigate } from "react-router-dom";
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     <section className="hero">
       <video
@@ -24,8 +26,8 @@ const Hero = () => {
         </h1>
 
         <h2 className="hero-subheading">
-          Your end-to-end partner for application development, automation, and
-          analytics engineering on Microsoft, Zoho, Shopify, and Odoo.
+          AI-enabled applications, automation, and analytics for Microsoft,
+          Zoho, and Odoo—engineered for growth, governance, and impact.
         </h2>
 
         <p className="hero-description">
@@ -34,8 +36,18 @@ const Hero = () => {
         </p>
 
         <div className="hero-buttons">
-          <button className="primary-btn">Get Your FREE Consultation</button>
-          <button className="secondary-btn">Talk to an Expert</button>
+          <button
+            className="primary-btn"
+            onClick={() => navigate("/contact-us/get-in-touch")}
+          >
+            Start Your Transformation
+          </button>
+          <button
+            className="secondary-btn"
+            onClick={() => navigate("/contact-us/get-in-touch")}
+          >
+            Talk to an Expert
+          </button>
         </div>
       </div>
 

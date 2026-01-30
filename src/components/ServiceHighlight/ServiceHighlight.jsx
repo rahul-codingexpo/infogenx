@@ -4,8 +4,9 @@ import serviceVideo1 from "../../assets/videos/Digital_Data_Processing.mp4";
 import serviceVideo2 from "../../assets/videos/Digital_Data_Processing.mp4";
 import serviceVideo3 from "../../assets/videos/Digital_Data_Processing.mp4";
 import serviceVideo4 from "../../assets/videos/Digital_Data_Processing.mp4"; // your video
-
+import { useNavigate } from "react-router-dom";
 const ServiceHighlight = () => {
+  const navigate = useNavigate();
   const services = [
     {
       index: "01",
@@ -64,7 +65,7 @@ const ServiceHighlight = () => {
         const progress = scrollInside / totalScroll;
         const index = Math.min(
           totalCards - 1,
-          Math.floor(progress * totalCards)
+          Math.floor(progress * totalCards),
         );
         setActiveIndex(index);
       }
@@ -157,7 +158,10 @@ const ServiceHighlight = () => {
                   <p className="service-description">{item.description}</p>
 
                   {isActive && (
-                    <button className="service-btn">
+                    <button
+                      className="service-btn"
+                      onClick={() => navigate("/contact-us/get-in-touch")}
+                    >
                       Talk to our Experts <span className="arrow">→</span>
                     </button>
                   )}

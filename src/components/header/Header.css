@@ -68,6 +68,11 @@
 }
 .quote-btn:hover{
     color: #1d1d1f !important;
+    background: #ff6a00;
+    
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
 }
 .hamburger{
     display: none;
