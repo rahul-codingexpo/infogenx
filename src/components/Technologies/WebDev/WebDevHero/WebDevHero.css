@@ -1,0 +1,287 @@
+.WebDev-hero {
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #fff0eb;
+    display: flex;
+    align-items: center;
+}
+
+.webDev-hero-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 200px 150px 200px 150px;
+}
+
+.WebDev-hero-heading {
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    /* ExtraBold */
+    font-size: 58px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: center;
+    margin-bottom: 16px;
+    color: #000;
+    /* Gradient text */
+    /* background: linear-gradient(89.95deg,
+            #081256 8.97%,
+            #011BDD 33.19%,
+            #EB632A 89.61%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; */
+}
+
+.WebDev-hero-subheading {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    /* Medium */
+    font-size: 45px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: center;
+    margin: 0 0 20px 0;
+
+    color: #000e68;
+    /* background color converted to text color */
+}
+
+.WebDev-hero-description {
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    /* SemiBold */
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: 0;
+    text-align: center;
+
+    color: #000E68;
+    /* neutral readable text */
+    max-width: 820px;
+    margin: 0 auto 28px;
+}
+.WebDev-hero-description-bottom{
+   
+    font-family: "Manrope", sans-serif;
+        font-weight: 600;
+        /* SemiBold */
+        font-size: 20px;
+        line-height: 160%;
+        letter-spacing: 0;
+        text-align: center;
+    
+        color: #000E68;
+        /* neutral readable text */
+        max-width: 820px;
+        margin: 40px auto;
+}
+
+.WebDev-hero-buttons {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.WebDev-primary-btn {
+    width: 273px;
+    height: 50px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px 30px;
+    border-radius: 50px;
+    border: none;
+
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    color: #ffffff;
+
+    cursor: pointer;
+
+    /* 🔥 Gradient exactly like screenshot */
+    /* background: linear-gradient(45.6deg,
+            #081256 0%,
+            #03133a 50%,
+            #eb632a 70%,
+            #f36b2a 100%); */
+
+    background: conic-gradient(at 50% 0%,
+            #AC3300 0deg,
+            #EB632A 90deg,
+            #a53606 110deg,
+            #00123C 150deg,
+            #00123C 180deg);
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.WebDev-primary-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 1.5);
+}
+
+.WebDev-secondary-btn {
+    /* width: 220px; */
+    height: 50px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px 30px;
+    border-radius: 50px;
+
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+
+    background: transparent;
+    color: #00123c;
+    cursor: pointer;
+
+    /* 🔥 Gradient border */
+    border: 3px solid transparent;
+    background-image:
+        linear-gradient(#ffffff, #ffffff),
+        linear-gradient(110deg,
+            #081256 0%,
+            #001b5e 35%,
+            #eb632a 70%,
+            #f36b2a 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+    transition: all 0.2s ease;
+}
+
+.WebDev-secondary-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.85);
+}
+
+.WebDev-hero-floating-icons {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+
+}
+
+
+/* Responsive Design for tablet */
+
+@media (max-width: 1024px) {
+    .WebDev-hero {
+        min-height: 110vh;
+    }
+
+    .WebDev-hero-heading {
+        font-size: 52px;
+    }
+
+    .WebDev-hero-subheading {
+        font-size: 34px;
+    }
+
+    .WebDev-hero-description {
+        font-size: 18px;
+        max-width: 700px;
+    }
+
+    .WebDev-primary-btn,
+    .WebDev-secondary-btn {
+        height: 48px;
+    }
+
+    
+}
+
+/* Responsive Design for mobile */
+@media (max-width: 768px) {
+    .WebDev-hero {
+        /* height: 100vh; */
+        min-height: auto;
+        /* padding: 120px 0 80px; */
+    }
+
+    .WebDev-hero-container {
+        padding: 0 20px;
+    }
+
+    .WebDev-hero-heading {
+        font-size: 38px;
+        line-height: 110%;
+    }
+
+    .WebDev-hero-subheading {
+        font-size: 26px;
+        line-height: 120%;
+    }
+
+    .WebDev-hero-description {
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    .WebDev-hero-buttons {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .WebDev-primary-btn,
+    .WebDev-secondary-btn {
+        width: 100%;
+        max-width: 320px;
+    }
+    .WebDev-secondary-btn {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    /* ❌ Hide floating icons on mobile */
+    .WebDev-hero-floating-icons {
+        display: none;
+    }
+
+    .icon-1 {
+        top: 670px;
+        left: 90px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .icon-2 {
+        top: 160px;
+        right: 256px;
+    }
+
+    .icon-3 {
+        height: 40px;
+        width: 40px;
+        top: 472px;
+        right: 16%;
+    }
+}
+
+/*for smaller devices*/
+
+@media (max-width: 480px) {
+    .WebDev-hero-heading {
+        font-size: 32px;
+    }
+
+    .WebDev-hero-subheading {
+        font-size: 22px;
+    }
+
+    .WebDev-hero-description {
+        font-size: 15px;
+    }
+}

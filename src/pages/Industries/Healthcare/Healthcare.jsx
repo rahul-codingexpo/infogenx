@@ -1,9 +1,9 @@
 import Header from "../../../components/header/Header";
-import AppDevHero from "../../../components/AppDevelopment/AppDevHero/AppDevHero";
-import AppDevExpertise from "../../../components/AppDevelopment/AppDevExpertise/AppDevExpertise";
-import AppDevApproach from "../../../components/AppDevelopment/AppDevApproach/AppDevApproach";
-import AppDevBusinessImpact from "../../../components/AppDevelopment/AppDevBusinessImpact/AppDevBusinessImpact";
-import AppDevImpactCTA from "../../../components/AppDevelopment/AppDevImpactCTA/AppDevImpactCTA";
+import AppDevHero from "../../../components/Industries/Healthcare/HealthcareHero/HealthcareHero";
+import AppDevExpertise from "../../../components/Industries/Healthcare/HealthcareExpertise/HealthcareExpertise";
+import AppDevApproach from "../../../components/Industries/Healthcare/HealthcareApproach/HealthcareApproach";
+import AppDevBusinessImpact from "../../../components/Industries/Healthcare/HealthcareBusinessImpact/HealthcareBusinessImpact";
+import AppDevImpactCTA from "../../../components/Industries/Healthcare/HealthcareImpactCTA/HealthcareImpactCTA";
 import Footer from "../../../components/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 const ApplicationDev = () => {

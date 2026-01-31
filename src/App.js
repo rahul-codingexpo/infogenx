@@ -5,17 +5,18 @@ import Products from "./pages/Products/Products";
 import GetinTouch from "./pages/Contact/GetinTouch/GetinTouch";
 import GlobalLocations from "./pages/Contact/GlobalLocations/GlobalLocations";
 import ImplementationIntegration from "./pages/Services/ImplementationIntegration/ImplementationIntegration";
-// import Automation from "./pages/Services/Automation/Automation";
 import ConsultingAdvisory from "./pages/Services/Consulting&Advisory/Consulting&Advisory";
 import SupportOptimization from "./pages/Services/SupportOptimization/support-optimization";
 import ManagedServices from "./pages/Services/ManagedServices/managed-services";
 import WebDevelopment from "./pages/Technologies/WebDev/Webdev";
 import MobileAppDevelopment from "./pages/Technologies/MobileApp/MobileApp";
 import ArtificialIntelligence from "./pages/Technologies/AI/AI";
+import DataEngineering from "./pages/Technologies/DataEngineering/DataEngineering";
 import CloudComputing from "./pages/Technologies/CloudComputing/CloudComputing";
 import Healthcare from "./pages/Industries/Healthcare/Healthcare";
 import Finance from "./pages/Industries/Finance/Finance";
 import Retail from "./pages/Industries/Retail/Retail";
+import RequestQuote from "./pages/RequestQuote/RequestQuote";
 import ECommerce from "./pages/Industries/ECommerce/ECommerce";
 import Manufacturing from "./pages/Industries/Manufacturing/Manufacturing";
 import Transport from "./pages/Industries/Transport/Transport";
@@ -43,6 +44,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/request-quote" element={<RequestQuote />} />
           <Route
             path="/products/stock-management-system"
             element={<IgxStock />}
@@ -122,6 +124,10 @@ function App() {
           <Route
             path="/technologies/cloud-computing"
             element={<CloudComputing />}
+          />
+          <Route
+            path="/technologies/data-engineering"
+            element={<DataEngineering />}
           />
           <Route
             path="/industries/healthcare-solutions"

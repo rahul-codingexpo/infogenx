@@ -1,9 +1,9 @@
 import Header from "../../../components/header/Header";
-import WebDevHero from "../../../components/CloudComputing/WebDevHero/WebDevHero";
-import WebDevTech from "../../../components/CloudComputing/WebDevTech/WebDevTech";
-import WebDevExpertise from "../../../components/CloudComputing/WebDevExperties/WebDevExpertise";
-import WebDevOutcomes from "../../../components/CloudComputing/WebDevOutcomes/WebDevOutcomes";
-import WebDevImpactCTA from "../../../components/CloudComputing/WebDevImpactCTA/WebDevImpactCTA";
+import WebDevHero from "../../../components/Technologies/CloudComputing/CloudComputingHero/CloudComputingHero";
+import WebDevTech from "../../../components/Technologies/CloudComputing/CloudComputingTech/CloudComputingTech";
+import WebDevExpertise from "../../../components/Technologies/CloudComputing/CloudComputingExperties/CloudComputingExpertise";
+import WebDevOutcomes from "../../../components/Technologies/CloudComputing/CloudComputingOutcomes/CloudComputingOutcomes";
+import WebDevImpactCTA from "../../../components/Technologies/CloudComputing/CloudComputingImpactCTA/CloudComputingImpactCTA";
 import Footer from "../../../components/Footer/Footer";
 const CloudComputing = () => {
   return (

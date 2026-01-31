@@ -1,0 +1,223 @@
+.tech-web-section {
+    position: relative;
+    background: linear-gradient(180deg, #121824, #0e1420);
+    padding: 120px 0;
+    overflow: hidden;
+}
+
+.tech-web-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* LABEL */
+.section-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #ff6a00;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* HEADER */
+.tech-web-header {
+    max-width: 720px;
+    margin-bottom: 70px;
+}
+
+.tech-web-header h2 {
+    font-family: "Manrope", sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0 0 18px;
+}
+
+.tech-web-desc {
+    font-size: 15px;
+    line-height: 160%;
+    color: #cbd2e1;
+    margin-bottom: 10px;
+}
+
+/* CORE STACK */
+.tech-stack h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.tech-stack-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 60px;
+    margin-bottom: 80px;
+}
+
+.tech-stack-card {
+    background: linear-gradient(180deg, #16223a, #111a2e);
+    border-radius: 16px;
+    padding: 28px;
+    border: 1px solid rgba(255, 106, 0, 0.35);
+}
+
+.tech-stack-card h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.tech-stack-card p {
+    font-size: 14px;
+    line-height: 160%;
+    color: #cbd2e1;
+}
+
+.tech-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #ff6a00;
+    margin-top: 14px;
+}
+
+/* APPROACH */
+.tech-approach h3 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0 0 20px;
+}
+
+.tech-approach-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 80px;
+}
+
+.tech-approach-grid h5 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.tech-approach-grid p {
+    font-size: 14px;
+    line-height: 160%;
+    color: #cbd2e1;
+}
+
+/* CORNER ACCENT */
+.tech-web-accent {
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    width: 180px;
+    height: 180px;
+    background: linear-gradient(135deg, #ff6a00, #ff9d6c);
+    border-radius: 50px;
+    transform: rotate(-25deg);
+}
+
+.web-corner-accent {
+    position: absolute;
+        top: 0;
+        right: 0;
+        width: 230px;
+}
+
+@media (max-width: 1024px) {
+    .tech-web-section {
+        padding: 90px 0;
+    }
+
+    .tech-web-header h2 {
+        font-size: 36px;
+    }
+
+    .tech-stack-grid {
+        gap: 30px 40px;
+    }
+
+    .tech-approach-grid {
+        gap: 25px 40px;
+    }
+
+    .web-corner-accent {
+        width: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tech-web-section {
+        padding: 70px 0;
+    }
+
+    .tech-web-header {
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .tech-web-header h2 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .tech-web-desc {
+        font-size: 14px;
+    }
+
+    /* Stack cards vertically */
+    .tech-stack-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-bottom: 60px;
+    }
+
+    .tech-stack h3 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .tech-stack-card {
+        padding: 22px;
+    }
+
+    /* Approach section */
+    .tech-approach h3 {
+        font-size: 26px;
+    }
+
+    .tech-approach-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    /* Hide accent on small screens */
+    .web-corner-accent {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .tech-web-header h2 {
+        font-size: 26px;
+    }
+
+    .tech-approach h3 {
+        font-size: 24px;
+    }
+
+    .tech-stack-card h4 {
+        font-size: 16px;
+    }
+
+    .tech-stack-card p,
+    .tech-approach-grid p {
+        font-size: 13px;
+    }
+}

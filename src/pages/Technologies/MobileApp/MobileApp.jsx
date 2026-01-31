@@ -1,9 +1,9 @@
 import Header from "../../../components/header/Header";
-import WebDevHero from "../../../components/MobileApp/WebDevHero/WebDevHero";
-import WebDevTech from "../../../components/MobileApp/WebDevTech/WebDevTech";
-import WebDevExpertise from "../../../components/MobileApp/WebDevExperties/WebDevExpertise";
-import WebDevOutcomes from "../../../components/MobileApp/WebDevOutcomes/WebDevOutcomes";
-import WebDevImpactCTA from "../../../components/MobileApp/WebDevImpactCTA/WebDevImpactCTA";
+import WebDevHero from "../../../components/Technologies/MobileApp/MobileAppHero/MobileAppHero";
+import WebDevTech from "../../../components/Technologies/MobileApp/MobileAppTech/MobileAppTech";
+import WebDevExpertise from "../../../components/Technologies/MobileApp/MobileAppExperties/MobileAppExpertise";
+import WebDevOutcomes from "../../../components/Technologies/MobileApp/MobileAppOutcomes/MobileAppOutcomes";
+import WebDevImpactCTA from "../../../components/Technologies/MobileApp/MobileAppImpactCTA/MobileAppImpactCTA";
 import Footer from "../../../components/Footer/Footer";
 const MobileApp = () => {
   return (

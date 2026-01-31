@@ -1,9 +1,9 @@
 import Header from "../../../components/header/Header";
-import WebDevHero from "../../../components/AI/WebDevHero/WebDevHero";
-import WebDevTech from "../../../components/AI/WebDevTech/WebDevTech";
-import WebDevExpertise from "../../../components/AI/WebDevExperties/WebDevExpertise";
-import WebDevOutcomes from "../../../components/AI/WebDevOutcomes/WebDevOutcomes";
-import WebDevImpactCTA from "../../../components/AI/WebDevImpactCTA/WebDevImpactCTA";
+import WebDevHero from "../../../components/Technologies/AI/AIHero/AIHero";
+import WebDevTech from "../../../components/Technologies/AI/AITech/AITech";
+import WebDevExpertise from "../../../components/Technologies/AI/AIExperties/AIExpertise";
+import WebDevOutcomes from "../../../components/Technologies/AI/AIOutcomes/AIOutcomes";
+import WebDevImpactCTA from "../../../components/Technologies/AI/AIImpactCTA/AIImpactCTA";
 import Footer from "../../../components/Footer/Footer";
 const AI = () => {
   return (

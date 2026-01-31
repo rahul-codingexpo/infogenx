@@ -1,9 +1,9 @@
 import Header from "../../../components/header/Header";
-import AppDevHero from "../../../components/Analytics/AppDevHero/AppDevHero";
-import AppDevExpertise from "../../../components/Analytics/AppDevExpertise/AppDevExpertise";
-import AppDevApproach from "../../../components/Analytics/AppDevApproach/AppDevApproach";
-import AppDevBusinessImpact from "../../../components/Analytics/AppDevBusinessImpact/AppDevBusinessImpact";
-// import AppDevImpactCTA from "../../../components/Analytics/AppDevImpactCTA/AppDevImpactCTA";
+import AppDevHero from "../../../components/Solutions/ApiIntegration/ApiIntegrationHero/ApiIntegrationHero";
+import AppDevExpertise from "../../../components/Solutions/ApiIntegration/ApiIntegrationExpertise/ApiIntegrationExpertise";
+import AppDevApproach from "../../../components/Solutions/ApiIntegration/ApiIntegrationApproach/ApiIntegrationApproach";
+import AppDevBusinessImpact from "../../../components/Solutions/ApiIntegration/ApiIntegrationBusinessImpact/ApiIntegrationBusinessImpact";
+import AppDevImpactCTA from "../../../components/Solutions/ApiIntegration/ApiIntegrationImpactCTA/ApiIntegrationImpactCTA";
 import Footer from "../../../components/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 const ApiIntegration = () => {
@@ -25,7 +25,7 @@ const ApiIntegration = () => {
       <AppDevExpertise />
       <AppDevApproach />
       <AppDevBusinessImpact />
-      {/* <AppDevImpactCTA /> */}
+      <AppDevImpactCTA />
       <Footer />
     </>
   );

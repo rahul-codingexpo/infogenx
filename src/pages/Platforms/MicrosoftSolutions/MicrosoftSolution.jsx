@@ -1,10 +1,10 @@
 import React from "react";
 import Header from "../../../components/header/Header";
-import AppDevHero from "../../../components/Analytics/AppDevHero/AppDevHero";
-import AppDevExpertise from "../../../components/Analytics/AppDevExpertise/AppDevExpertise";
-import AppDevApproach from "../../../components/Analytics/AppDevApproach/AppDevApproach";
-import AppDevBusinessImpact from "../../../components/Analytics/AppDevBusinessImpact/AppDevBusinessImpact";
-// import AppDevImpactCTA from "../../../components/Analytics/AppDevImpactCTA/AppDevImpactCTA";
+import AppDevHero from "../../../components/Platforms/Microsoft/MicrosoftHero/MicrosoftHero";
+import AppDevExpertise from "../../../components/Platforms/Microsoft/MicrosoftExpertise/MicrosoftExpertise";
+import AppDevApproach from "../../../components/Platforms/Microsoft/MicrosoftApproach/MicrosoftApproach";
+import AppDevBusinessImpact from "../../../components/Platforms/Microsoft/MicrosoftBusinessImpact/MicrosoftBusinessImpact";
+// import AppDevImpactCTA from "../../../components/Platforms/Microsoft/MicrosoftImpactCTA/MicrosoftImpactCTA";
 import Footer from "../../../components/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 const MicrosoftSolution = () => {

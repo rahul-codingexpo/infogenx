@@ -129,7 +129,7 @@ const Footer = () => {
               </li>
               <li>
                 {" "}
-                <Link to="/services/analytics">
+                <Link to="/technologies/data-engineering">
                   Data Engineering & Analytics
                 </Link>
               </li>

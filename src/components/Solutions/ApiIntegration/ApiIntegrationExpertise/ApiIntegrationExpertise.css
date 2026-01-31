@@ -1,0 +1,142 @@
+.appdev-expertise-section {
+    background: #fff6f0;
+    padding: 50px 0px 100px;
+}
+
+.appdev-expertise-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* ---------- HEADER ---------- */
+.appdev-expertise-header {
+    max-width: 520px;
+    margin-bottom: 60px;
+}
+
+.section-label {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 700;
+    /* color: #ff6a00; */
+background: linear-gradient(89.95deg, #030307 8.97%, #05060f 33.19%, #f3530e 89.61%);
+    -webkit-text-fill-color: transparent;    
+    background-clip: text;
+    margin-bottom: 14px;
+}
+
+.appdev-expertise-header h2 {
+    font-family: "Manrope", sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 120%;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #0b1f4d;
+}
+
+/* ---------- GRID ---------- */
+.appdev-expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    row-gap: 60px;
+}
+
+/* ---------- ITEM ---------- */
+.expertise-item {
+    max-width: 370px;
+}
+
+.expertise-icon {
+    font-size: 28px;
+    color: #ff6a00;
+    margin-bottom: 0;
+}
+
+.expertise-item h4 {
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #0b1f4d;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+.expertise-item p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 160%;
+    color: #555;
+}
+
+@media (max-width: 1199px) {
+    .appdev-expertise-header {
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .appdev-expertise-header h2 {
+        font-size: 36px;
+    }
+
+    .appdev-expertise-grid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40px;
+        row-gap: 50px;
+    }
+
+    .expertise-item {
+        max-width: 100%;
+    }
+
+    .expertise-item h4 {
+        font-size: 17px;
+    }
+
+    .expertise-item p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .appdev-expertise-section {
+        padding: 40px 0 70px;
+    }
+
+    .appdev-expertise-container {
+        padding: 0 20px;
+    }
+
+    .section-label {
+        font-size: 15px;
+    }
+
+    .appdev-expertise-header h2 {
+        font-size: 28px;
+        line-height: 125%;
+    }
+
+    .appdev-expertise-grid {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+
+    .expertise-item {
+        text-align: center;
+    }
+
+    .expertise-icon {
+        margin: 0 auto 6px;
+        display: block;
+    }
+
+    .expertise-item h4 {
+        font-size: 16px;
+    }
+
+    .expertise-item p {
+        font-size: 14px;
+    }
+}

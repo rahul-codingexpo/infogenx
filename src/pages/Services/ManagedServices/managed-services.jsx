@@ -1,9 +1,9 @@
 import Header from "../../../components/header/Header";
-import AppDevHero from "../../../components/CloudAI/AppDevHero/AppDevHero";
-import AppDevExpertise from "../../../components/CloudAI/AppDevExpertise/AppDevExpertise";
-import AppDevApproach from "../../../components/CloudAI/AppDevApproach/AppDevApproach";
-import AppDevBusinessImpact from "../../../components/CloudAI/AppDevBusinessImpact/AppDevBusinessImpact";
-import AppDevImpactCTA from "../../../components/CloudAI/AppDevImpactCTA/AppDevImpactCTA";
+import AppDevHero from "../../../components/Services/ManagedServices/ManagedServicesHero/ManagedServicesHero";
+import AppDevExpertise from "../../../components/Services/ManagedServices/ManagedServicesExpertise/ManagedServicesExpertise";
+import AppDevApproach from "../../../components/Services/ManagedServices/ManagedServicesApproach/ManagedServicesApproach";
+import AppDevBusinessImpact from "../../../components/Services/ManagedServices/ManagedServicesBusinessImpact/ManagedServicesBusinessImpact";
+import AppDevImpactCTA from "../../../components/Services/ManagedServices/ManagedServicesImpactCTA/ManagedServicesImpactCTA";
 import Footer from "../../../components/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 const ApplicationDev = () => {

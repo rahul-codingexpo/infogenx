@@ -38,6 +38,7 @@ const Header = () => {
               <SolutionsDropdown closeMenu={() => setSolutionsOpen(false)} />
             )}
           </div>
+
           <div
             className="nav-item"
             onMouseEnter={() => setPlatformsOpen(true)}
@@ -49,6 +50,7 @@ const Header = () => {
               <PlatformsDropdown closeMenu={() => setPlatformsOpen(false)} />
             )}
           </div>
+
           <div
             className="nav-item"
             onMouseEnter={() => setServicesOpen(true)}
@@ -73,6 +75,7 @@ const Header = () => {
               />
             )}
           </div> */}
+
           <div
             className="nav-item"
             onMouseEnter={() => setIndustriesOpen(true)}
@@ -111,10 +114,7 @@ const Header = () => {
               <ContactDropdown closeMenu={() => setContactOpen(false)} />
             )}
           </div>
-          <Link
-            to="/contact-us/get-in-touch"
-            className="quote-btn desktop-only"
-          >
+          <Link to="/request-quote" className="quote-btn desktop-only">
             Request a Quote
           </Link>
         </nav>

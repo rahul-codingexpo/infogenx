@@ -1,0 +1,113 @@
+.request-quote-page {
+    padding: 130px 20px;
+}
+
+.contact-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    display: flex;
+    padding-top: 40px;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-row {
+    display: flex;
+    gap: 24px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 16px 18px;
+    border: 1px solid #000;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+    background: #fff;
+
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border: 2px solid transparent;
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(110deg, #081256 0%, #001b5e 35%, #eb632a 70%, #f36b2a 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+}
+
+.full-width {
+    width: 100%;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 180px;
+}
+
+.submit-btn {
+    width: 200px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 30px;
+    border-radius: 50px;
+    border: none;
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: #ffffff;
+    cursor: pointer;
+    /* background: linear-gradient(45.6deg, #081256 0%, #03133a 50%, #eb632a 70%, #f36b2a 100%); */
+    background: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110deg, #00123C 150deg, #00123C 180deg);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.thank-you-message {
+    text-align: center;
+    padding: 40px 20px;
+    border: 2px solid transparent;
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(110deg, #081256 0%, #001b5e 35%, #eb632a 70%, #f36b2a 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    transition: all 0.2s ease;
+}
+
+.thank-you-message h3 {
+    font-weight: 700;
+    background: linear-gradient(89.95deg, #030307 8.97%, #05060f 33.19%, #f3530e 70.61%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.thank-you-message p {
+    font-size: 16px;
+    line-height: 150%;
+    color: #555;
+    font-weight: 500;
+}
+
+.thank-you-message button {
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 30px;
+    border-radius: 50px;
+    border: none;
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    color: #ffffff;
+    cursor: pointer;
+    /* background: linear-gradient(45.6deg, #081256 0%, #03133a 50%, #eb632a 70%, #f36b2a 100%); */
+    background: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110deg, #00123C 150deg, #00123C 180deg);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}

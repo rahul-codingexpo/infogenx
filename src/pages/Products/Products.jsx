@@ -13,7 +13,7 @@ import { FaUserGear } from "react-icons/fa6";
 // import { FaBusAlt } from "react-icons/fa";
 // import { FaSpellCheck } from "react-icons/fa";
 import Footer from "../../components/Footer/Footer";
-import CtaBanner from "../../components/CtaBanner/CtaBanner";
+import CtaBanner from "../../components/Home/CtaBanner/CtaBanner";
 import { useState } from "react";
 import DemoPopup from "./DemoPopup";
 const Products = () => {

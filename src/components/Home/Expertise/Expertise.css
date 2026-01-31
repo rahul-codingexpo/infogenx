@@ -1,0 +1,241 @@
+.expertise-section {
+    margin-top: -200px;
+    padding: 0px 0;
+}
+
+.expertise-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    /* padding: 60px; */
+    border-radius: 16px;
+    background: #ffffff;
+}
+
+.expertise-content {
+    max-width: 770px;
+    margin-bottom: 20px;
+}
+
+.expertise-heading {
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 120%;
+    color: #0b1f4d;
+    margin-bottom: 20px;
+    padding: 60px 0px 0px 60px;
+}
+
+.expertise-description {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    line-height: 160%;
+    color: #5a5a5a;
+    padding: 0px 0px 0px 60px;
+}
+
+.expertise-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 32px;
+    background-size: cover;
+    padding: 0 50px;
+    background-image: url('../../../assets/images/wave.png');
+    background-repeat: no-repeat;
+}
+
+.expertise-card {
+    width: 350px;
+    height: 350px;
+    
+    text-align: center;
+    background: linear-gradient(180deg,
+            rgba(255, 190, 190, 0.683),
+            rgba(255, 255, 255, 0.9));
+            -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    border-radius: 16px;
+    padding: 15px;
+    position: relative;
+    will-change: transform, opacity;
+}
+/* .first-card {
+    height: 380px;
+    top: 100PX;
+}
+
+.center-card {
+    height: 380px;
+    top: 50PX;
+} */
+/* .last-card {
+    height: 380px;
+    
+} */
+.last-card img {
+        width: 350px;
+}
+.expertise-card h4 {
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #0b1f4d;
+}
+
+.expertise-card p {
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #444;
+}
+
+.card-visual {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.expertise-card img {
+    position: absolute;
+    /* bottom: 20px; */
+    transform: translateX(-50%);
+}
+
+.center-card img{
+    bottom: 0px;
+}
+
+.expertise-card {
+    transition: transform 0.6s ease, opacity 0.6s ease;
+    will-change: transform, opacity;
+}
+
+/* Exit animation */
+.card-exit {
+    transform: translateY(-200px);
+    opacity: 0;
+}
+
+/* Responsive Design for tablet */
+@media (max-width: 1024px) {
+    .expertise-section {
+        margin-top: -200px;
+    }
+
+    .expertise-heading {
+        font-size: 34px;
+        padding: 40px 0 0 40px;
+    }
+
+    .expertise-description {
+        padding-left: 40px;
+    }
+
+    .expertise-cards {
+        padding: 0 30px;
+        gap: 20px;
+    }
+
+    .expertise-card {
+        width: 300px;
+        height: 320px;
+    }
+
+    .first-card,
+    .center-card,
+    .last-card {
+        top: 0;
+        height: 340px;
+    }
+
+    .expertise-card img {
+        width: 260px;
+    }
+
+    .last-card img {
+        width: 280px;
+    }
+}
+
+/* Responsive Design for mobile */
+@media (max-width: 768px) {
+    .expertise-section {
+        margin-top: 0;
+        padding: 60px 0 0;
+    }
+
+    .expertise-container {
+        padding-bottom: 20px;
+        background: #fff5ef;
+    }
+
+    .expertise-heading {
+        font-size: 28px;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .expertise-description {
+        padding: 0 20px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .expertise-cards {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+        background-image: none;
+        /* IMPORTANT */
+    }
+
+    .expertise-card {
+        width: 100%;
+        max-width: 360px;
+        height: auto;
+        padding: 20px;
+    }
+
+    .first-card,
+    .center-card,
+    .last-card {
+        top: 0;
+        height: auto;
+    }
+    
+    .expertise-card img {
+        position: static;
+        transform: none;
+        margin-top: 20px;
+        width: 220px;
+    }
+
+}
+
+/* Responsive Design for small mobile */
+@media (max-width: 480px) {
+    .expertise-heading {
+        font-size: 24px;
+        line-height: 130%;
+    }
+
+    .expertise-description {
+        font-size: 14px;
+    }
+
+    .expertise-card h4 {
+        font-size: 16px;
+    }
+
+    .expertise-card p {
+        font-size: 13px;
+    }
+}

@@ -67,7 +67,7 @@
     cursor: pointer;
 }
 .quote-btn:hover{
-    color: #1d1d1f !important;
+    color: #ffffff !important;
     background: #ff6a00;
     
     transform: translateY(-2px);

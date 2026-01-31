@@ -1,8 +1,8 @@
 import Header from "../../components/header/Header";
-import AboutHero from "../../components/AboutHero/AboutHero";
-import AboutWhoWeAre from "../../components/AboutWhoWeAre/AboutWhoWeAre";
-import AboutWhyChoose from "../../components/AboutWhyChoose/AboutWhyChoose";
-import AboutMissionVision from "../../components/AboutMissionVision/AboutMissionVision";
+import AboutHero from "../../components/About/AboutHero/AboutHero";
+import AboutWhoWeAre from "../../components/About/AboutWhoWeAre/AboutWhoWeAre";
+import AboutWhyChoose from "../../components/About/AboutWhyChoose/AboutWhyChoose";
+import AboutMissionVision from "../../components/About/AboutMissionVision/AboutMissionVision";
 import Footer from "../../components/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 const About = () => {

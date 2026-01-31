@@ -1,10 +1,10 @@
 import React from "react";
 import Header from "../../../components/header/Header";
-import AppDevHero from "../../../components/AppDevelopment/AppDevHero/AppDevHero";
-import AppDevExpertise from "../../../components/AppDevelopment/AppDevExpertise/AppDevExpertise";
-import AppDevApproach from "../../../components/AppDevelopment/AppDevApproach/AppDevApproach";
-import AppDevBusinessImpact from "../../../components/AppDevelopment/AppDevBusinessImpact/AppDevBusinessImpact";
-import AppDevImpactCTA from "../../../components/AppDevelopment/AppDevImpactCTA/AppDevImpactCTA";
+import AppDevHero from "../../../components/Solutions/ModernApplication/ModernApplicationHero/ModernApplicationHero";
+import AppDevExpertise from "../../../components/Solutions/ModernApplication/ModernApplicationExpertise/ModernApplicationExpertise";
+import AppDevApproach from "../../../components/Solutions/ModernApplication/ModernApplicationApproach/ModernApplicationApproach";
+import AppDevBusinessImpact from "../../../components/Solutions/ModernApplication/ModernApplicationBusinessImpact/ModernApplicationBusinessImpact";
+import AppDevImpactCTA from "../../../components/Solutions/ModernApplication/ModernApplicationImpactCTA/ModernApplicationImpactCTA";
 import Footer from "../../../components/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 const ModernApplication = () => {

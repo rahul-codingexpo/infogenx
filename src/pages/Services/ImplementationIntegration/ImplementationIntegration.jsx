@@ -1,9 +1,9 @@
 import Header from "../../../components/header/Header";
-import AppDevHero from "../../../components/AppDevelopment/AppDevHero/AppDevHero";
-import AppDevExpertise from "../../../components/AppDevelopment/AppDevExpertise/AppDevExpertise";
-import AppDevApproach from "../../../components/AppDevelopment/AppDevApproach/AppDevApproach";
-import AppDevBusinessImpact from "../../../components/AppDevelopment/AppDevBusinessImpact/AppDevBusinessImpact";
-import AppDevImpactCTA from "../../../components/AppDevelopment/AppDevImpactCTA/AppDevImpactCTA";
+import AppDevHero from "../../../components/Services/ImplementIntegration/ImplementIntegrationHero/ImplementIntegrationHero";
+import AppDevExpertise from "../../../components/Services/ImplementIntegration/ImplementIntegrationExpertise/ImplementIntegrationExpertise";
+import AppDevApproach from "../../../components/Services/ImplementIntegration/ImplementIntegrationApproach/ImplementIntegrationApproach";
+import AppDevBusinessImpact from "../../../components/Services/ImplementIntegration/ImplementIntegrationBusinessImpact/ImplementIntegrationBusinessImpact";
+import AppDevImpactCTA from "../../../components/Services/ImplementIntegration/ImplementIntegrationImpactCTA/ImplementIntegrationImpactCTA";
 import Footer from "../../../components/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 const ApplicationDev = () => {

@@ -1,10 +1,10 @@
 import Header from "../../components/header/Header";
-import Hero from "../../components/Hero/Hero";
-import Expertise from "../../components/Expertise/Expertise";
-import ServiceHighlight from "../../components/ServiceHighlight/ServiceHighlight";
-import TechSlider from "../../components/TechSlider/TechSlider";
-import Testimonials from "../../components/Testimonials/Testimonials";
-import CtaBanner from "../../components/CtaBanner/CtaBanner";
+import Hero from "../../components/Home/Hero/Hero";
+import Expertise from "../../components/Home/Expertise/Expertise";
+import ServiceHighlight from "../../components/Home/ServiceHighlight/ServiceHighlight";
+import TechSlider from "../../components/Home/TechSlider/TechSlider";
+import Testimonials from "../../components/Home/Testimonials/Testimonials";
+import CtaBanner from "../../components/Home/CtaBanner/CtaBanner";
 import Footer from "../../components/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 const Home = () => {

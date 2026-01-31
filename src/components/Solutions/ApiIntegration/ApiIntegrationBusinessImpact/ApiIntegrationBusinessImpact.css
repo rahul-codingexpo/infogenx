@@ -1,0 +1,146 @@
+.business-impact-section {
+    padding: 120px 0;
+    background: #fff7f2;
+}
+
+.business-impact-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* HEADER */
+.business-impact-header {
+    max-width: 520px;
+    margin-bottom: 50px;
+}
+
+.section-label {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ff6a00;
+}
+
+.business-impact-header h2 {
+    font-family: "Manrope", sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+    color: #0b1f4d;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* GRID */
+.business-impact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px 80px;
+}
+
+/* CARD */
+.impact-card{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.impact-card img {
+    width: 180px;
+    height: 180px;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    object-fit: cover;
+}
+
+.impact-card h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #0b1f4d;
+}
+
+.impact-card p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 160%;
+    color: #555;
+}
+
+@media (max-width: 1199px) {
+    .business-impact-section {
+        padding: 90px 0;
+    }
+
+    .business-impact-header {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .business-impact-header h2 {
+        font-size: 36px;
+    }
+
+    .business-impact-grid {
+        gap: 40px 50px;
+    }
+
+    .impact-card {
+        gap: 24px;
+    }
+
+    .impact-card img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .impact-card h4 {
+        font-size: 20px;
+    }
+
+    .impact-card p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .business-impact-section {
+        padding: 70px 0;
+    }
+
+    .business-impact-container {
+        padding: 0 20px;
+    }
+
+    .section-label {
+        font-size: 14px;
+    }
+
+    .business-impact-header h2 {
+        font-size: 28px;
+        line-height: 125%;
+    }
+
+    .business-impact-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .impact-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 18px;
+    }
+
+    .impact-card img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .impact-card h4 {
+        font-size: 18px;
+    }
+
+    .impact-card p {
+        font-size: 14px;
+    }
+}
