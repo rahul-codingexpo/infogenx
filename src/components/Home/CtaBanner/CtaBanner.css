@@ -52,15 +52,16 @@ background: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110de
     font-weight: 600;
 
     color: #ffffff;
-    background: #f26522;
+    background: #d33e00;
     cursor: pointer;
 
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .cta-primary:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
+    background: #eb632a;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.65);
 }
 
 .cta-secondary {
@@ -81,7 +82,7 @@ background: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110de
 
 .cta-secondary:hover {
     background: #ffffff;
-    color: #081256;
+    color: #00123C;
 }
 
 /* Responsive Design for tablet */

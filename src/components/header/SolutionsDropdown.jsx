@@ -31,7 +31,7 @@ const SolutionsDropdown = ({ closeMenu }) => {
           </div>
         </Link>
 
-        <Link to="/solutions/application-engineering" onClick={closeMenu}>
+        <Link to="/solutions/modern-applications" onClick={closeMenu}>
           <div className="service-img">
             <img src={CodeBox} alt="Service-img" />
           </div>

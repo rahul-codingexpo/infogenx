@@ -86,9 +86,9 @@ const Header = () => {
               <IndustriesDropdown closeMenu={() => setIndustriesOpen(false)} />
             )}
           </div>
-          <Link to="/products" onClick={() => setMenuOpen(false)}>
+          {/* <Link to="/products" onClick={() => setMenuOpen(false)}>
             Products
-          </Link>
+          </Link> */}
           <Link to="/portfolio">Our work</Link>
           {/* <Link to="/blog">Blog</Link>  */}
           {/* <Link to="/insights">Insights</Link> */}
@@ -114,9 +114,15 @@ const Header = () => {
               <ContactDropdown closeMenu={() => setContactOpen(false)} />
             )}
           </div>
-          <Link to="/request-quote" className="quote-btn desktop-only">
-            Request a Quote
-          </Link>
+          <div className="quote-wrapper">
+            <Link to="/request-quote" className="quote-btn desktop-only">
+              Architect your Intelligence
+            </Link>
+            <span className="quote-tooltip">
+              Request a tailored quote for smart app Automation and Analytics
+              Engineering
+            </span>
+          </div>
         </nav>
 
         {/* Hamburger */}

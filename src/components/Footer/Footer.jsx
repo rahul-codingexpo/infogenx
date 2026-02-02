@@ -55,7 +55,7 @@ const Footer = () => {
               </li>
               <li>
                 {" "}
-                <Link to="/services/it-partner">Partner</Link>
+                <Link to="/products">Products</Link>
               </li>
               <li>
                 {" "}
@@ -67,7 +67,7 @@ const Footer = () => {
               </li>
               <li>
                 {" "}
-                <Link to="/term-conditions">Terms and Conditions</Link>
+                <Link to="/terms-conditions">Terms and Conditions</Link>
               </li>
             </ul>
           </div>
@@ -77,76 +77,67 @@ const Footer = () => {
             <ul>
               <li>
                 {" "}
-                <Link to="/services/application-development">
-                  Application & Web Development
+                <Link to="/services/implementation-integration">
+                  Implementation & Integration
                 </Link>
               </li>
               <li>
                 {" "}
-                <Link to="/services/analytics">
-                  Data Engineering & Analytics
+                <Link to="/services/managed-services">Managed Services</Link>
+              </li>
+              <li>
+                {" "}
+                <Link to="/services/consulting-advisory">
+                  Consulting & Advisory
                 </Link>
               </li>
               <li>
                 {" "}
-                <Link to="/services/automation">
-                  Intelligent Process Automation
-                </Link>
-              </li>
-              <li>
-                {" "}
-                <Link to="/services/cloud-ai">AI-Powered Cloud Solutions</Link>
-              </li>
-              <li>
-                {" "}
-                <Link to="/services/it-partner">
-                  Offshore Software Development
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4>TECHNOLOGIES</h4>
-            <ul>
-              <li>
-                {" "}
-                <Link to="/technologies/web-development">
-                  Frontend Development
-                </Link>
-              </li>
-              <li>
-                {" "}
-                <Link to="/technologies/web-development">
-                  Backend Development
-                </Link>
-              </li>
-              <li>
-                {" "}
-                <Link to="/technologies/mobile-app-development">
-                  Mobile App Development
-                </Link>
-              </li>
-              <li>
-                {" "}
-                <Link to="/technologies/data-engineering">
-                  Data Engineering & Analytics
-                </Link>
-              </li>
-              <li>
-                {" "}
-                <Link to="/technologies/artificial-intelligence">
-                  Artificial Intelligence
+                <Link to="/services/support-optimization">
+                  Support & Optimization
                 </Link>
               </li>
               {/* <li>
                 {" "}
-                <Link to="/technologies/smart-automation">
-                  Smart Automation
+                <Link to="/services/it-partner">
+                  Offshore Software Development
                 </Link>
               </li> */}
+            </ul>
+          </div>
+
+          <div>
+            <h4>SOLUTIONS</h4>
+            <ul>
               <li>
-                <Link to="/technologies/cloud-computing">Cloud Computing</Link>
+                {" "}
+                <Link to="/solutions/digital-transformation">
+                  Digital Transformation
+                </Link>
+              </li>
+              <li>
+                {" "}
+                <Link to="/solutions/intelligent-automation">
+                  Intelligent Automation
+                </Link>
+              </li>
+              <li>
+                {" "}
+                <Link to="/solutions/modern-applications">
+                  Modern Applications
+                </Link>
+              </li>
+
+              <li>
+                {" "}
+                <Link to="/solutions/data-analytics-ai">
+                  Data Analytics & AI
+                </Link>
+              </li>
+              <li>
+                <Link to="/solutions/api-integration">
+                  Integration & API Enablement
+                </Link>
               </li>
             </ul>
           </div>

@@ -25,7 +25,7 @@ import ApiIntegration from "./pages/Solutions/APIintegration/ApiIntegration";
 import DataAnalyticsAI from "./pages/Solutions/DataAnalyticsAI/DataAnalyticsAI";
 import DigitalTransformation from "./pages/Solutions/DigitalTransformation/DigitalTransformation";
 import IntelligentAutomation from "./pages/Solutions/IntelligentAutomation/IntelligentAutomation";
-import ApplicationEngineering from "./pages/Solutions/ModernApplication/ModernApplication";
+import ModernApplication from "./pages/Solutions/ModernApplication/ModernApplication";
 import MicrosoftSolution from "./pages/Platforms/MicrosoftSolutions/MicrosoftSolution";
 import ZohoSolution from "./pages/Platforms/ZohoSolutions/ZohoSolution";
 import OdooSolution from "./pages/Platforms/OdooSolutions/OdooSolution";
@@ -35,6 +35,9 @@ import IgxStock from "./pages/Products/IGXStock/IgxStock";
 import OdooErp from "./pages/Products/OdooErp/OdooErp";
 import RetailPos from "./pages/Products/RetailPos/RetailPos";
 import CustomerRelation from "./pages/Products/CustomerRelation/CustomerRelation";
+import Career from "./pages/Careers/Careers";
+import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
+import TermsConditions from "./pages/TermsConditions/TermsConditions";
 import "./App.css";
 function App() {
   return (
@@ -45,6 +48,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
           <Route path="/request-quote" element={<RequestQuote />} />
+          <Route path="/careers" element={<Career />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-conditions" element={<TermsConditions />} />
           <Route
             path="/products/stock-management-system"
             element={<IgxStock />}
@@ -106,8 +112,8 @@ function App() {
             element={<IntelligentAutomation />}
           />
           <Route
-            path="/solutions/application-engineering"
-            element={<ApplicationEngineering />}
+            path="/solutions/modern-applications"
+            element={<ModernApplication />}
           />
           <Route
             path="/technologies/web-development"

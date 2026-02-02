@@ -27,7 +27,7 @@
     font-size: 29px;
     font-weight: 800;
     margin-bottom: 16px;
-    background: linear-gradient(89.95deg, #030307 8.97%, #05060f 33.19%, #f3530e 89.61%);
+    background: linear-gradient(89.95deg, #00123c 8.97%, #00123c 33.19% 33.19%, #f3530e 89.61%);
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
@@ -68,7 +68,7 @@
     font-size: 17px;
     font-weight: 600;
     margin-bottom: 12px;
-    color: #0b1f4d;
+    color: #00123C;
 }
 
 .impact-cta-right svg {

@@ -1,9 +1,9 @@
 .contact-dropdown {
     position: absolute;
     /* top: 45px; */
-    /* left: 50%; */
-    /* transform: translateX(50%); */
-    right: 5%;
+    left: 85%;
+    transform: translateX(-50%);
+    /* right: 5%; */
     width: 200px;
     background: #fff1e8;
     border-radius: 18px;
@@ -27,7 +27,7 @@
     border-radius: 14px;
     padding: 10px;
     text-decoration: none;
-    color: #1d1d1f;
+    color: #00123C;
     transition: all 0.25s ease;
 }
 
