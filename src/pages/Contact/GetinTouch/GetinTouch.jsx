@@ -98,11 +98,11 @@ const GetinTouch = () => {
         <title>Contact Infogenx | Book an AI & Automation Call</title>
         <meta
           name="description"
-          content="InfogenX: Your Australian digital transformation partner for AI-powered Solutions development, analytics, automation & cloud solutions. Custom software to drive growth & efficiency – free consultation available."
+          content="Get in touch with Infogenx to discuss your digital transformation goals, request a demo, or book an Australian-led strategy consultation."
         />
         <meta
           name="keywords"
-          content="intelligent automation consulting Australia,business process automation with AI,AI-driven workflow automation,Strategic Exclusion"
+          content="contact AI & Automation Australia company, IT strategy call Australia"
         />
       </Helmet>
       <Header />

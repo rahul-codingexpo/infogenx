@@ -29,7 +29,7 @@ import ModernApplication from "./pages/Solutions/ModernApplication/ModernApplica
 import MicrosoftSolution from "./pages/Platforms/MicrosoftSolutions/MicrosoftSolution";
 import ZohoSolution from "./pages/Platforms/ZohoSolutions/ZohoSolution";
 import OdooSolution from "./pages/Platforms/OdooSolutions/OdooSolution";
-import Blog from "./pages/Insights/Blog/Blog";
+
 import CaseStudies from "./pages/Insights/CaseStudies/CaseStudies";
 import IgxStock from "./pages/Products/IGXStock/IgxStock";
 import OdooErp from "./pages/Products/OdooErp/OdooErp";
@@ -67,7 +67,6 @@ function App() {
             path="/products/customer-relationship-management-system"
             element={<CustomerRelation />}
           />
-          <Route path="/insights/blog" element={<Blog />} />
           <Route path="/insights/case-studies" element={<CaseStudies />} />
           <Route path="/contact-us/get-in-touch" element={<GetinTouch />} />
           <Route

@@ -26,6 +26,7 @@ import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { HiOutlineTrophy } from "react-icons/hi2";
 import { VscRemoteExplorer } from "react-icons/vsc";
 import { RiShieldCheckLine } from "react-icons/ri";
+import { Helmet } from "react-helmet-async";
 
 const descItems = [
   {
@@ -90,6 +91,17 @@ const OdooErp = () => {
   }, [maxIndex]);
   return (
     <>
+      <Helmet>
+        <title>ODOO ERP in Brisbane, Australia|Infogenx</title>
+        <meta
+          name="description"
+          content="Certified ODOO ERP partners in Brisbane – InfogenX delivers tailored implementation, customisation & support for Australian businesses. Boost efficiency with open-source ERP. Request a quote today."
+        />
+        <meta
+          name="keywords"
+          content="Australian IT consulting, AI solutions Australia, digital transformation services, AI-enabled intelligent automation,intelligent process automation solutions,AI application development Australia,AI-enabled business applications,application modernisation Australia,enterprise application transformation"
+        />
+      </Helmet>
       {/* NAVBAR */}
       <header className="igx-navbar">
         <div className="igx-nav-container">

@@ -43,6 +43,7 @@
 
 .impact-buttons {
     display: flex;
+    align-items: center !important;
     gap: 18px;
 }
 
@@ -124,7 +125,7 @@
 
 @media (max-width: 767px) {
     .impact-cta-section {
-        padding-bottom: 100px;
+        padding: 0 20px 100px;
     }
 
     .impact-cta-container {
@@ -144,6 +145,7 @@
 
     .impact-buttons {
         flex-direction: column;
+        align-items: center !important;
         gap: 14px;
     }
 

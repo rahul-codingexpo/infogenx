@@ -8,14 +8,19 @@ const GetinTouch = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Infogenx | Book an AI & Automation Call</title>
+        <title>
+          Get in Touch for AI Automation Solutions -Infogenx IT Services |
+          Australia |India
+        </title>
         <meta
           name="description"
-          content="InfogenX: Your Australian digital transformation partner for AI-powered Solutions development, analytics, automation & cloud solutions. Custom software to drive growth & efficiency – free consultation available."
+          content="Get in touch with Infogenx to discuss how  build customised AI-enabled applications, intelligent automation, and analytics solutions for Australian businesses across Microsoft, Zoho, Shopify, and Odoo platforms."
         />
         <meta
           name="keywords"
-          content="intelligent automation consulting Australia,business process automation with AI,AI-driven workflow automation,Strategic Exclusion"
+          content="Get in touch AI Automation,Platform specialists,Business enablement,Decision intelligence
+AI & Automation Consulting, Digital Transformation Partner,Business Systems & AI Solutions, AI-Enabled Business Solutions,Automation & Analytics Consultin Platform-Focused Digital Solutions,AI consulting services,intelligent automation solutions, analytics consulting
+what is intelligent automation, AI in business"
         />
       </Helmet>
       <Header />

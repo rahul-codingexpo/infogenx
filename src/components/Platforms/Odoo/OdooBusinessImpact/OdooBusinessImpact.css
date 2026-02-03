@@ -132,8 +132,8 @@
     }
 
     .impact-card img {
-        width: 130px;
-        height: 130px;
+        width: 250px !important;
+        height: 170px !important;
     }
 
     .impact-card h4 {

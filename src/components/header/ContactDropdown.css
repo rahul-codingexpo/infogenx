@@ -87,7 +87,9 @@
         height: 50vh;
         overflow-y: scroll;
     }
-
+        .contact-dropdown{
+        left: 50%;
+        }
 
 
     .services-grid {

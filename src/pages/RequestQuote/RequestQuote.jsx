@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./RequestQuote.css";
 import Header from "../../components/header/Header";
 import Footer from "../../components/Footer/Footer";
+import { Helmet } from "react-helmet-async";
 const RequestQuote = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -90,6 +91,17 @@ const RequestQuote = () => {
   };
   return (
     <>
+      <Helmet>
+        <title>Contact Infogenx | Book an AI & Automation Call</title>
+        <meta
+          name="description"
+          content="Get in touch with Infogenx to discuss your digital transformation goals, request a demo, or book an Australian-led strategy consultation."
+        />
+        <meta
+          name="keywords"
+          content="contact AI & Automation Australia company, IT strategy call Australia"
+        />
+      </Helmet>
       <Header />
       <div className="request-quote-page">
         <div className="contact-form-container">

@@ -1,9 +1,21 @@
 import "./PrivacyPolicy.css";
 import Header from "../../components/header/Header";
 import Footer from "../../components/Footer/Footer";
+import { Helmet } from "react-helmet-async";
 const PrivacyPolicy = () => {
   return (
     <>
+      <Helmet>
+        <title>Privacy Policy | Infogenx</title>
+        <meta
+          name="description"
+          content="Read Infogenx Privacy Policy to understand how we collect, use, and protect your personal information while using our website and services."
+        />
+        <meta
+          name="keywords"
+          content="Infogenx privacy policy, data protection, user privacy, information security policy"
+        />
+      </Helmet>
       <Header />
       <section className="privacy-policy-section">
         <div className="privacy-container">
@@ -13,8 +25,8 @@ const PrivacyPolicy = () => {
             <h2>Who we are</h2>
             <p>
               Our website address is:{" "}
-              <a href="https://infogenx.vercel.app" rel="noreferrer">
-                https://infogenx.vercel.app
+              <a href="https://infogenx.com" rel="noreferrer">
+                https://infogenx.com
               </a>
             </p>
           </div>

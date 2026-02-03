@@ -86,7 +86,10 @@
         height: 50vh;
         overflow-y: scroll;
     }
-
+        .insight-dropdown{
+        left: 20%;
+        
+        }
 
 
     .services-grid {

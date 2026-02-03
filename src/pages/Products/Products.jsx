@@ -3,19 +3,16 @@ import "./Products.css";
 import Header from "../../components/header/Header";
 import AppcornerAssent from "../../assets/images/appcorner.png";
 import { AiOutlineStock } from "react-icons/ai";
-// import { RiHandHeartFill } from "react-icons/ri";
-// import { FaHospital } from "react-icons/fa";
-// import { FaVanShuttle } from "react-icons/fa6";
+
 import { FaLaptopCode } from "react-icons/fa";
 import { FaChartBar } from "react-icons/fa";
 import { FaUserGear } from "react-icons/fa6";
-// import { FaTasks } from "react-icons/fa";
-// import { FaBusAlt } from "react-icons/fa";
-// import { FaSpellCheck } from "react-icons/fa";
+
 import Footer from "../../components/Footer/Footer";
 import CtaBanner from "../../components/Home/CtaBanner/CtaBanner";
 import { useState } from "react";
 import DemoPopup from "./DemoPopup";
+import { Helmet } from "react-helmet-async";
 const Products = () => {
   const steps = [
     {
@@ -30,30 +27,7 @@ const Products = () => {
         password: "admin",
       },
     },
-    // {
-    //   number: "2",
-    //   icon: <RiHandHeartFill />,
-    //   title: "Clinic Management System",
-    //   desc: "Our clinic management software assists healthcare establishments by offering quality billing management. It simplifies and automates the billing process, removing the need for manual intervention.",
-    // },
-    // {
-    //   number: "3",
-    //   icon: <FaHospital />,
-    //   title: "Hospital Management System",
-    //   desc: "Our hospital management system is an integrated healthcare solution which includes Pharmacy, OP Management,Laboratory Information System, Insurance And Corporate Billing and much more.",
-    // },
-    // {
-    //   number: "4",
-    //   icon: <FaVanShuttle />,
-    //   title: "Transport Management System",
-    //   desc: "Our transportation management System (TMS) designed for companies of all sizes. Features include billing and invoicing, load management, order management, shipment management, reporting, scheduling and more.",
-    // },
-    // {
-    //   number: "5",
-    //   icon: <FaLaptopCode />,
-    //   title: "ERP Software",
-    //   desc: "Our ERP software integrates various functions into one complete system to streamline processes and information across the entire application which helps you manage day-to-day business activities.",
-    // },
+
     {
       number: "2",
       icon: <FaLaptopCode />,
@@ -93,29 +67,26 @@ const Products = () => {
         password: "admin",
       },
     },
-    // {
-    //   number: "9",
-    //   icon: <FaTasks />,
-    //   title: "Task Management System",
-    //   desc: "Task management is the process of managing a task through its life cycle. It involves planning, testing, tracking, and reporting.Project managers adhering to task-oriented management have a detailed and up-to-date project schedule, and are usually good at directing team members and moving the project forward.",
-    // },
-    // {
-    //   number: "10",
-    //   icon: <FaBusAlt />,
-    //   title: "Vehicle Stock Management Applicaiton",
-    //   desc: "Vehicle Stock Management is a systematic and purposeful approach to efficiently managing an organization's inventory of vehicles. This process ensures that an organization optimally utilizes its fleet of vehicles to gain a competitive edge in the market.",
-    // },
-    // {
-    //   number: "11",
-    //   icon: <FaSpellCheck />,
-    //   title: "Online Testing Application",
-    //   desc: "Online Examination System is a technology-driven way to simplify examination activities like defining exam patterns with question banks, defining exam timer, objective/ subjective question sections, conducting exams using the computer or mobile devices in a paperless manner.",
-    // },
   ];
   const [activeDemo, setActiveDemo] = useState(null);
 
   return (
     <>
+      <Helmet>
+        <title>
+          Automation Software Products & Custom Solutions for Startups &
+          Enterprises in Brisbane, Australia | Infogenx
+        </title>
+        <meta
+          name="description"
+          content="Explore Infogenx’s innovative IT products designed to streamline operations, enhance efficiency, and drive business growth across  Australia."
+        />
+        <meta
+          name="keywords"
+          content="Australian IT consulting, AI solutions Australia, digital transformation services, AI-enabled intelligent automation,intelligent process automation solutions,AI application development Australia,AI-enabled business applications,application modernisation Australia,enterprise application transformation"
+        />
+      </Helmet>
+
       <Header />
       <section className="product-WebDev-hero">
         <img

@@ -196,4 +196,21 @@
         width: 120px;
         opacity: 0.6;
     }
+        .outcome-container {
+            display: flex;
+            flex-direction: column !important;
+            justify-content: space-between;
+        }
+        .business-outcome-item{
+            margin-bottom: 30px;
+        }
+                .border-left{
+            border-left: none !important;
+                }
+        .automation-corner-accent {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 90px !important;
+        }
 }

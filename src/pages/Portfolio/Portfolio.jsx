@@ -25,6 +25,7 @@ import LogoImg2 from "../../assets/images/infogenx-logos-images-2.png";
 import LogoImg3 from "../../assets/images/infogenx-logos-images-3.png";
 import LogoImg4 from "../../assets/images/infogenx-logos-images-4.png";
 import LogoImg5 from "../../assets/images/infogenx-logos-images-5.png";
+import { Helmet } from "react-helmet-async";
 const projects = [
   {
     id: 1,
@@ -143,6 +144,18 @@ const Portfolio = () => {
       : projects.filter((project) => project.category === activeFilter);
   return (
     <>
+      <Helmet>
+        <title>Our Portfolio | Infogenx Projects</title>
+        <meta
+          name="description"
+          content="Discover Infogenx portfolio showcasing our web development, UI/UX design, and software projects delivered to clients across various industries."
+        />
+        <meta
+          name="keywords"
+          content="Infogenx portfolio, web development projects, full-stack projects, software development work, UI UX portfolio"
+        />
+      </Helmet>
+
       <Header />
       <section className="appdev-hero">
         <img
