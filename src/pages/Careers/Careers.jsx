@@ -21,7 +21,7 @@ const Career = () => {
         <h1>Careers at Infogenx</h1>
         <p>Explore exciting career opportunities with Infogenx.</p>
 
-        <p>There are no open positions at the moment.</p>
+        <p>Send your Resume to this whatsapp no: 9787806366</p>
       </div>
       <Footer />
     </div>

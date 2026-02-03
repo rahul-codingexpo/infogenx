@@ -4,7 +4,7 @@ import "./Header.css";
 import logo from "../../assets/images/logo.png";
 import ServicesDropdown from "./ServicesDropdown";
 // import TechnologiesDropdown from "./TechnologiesDropdown";
-import IndustriesDropdown from "./IndustriesDropdown";
+// import IndustriesDropdown from "./IndustriesDropdown";
 import SolutionsDropdown from "./SolutionsDropdown";
 import PlatformsDropdown from "./PlatformsDropdown";
 import InsightDropdown from "./InsightDropdown";
@@ -13,7 +13,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   // const [technologiesOpen, setTechnologiesOpen] = useState(false);
-  const [industriesOpen, setIndustriesOpen] = useState(false);
+  // const [industriesOpen, setIndustriesOpen] = useState(false);
   const [solutionsOpen, setSolutionsOpen] = useState(false);
   const [platformsOpen, setPlatformsOpen] = useState(false);
   const [insightOpen, setInsightOpen] = useState(false);
@@ -27,6 +27,20 @@ const Header = () => {
         </Link>
 
         <nav className={`nav ${menuOpen ? "open" : ""}`}>
+          <Link to="/about">About us</Link>
+
+          <div
+            className="nav-item"
+            onMouseEnter={() => setServicesOpen(true)}
+            onMouseLeave={() => setServicesOpen(false)}
+          >
+            <span className="nav-link">Services</span>
+
+            {servicesOpen && (
+              <ServicesDropdown closeMenu={() => setServicesOpen(false)} />
+            )}
+          </div>
+
           <div
             className="nav-item"
             onMouseEnter={() => setSolutionsOpen(true)}
@@ -51,17 +65,9 @@ const Header = () => {
             )}
           </div>
 
-          <div
-            className="nav-item"
-            onMouseEnter={() => setServicesOpen(true)}
-            onMouseLeave={() => setServicesOpen(false)}
-          >
-            <span className="nav-link">Services</span>
-
-            {servicesOpen && (
-              <ServicesDropdown closeMenu={() => setServicesOpen(false)} />
-            )}
-          </div>
+          <Link to="/products" onClick={() => setMenuOpen(false)}>
+            Products
+          </Link>
 
           {/* <div
             className="nav-item"
@@ -76,7 +82,7 @@ const Header = () => {
             )}
           </div> */}
 
-          <div
+          {/* <div
             className="nav-item"
             onMouseEnter={() => setIndustriesOpen(true)}
             onMouseLeave={() => setIndustriesOpen(false)}
@@ -85,10 +91,8 @@ const Header = () => {
             {industriesOpen && (
               <IndustriesDropdown closeMenu={() => setIndustriesOpen(false)} />
             )}
-          </div>
-          {/* <Link to="/products" onClick={() => setMenuOpen(false)}>
-            Products
-          </Link> */}
+          </div> */}
+
           <Link to="/portfolio">Our work</Link>
           {/* <Link to="/blog">Blog</Link>  */}
           {/* <Link to="/insights">Insights</Link> */}
@@ -102,7 +106,7 @@ const Header = () => {
               <InsightDropdown closeMenu={() => setInsightOpen(false)} />
             )}
           </div>
-          <Link to="/about">About us</Link>
+
           {/* <Link to="/contact">Contact</Link> */}
           <div
             className="nav-item"

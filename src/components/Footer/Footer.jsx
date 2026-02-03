@@ -47,7 +47,7 @@ const Footer = () => {
         {/* Links */}
         <div className="footer-links">
           <div>
-            <h4>INFOGENX</h4>
+            <h4>COMPANY</h4>
             <ul>
               <li>
                 {" "}
@@ -78,7 +78,8 @@ const Footer = () => {
               <li>
                 {" "}
                 <Link to="/services/implementation-integration">
-                  Implementation & Integration
+                  Implementation & <br />
+                  Integration
                 </Link>
               </li>
               <li>
@@ -143,6 +144,24 @@ const Footer = () => {
           </div>
 
           <div>
+            <h4>PLATFORMS</h4>
+            <ul>
+              <li>
+                {" "}
+                <Link to="/platforms/microsoft">Microsoft Solutions</Link>
+              </li>
+              <li>
+                {" "}
+                <Link to="/platforms/zoho">Zoho Solutions</Link>
+              </li>
+              <li>
+                {" "}
+                <Link to="/platforms/odoo">Odoo Solutions</Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
             <h4>INDUSTRIES</h4>
             <ul>
               <li>
@@ -179,7 +198,7 @@ const Footer = () => {
 
         {/* Bottom */}
         <div className="footer-bottom">
-          Copyright © 2025 All rights reserved. Infogenx Pvt Ltd.
+          Copyright © 2026 All rights reserved. Infogenx Pvt Ltd.
         </div>
       </div>
     </footer>
