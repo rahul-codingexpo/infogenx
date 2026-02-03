@@ -41,5 +41,14 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      window.$zoho = window.$zoho || {};
+      $zoho.salesiq = $zoho.salesiq || { ready: function () {} };
+    </script>
+    <script
+      id="zsiqscript"
+      src="https://salesiq.zohopublic.com/widget?wc=siqa808627325bae8eccbe91fe6fb2d4574e87e6fc7712c2cb2013ae02c7a10bb1b"
+      defer
+    ></script>
   </body>
 </html>
