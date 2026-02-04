@@ -1,7 +1,16 @@
 /* NAVBAR */
 .igx-navbar {
-    background: #fff;
-    padding: 16px 0;
+    /* background: #fff;
+    padding: 16px 0; */
+    position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+    
+        background: #fff;
+        padding: 16px 0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
 }
 
 .igx-nav-container {
@@ -635,8 +644,8 @@
 /* Scroll top */
 .igx-scroll-top {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 70px;
+    right: 20px;
     width: 44px;
     height: 44px;
     border-radius: 50%;
