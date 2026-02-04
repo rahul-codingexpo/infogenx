@@ -118,16 +118,16 @@ const Header = () => {
               <ContactDropdown closeMenu={() => setContactOpen(false)} />
             )}
           </div>
-          <div className="quote-wrapper">
-            <Link to="/request-quote" className="quote-btn desktop-only">
-              Architect your Intelligence
-            </Link>
-            <span className="quote-tooltip">
-              Request a tailored quote for smart app Automation and Analytics
-              Engineering
-            </span>
-          </div>
         </nav>
+        <div className="quote-wrapper">
+          <Link to="/request-quote" className="quote-btn desktop-only">
+            Architect your Intelligence
+          </Link>
+          <span className="quote-tooltip">
+            Request a tailored quote for smart app Automation and Analytics
+            Engineering
+          </span>
+        </div>
 
         {/* Hamburger */}
         <div
