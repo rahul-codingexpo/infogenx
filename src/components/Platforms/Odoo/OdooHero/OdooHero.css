@@ -91,6 +91,7 @@
 
   .appdev-left h1 {
     font-size: 40px;
+    padding-top: 50px !important;
   }
 
   .appdev-buttons {
