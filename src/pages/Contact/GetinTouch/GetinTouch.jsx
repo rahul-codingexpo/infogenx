@@ -26,56 +26,112 @@ const GetinTouch = () => {
     }));
   };
 
-  const handleSubmit = async (e) => {
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setIsSubmitting(true);
+
+  //   try {
+  //     // Submit to Odoo CRM
+  //     const odooResponse = await fetch(
+  //       "https://igxerp.infogenx.com/form/submit",
+  //       {
+  //         method: "POST",
+  //         body: JSON.stringify({
+  //           name: formData.name,
+  //           phone: formData.contactNumber,
+  //           email: formData.email,
+  //           "entry.720479336": formData.location,
+  //           "entry.505898934": formData.desiredService,
+  //           message: formData.message,
+  //         }),
+  //         headers: {
+  //           "Content-Type": "application/json",
+  //         },
+  //       },
+  //     );
+
+  //     const data = await odooResponse.json();
+  //     console.log("Odoo submission successful:", data);
+
+  //     // Submit to Google Forms
+  //     const googleFormUrl =
+  //       "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfyVw9o6-iQW88bgzL96jD6KHesu3V-J-QkOJQAKRYwVCDj0A/formResponse";
+  //     const params = new URLSearchParams();
+  //     params.append("entry.1583188992", formData.name);
+  //     params.append("entry.59106495", formData.contactNumber);
+  //     params.append("entry.1507836294", formData.email);
+  //     params.append("entry.1678940442", formData.location);
+  //     params.append("entry.645797029", formData.desiredService);
+  //     params.append("entry.2000705636", formData.message);
+
+  //     await fetch(googleFormUrl, {
+  //       method: "POST",
+  //       mode: "no-cors",
+  //       body: params,
+  //     });
+
+  //     console.log("Google Form submission successful");
+
+  //     // Show thank you message
+  //     setShowThankYou(true);
+
+  //     // Reset form
+  //     setFormData({
+  //       name: "",
+  //       contactNumber: "",
+  //       email: "",
+  //       location: "",
+  //       desiredService: "",
+  //       message: "",
+  //     });
+  //   } catch (error) {
+  //     console.error("Error:", error);
+  //     alert("An error occurred. Please try again.");
+  //   } finally {
+  //     setIsSubmitting(false);
+  //   }
+  // };
+
+  const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
 
     try {
-      // Submit to Odoo CRM
-      const odooResponse = await fetch(
-        "https://igxerp.infogenx.com/form/submit",
-        {
-          method: "POST",
-          body: JSON.stringify({
-            name: formData.name,
-            phone: formData.contactNumber,
-            email: formData.email,
-            "entry.720479336": formData.location,
-            "entry.505898934": formData.desiredService,
-            message: formData.message,
-          }),
-          headers: {
-            "Content-Type": "application/json",
-          },
-        },
-      );
+      const form = document.createElement("form");
+      form.method = "POST";
+      form.action = "https://crm.zoho.com/crm/WebToLeadForm";
+      form.acceptCharset = "UTF-8";
 
-      const data = await odooResponse.json();
-      console.log("Odoo submission successful:", data);
+      const fields = {
+        // 🔐 Zoho mandatory hidden fields
+        xnQsjsdp:
+          "591fa633814d0b0318cf3c93f44d6a40597e80f70db8a1fa0f9163cc34c13a8b",
+        xmIwtLD:
+          "b9a374b54b129c128646ab1e2e5ea1a15e7129f4b683e8e9a535878ec8d254ae83291483e3fc9ef35f51400408262393",
+        actionType: "TGVhZHM=",
+        returnURL: "https://infogenx.vercel.app",
 
-      // Submit to Google Forms
-      const googleFormUrl =
-        "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfyVw9o6-iQW88bgzL96jD6KHesu3V-J-QkOJQAKRYwVCDj0A/formResponse";
-      const params = new URLSearchParams();
-      params.append("entry.1583188992", formData.name);
-      params.append("entry.59106495", formData.contactNumber);
-      params.append("entry.1507836294", formData.email);
-      params.append("entry.1678940442", formData.location);
-      params.append("entry.645797029", formData.desiredService);
-      params.append("entry.2000705636", formData.message);
+        // 🧑 User form fields → Zoho Lead fields
+        "Last Name": formData.name,
+        Phone: formData.contactNumber,
+        Email: formData.email,
+        Country: formData.location,
+        Designation: formData.desiredService,
+        Description: formData.message,
+      };
 
-      await fetch(googleFormUrl, {
-        method: "POST",
-        mode: "no-cors",
-        body: params,
+      Object.entries(fields).forEach(([name, value]) => {
+        const input = document.createElement("input");
+        input.type = "hidden";
+        input.name = name;
+        input.value = value;
+        form.appendChild(input);
       });
 
-      console.log("Google Form submission successful");
+      document.body.appendChild(form);
+      form.submit();
 
-      // Show thank you message
       setShowThankYou(true);
-
-      // Reset form
       setFormData({
         name: "",
         contactNumber: "",
