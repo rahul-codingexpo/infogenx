@@ -171,13 +171,14 @@ const GetinTouch = () => {
         <div className="appdev-container">
           <div className="appdev-left">
             <h1>
-              Ready to Digitize Your Business Affordably? Contact Us Today!
+              Scale Smarter with an AI-Driven Business Audit Transform Your
+              Ecosystem with AI-Enabled Intelligence.
             </h1>
-            <p>
+            {/* <p>
               Still hanging back with uncertainties? However, no worries at all!
               Therefore, try our Free consulting and advice to see the results
               for yourself
-            </p>
+            </p> */}
             <div className="appdev-buttons">
               <button className="primary-btn">
                 Get Your FREE Consultation

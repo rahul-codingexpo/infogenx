@@ -76,19 +76,20 @@
 }
 .quote-btn:hover{
     color: #ffffff !important;
-    background: #eb6302;
-    
+    /* background: #eb6302; */
+        background: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110deg, #00123C 150deg, #00123C 180deg);
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
+
 }
 .quote-tooltip {
     position: absolute;
-    top: 110%;
+    top: 127%;
     left: 50%;
     transform: translateX(-50%);
     width: 280px;
-    background: #4e4e4e;
+    background: #077dc1;
     color: #fff;
     font-size: 13px;
     padding: 8px 10px;

@@ -93,7 +93,7 @@ const Header = () => {
             )}
           </div> */}
 
-          <Link to="/portfolio">Our work</Link>
+          <Link to="/portfolio">Portfolio</Link>
           {/* <Link to="/blog">Blog</Link>  */}
           {/* <Link to="/insights">Insights</Link> */}
           <div
@@ -113,7 +113,7 @@ const Header = () => {
             onMouseEnter={() => setContactOpen(true)}
             onMouseLeave={() => setContactOpen(false)}
           >
-            <span className="nav-link">Contact</span>
+            <span className="nav-link">Contact Us</span>
             {contactOpen && (
               <ContactDropdown closeMenu={() => setContactOpen(false)} />
             )}
