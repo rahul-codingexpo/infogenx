@@ -23,7 +23,7 @@
     font-weight: 800;
     line-height: 120%;
     margin-top: 0;
-    color: #171D27;
+    color: #00123c;
 }
 
 .about-label {
@@ -85,10 +85,10 @@
     font-size: 39px;
     margin-top: 0;
     font-weight: 800;
-    color: #171D27;
+    color: #00123c;
 }
 .about-who-bottom h3 span{
-    background: linear-gradient(89.95deg, #171d27 8.97%, #1b222f 33.19%, #f57037 89.61%);
+    background: linear-gradient(89.95deg, #00123c 8.97%, #00123c 33.19%, #f57037 89.61%);
         -webkit-text-fill-color: transparent;
         background-clip: text;
 }
