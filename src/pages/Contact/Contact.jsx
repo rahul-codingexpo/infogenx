@@ -9,7 +9,7 @@ const AuditContact = () => {
     fullName: "",
     company: "",
     bottleneck: "",
-    platform: "Zoho",
+    platform: "",
     goal: "",
     contact: "",
   });
@@ -96,9 +96,10 @@ const AuditContact = () => {
 
     formDataToSend.append(
       "Description",
-      `Bottleneck: ${formData.bottleneck}
-Platform: ${formData.platform}
-Goal: ${formData.goal}`,
+      `
+      Platform: ${formData.platform}
+      Bottleneck: ${formData.bottleneck}
+      Goal: ${formData.goal}`,
     );
 
     const isEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.contact);
@@ -160,29 +161,45 @@ Goal: ${formData.goal}`,
             <div className="audit-form-card">
               {/* ✅ FORM WRAPPER ADDED */}
               <form onSubmit={handleSubmit}>
-                <p className="form-line">
-                  Hi Infogenx! My name is
+                <p
+                  className="form-line"
+                  style={{ display: "flex", alignItems: "center" }}
+                >
+                  Hi Infogenx! My name is &nbsp;
                   <input
                     type="text"
                     name="fullName"
                     value={formData.fullName}
                     onChange={handleChange}
                     required
+                    style={{
+                      flex: 1,
+                      minWidth: "100px",
+                      paddingBottom: 0,
+                    }}
                   />
                 </p>
 
-                <p className="form-line">
-                  Company Name
+                <p
+                  className="form-line"
+                  style={{ display: "flex", alignItems: "center" }}
+                >
+                  Company Name &nbsp;
                   <input
                     type="text"
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
                     required
+                    style={{
+                      flex: 1,
+                      minWidth: "100px",
+                      paddingBottom: 0,
+                    }}
                   />
                 </p>
 
-                <p className="form-line">
+                <p className="form-line" style={{ paddingTop: "10px" }}>
                   Currently, our biggest bottleneck is
                   <input
                     type="text"
@@ -199,6 +216,7 @@ Goal: ${formData.goal}`,
                     value={formData.platform}
                     onChange={handleChange}
                   >
+                    <option disabled>Select</option>
                     <option>Zoho</option>
                     <option>Shopify</option>
                     <option>Odoo</option>

@@ -7,7 +7,7 @@
     max-width: 1350px;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.7fr 1fr;
     gap: 40px;
     align-items: flex-start;
 }
@@ -16,12 +16,12 @@
 .audit-left h1 {
     font-size: 34px;
     font-weight: 700;
-    color: #171d27;
+    color: #00123c;
     margin-bottom: 12px;
 }
 
 .audit-left h3 {
-    color: #4b5563;
+    color: #00123c;
     margin-bottom: 16px;
 }
 
