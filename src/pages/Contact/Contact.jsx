@@ -9,7 +9,7 @@ const AuditContact = () => {
     fullName: "",
     company: "",
     bottleneck: "",
-    platform: "",
+    platform: "Select",
     goal: "",
     contact: "",
   });
