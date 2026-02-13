@@ -12,7 +12,7 @@ const DigitalTransformation = () => {
     <>
       <Helmet>
         <title>
-          Digital Transformation Consulting for Australian Businesses | Infogenx
+          Digital Transformation for Australian Businesses | Infogenx
         </title>
         <meta
           name="description"

@@ -10,10 +10,9 @@ const AppDevExpertise = () => {
       <div className="appdev-expertise-container">
         {/* Heading */}
         <div className="appdev-expertise-header">
-          <span className="section-label">What We Do</span>
+          <span className="section-label">Zoho Platform Specialists</span>
           <h2>
-            Our Application <br />
-            Development Expertise
+            End-to-end Zoho One deployment and optimisation for Australia.
           </h2>
         </div>
 

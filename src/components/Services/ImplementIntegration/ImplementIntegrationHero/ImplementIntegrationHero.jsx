@@ -13,15 +13,16 @@ const AppDevHero = () => {
         {/* LEFT CONTENT */}
 
         <div className="appdev-left">
-          <h1>Analytics & Data Engineering</h1>
+          <h1>Deploy With Confidence</h1>
 
           <p>
-            Modern data platforms, BI, and AI-assisted insights using Azure,
-            Fabric, and Microsoft analytics ecosystems.
+            End-to-end platform implementation and API integration services
+            delivering Microsoft, Zoho, or Odoo solutions for Australian
+            enterprises.
           </p>
 
           <div className="appdev-buttons">
-            <button className="primary-btn">Get Your FREE Consultation</button>
+            <button className="primary-btn">Start Implementation</button>
 
             <button className="secondary-btn">
               Talk to an Expert <span>↗</span>

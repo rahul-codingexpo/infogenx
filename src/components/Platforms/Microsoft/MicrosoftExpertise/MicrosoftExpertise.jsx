@@ -10,10 +10,9 @@ const AppDevExpertise = () => {
       <div className="appdev-expertise-container">
         {/* Heading */}
         <div className="appdev-expertise-header">
-          <span className="section-label">What We Do</span>
+          <span className="section-label">Microsoft Platform Expertise</span>
           <h2>
-            Our Application <br />
-            Development Expertise
+            Power Platform automation and Azure AI for Australian businesses.
           </h2>
         </div>
 

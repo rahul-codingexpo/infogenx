@@ -64,36 +64,36 @@ const Expertise = () => {
           </h2>
 
           <p className="expertise-description">
-            We help businesses build scalable applications, intelligent
-            automation, and data-driven systems using modern low-code and cloud
-            platforms.
+            We help Australian businesses build scalable AI-enabled
+            applications, intelligent automation workflows, and analytics-driven
+            systems using trusted platforms including Microsoft, Zoho, and Odoo.
           </p>
         </div>
 
         <div className="expertise-cards">
           <div className="expertise-card first-card">
-            <h4>Low-Code Application Development</h4>
+            <h4>AI-Enabled Application Development </h4>
             <p>
-              Build flexible, business-ready applications that accelerate
-              delivery and adapt as your needs evolve.
+              Custom applications engineered for seamless integration, security,
+              and business growth across your chosen platform.
             </p>
             <img src={card1} alt="" />
           </div>
 
           <div className="expertise-card center-card">
-            <h4>Intelligent Automation</h4>
+            <h4>Intelligent Automation for Repetitive Work</h4>
             <p>
-              Simplify complex workflows, eliminate repetitive tasks, and
-              improve operational efficiency with automation.
+              AI-driven workflow orchestration that eliminates repetitive tasks,
+              reduces errors, and accelerates operational efficiency.
             </p>
             <img src={card2} alt="" />
           </div>
 
           <div className="expertise-card last-card">
-            <h4>Analytics & AI</h4>
+            <h4>AI-Powered Business Insights</h4>
             <p>
-              Transform business data into actionable insights that support
-              smarter, faster decision-making.
+              AI powered Analytics and embedded intelligence that turn raw data
+              into predictive insights and confident decision-making.
             </p>
             <img src={card3} alt="" />
           </div>

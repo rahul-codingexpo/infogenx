@@ -22,8 +22,10 @@ const AppDevBusinessImpact = () => {
             <div className="impact-content">
               <h4>Outcome-Driven Solutions</h4>
               <p>
-                We focus on delivering measurable results – faster
-                time-to-market, reduced costs, and scalable systems.
+                {/* We focus on delivering measurable results – faster
+                time-to-market, reduced costs, and scalable systems. */}
+                Australian-led consulting with local accountability and
+                nationwide delivery
               </p>
             </div>
           </div>
@@ -35,8 +37,10 @@ const AppDevBusinessImpact = () => {
             <div className="impact-content">
               <h4>Low-Code & Enterprise Expertise</h4>
               <p>
-                We combine bleeding-edge platforms with engineering experience
-                to meet real business needs.
+                {/* We combine bleeding-edge platforms with engineering experience
+                to meet real business needs. */}
+                Deep platform expertise across Microsoft Power Automate, Zoho
+                Flow, and Odoo automation
               </p>
             </div>
           </div>
@@ -48,8 +52,10 @@ const AppDevBusinessImpact = () => {
             <div className="impact-content">
               <h4>Secure, Scalable, and Compliant</h4>
               <p>
-                Solutions designed to meet industry standards and handle
-                enterprise-grade scale.
+                {/* Solutions designed to meet industry standards and handle
+                enterprise-grade scale. */}
+                Proven outcomes: up to 70% reduction in manual effort and
+                measurable ROI
               </p>
             </div>
           </div>
@@ -61,8 +67,10 @@ const AppDevBusinessImpact = () => {
             <div className="impact-content">
               <h4>Cross-Industry Experience</h4>
               <p>
-                We serve diverse sectors, including finance, logistics,
-                healthcare, and retail.
+                {/* We serve diverse sectors, including finance, logistics,
+                healthcare, and retail. */}
+                Comprehensive All-A framework delivering end-to-end
+                transformation for Australian enterprises
               </p>
             </div>
           </div>

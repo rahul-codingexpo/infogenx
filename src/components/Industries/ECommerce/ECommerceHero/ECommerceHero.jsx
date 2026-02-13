@@ -13,15 +13,12 @@ const AppDevHero = () => {
         {/* LEFT CONTENT */}
 
         <div className="appdev-left">
-          <h1>
-            Application Development <br />
-            That Accelerates Growth <br />
-            and Innovation
-          </h1>
+          <h1>E-Commerce Scaled Smartly</h1>
 
           <p>
-            Deliver scalable, secure, and high-impact applications quickly using
-            low-code technologies and expert engineering.
+            Conversion optimisation and personalisation automation for
+            e-commerce Australia – seamless Zoho or Microsoft integration for
+            growth.
           </p>
 
           <div className="appdev-buttons">

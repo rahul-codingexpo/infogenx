@@ -9,8 +9,10 @@ const AppDevExpertise = () => {
       <div className="appdev-expertise-container">
         {/* Heading */}
         <div className="appdev-expertise-header">
-          <span className="section-label">What We Deliver</span>
-          <h2>Core IPA Capabilities</h2>
+          <span className="section-label">Support & Optimisation</span>
+          <h2>
+            Continuous improvement and rapid support for Australian platforms.
+          </h2>
         </div>
 
         {/* Expertise grid */}

@@ -13,15 +13,11 @@ const AppDevHero = () => {
         {/* LEFT CONTENT */}
 
         <div className="appdev-left">
-          <h1>
-            Application Development <br />
-            That Accelerates Growth <br />
-            and Innovation
-          </h1>
+          <h1>Finance Secured Transformed</h1>
 
           <p>
-            Deliver scalable, secure, and high-impact applications quickly using
-            low-code technologies and expert engineering.
+            Risk analytics and compliance automation for finance Australia –
+            secure AI solutions on Microsoft Azure or Dynamics platforms.
           </p>
 
           <div className="appdev-buttons">

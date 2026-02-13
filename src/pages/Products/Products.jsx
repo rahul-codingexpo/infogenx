@@ -96,27 +96,28 @@ const Products = () => {
         ></img>
         <div className="product-WebDev-hero-container">
           <h1 className="product-products-hero-heading">
-            Products for all your Business Needs
+            Products That Perform
           </h1>
 
           <p className="product-WebDev-hero-description">
-            Business made easy and productive with our adaptable products, Now
-            enjoy your business.
+            Ready-to-deploy intelligent software products including ERP, CRM,
+            and industry-specific systems customisable for Australian
+            businesses.
           </p>
 
           <div className="WebDev-hero-buttons">
             <button className="product-WebDev-primary-btn">
-              Get Your FREE Consultation
+              Transform your product
             </button>
             <button className="product-WebDev-secondary-btn">
               Talk to an Expert
             </button>
           </div>
-          <p className="product-WebDev-hero-description-bottom">
+          {/* <p className="product-WebDev-hero-description-bottom">
             At Infogenx, our products are designed to empower businesses across
             industries with intelligent, scalable, and ready-to-deploy digital
             solutions.
-          </p>
+          </p> */}
         </div>
       </section>
 

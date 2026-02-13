@@ -13,18 +13,20 @@ const AppDevHero = () => {
         {/* LEFT CONTENT */}
 
         <div className="appdev-left">
-          <h1>Intelligent Process Automation</h1>
+          <h1>Optimise Continuously</h1>
 
           <p>
-            Workflow automation, low-code solutions, and AI-assisted process
-            optimisation using Microsoft Power Platform.
+            Platform optimisation, issue resolution, and performance enhancement
+            services for Microsoft, Zoho, and Odoo users across Australia.
           </p>
 
           <div className="appdev-buttons">
-            <button className="primary-btn">Get Your FREE Consultation</button>
+            <button className="primary-btn">
+              Request Optimisation Review{" "}
+            </button>
 
             <button className="secondary-btn automation-secondary-btn">
-              Talk to an Automation Expert <span>↗</span>
+              Talk to an Expert <span>↗</span>
             </button>
           </div>
         </div>

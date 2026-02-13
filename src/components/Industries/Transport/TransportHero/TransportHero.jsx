@@ -13,15 +13,12 @@ const AppDevHero = () => {
         {/* LEFT CONTENT */}
 
         <div className="appdev-left">
-          <h1>
-            Application Development <br />
-            That Accelerates Growth <br />
-            and Innovation
-          </h1>
+          <h1>Logistics Optimised Fast</h1>
 
           <p>
-            Deliver scalable, secure, and high-impact applications quickly using
-            low-code technologies and expert engineering.
+            Route optimisation and fleet automation for transport logistics
+            Australia – real-time tracking and workflow intelligence on
+            preferred platforms.
           </p>
 
           <div className="appdev-buttons">

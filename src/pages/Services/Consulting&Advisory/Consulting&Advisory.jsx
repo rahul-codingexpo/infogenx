@@ -11,8 +11,7 @@ const ApplicationDev = () => {
     <>
       <Helmet>
         <title>
-          AI & Automation Consulting & Platform Advisory Services | Infogenx
-          Australia
+          IT Consulting & Technology Advisory Services | Infogenx Australia
         </title>
         <meta
           name="description"

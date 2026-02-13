@@ -13,15 +13,16 @@ const AppDevHero = () => {
         {/* LEFT CONTENT */}
 
         <div className="appdev-left">
-          <h1>AI-enabled Application Development</h1>
+          <h1>Odoo Efficiency Unlocked</h1>
 
           <p>
-            Cloud-native, secure, and scalable business applications across web,
-            mobile, and enterprise platforms.
+            Odoo ERP implementation, custom modules, and workflow automation
+            designed for Australian organisations requiring operational control
+            and scalability.
           </p>
 
           <div className="appdev-buttons">
-            <button className="primary-btn">Get Your FREE Consultation</button>
+            <button className="primary-btn">Explore Odoo Solutions </button>
 
             <button className="secondary-btn">
               Talk to an Expert <span>↗</span>

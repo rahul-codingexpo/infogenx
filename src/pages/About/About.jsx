@@ -10,16 +10,15 @@ const About = () => {
     <>
       <Helmet>
         <title>
-          AI-Enabled Applications & Automation Solutions for Australian
-          Businesses | Infogenx
+          About Infogenx | Australian IT Consulting & Engineering Firm
         </title>
         <meta
           name="description"
-          content="InfogenX: Your Australian digital transformation partner for AI-powered Solutions development, analytics, automation & cloud solutions. Custom software to drive growth & efficiency – free consultation available."
+          content="Learn about Infogenx—our story, leadership, partnerships, and mission to deliver intelligent, outcome-driven digital solutions for businesses."
         />
         <meta
           name="keywords"
-          content="intelligent automation consulting Australia,business process automation with AI,AI-driven workflow automation,Strategic Exclusion"
+          content="about Infogenx, Australian IT consulting company, digital engineering firm"
         />
       </Helmet>
       <Header />

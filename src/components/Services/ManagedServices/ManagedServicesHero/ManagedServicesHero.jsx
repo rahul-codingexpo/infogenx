@@ -13,15 +13,15 @@ const AppDevHero = () => {
         {/* LEFT CONTENT */}
 
         <div className="appdev-left">
-          <h1>AI-enabled Application Development</h1>
+          <h1>Support That Scales</h1>
 
           <p>
-            Cloud-native, secure, and scalable business applications across web,
-            mobile, and enterprise platforms.
+            Proactive managed services and monitoring for Microsoft, Zoho, and
+            Odoo platforms keeping Australian businesses running smoothly.
           </p>
 
           <div className="appdev-buttons">
-            <button className="primary-btn">Get Your FREE Consultation</button>
+            <button className="primary-btn">Explore Managed Services </button>
 
             <button className="secondary-btn">
               Talk to an Expert <span>↗</span>

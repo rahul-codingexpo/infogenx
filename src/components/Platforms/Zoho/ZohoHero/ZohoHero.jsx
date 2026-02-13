@@ -13,15 +13,16 @@ const AppDevHero = () => {
         {/* LEFT CONTENT */}
 
         <div className="appdev-left">
-          <h1>AI-enabled Application Development</h1>
+          <h1>Zoho Mastery Achieved</h1>
 
           <p>
-            Cloud-native, secure, and scalable business applications across web,
-            mobile, and enterprise platforms.
+            Zoho CRM implementation, workflow automation, and analytics
+            engineering customised for growing Australian businesses needing
+            agility and integration.
           </p>
 
           <div className="appdev-buttons">
-            <button className="primary-btn">Get Your FREE Consultation</button>
+            <button className="primary-btn">Explore Zoho Solutions</button>
 
             <button className="secondary-btn">
               Talk to an Expert <span>↗</span>

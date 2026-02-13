@@ -4,28 +4,28 @@ const steps = [
   {
     number: "1",
     title: "Discovery & Strategy",
-    desc: "We understand business goals, users, and market context to shape the right solution.",
+    desc: "Process discovery and mapping to identify high-impact automation opportunities",
   },
   {
     number: "2",
     title: "User-Centric Design",
-    desc: "We prioritize intuitive experiences that drive adoption and value.",
+    desc: "AI workflow design and deployment with governance and compliance built in",
   },
   {
     number: "3",
     title: "Agile Engineering",
-    desc: "Iterative development ensures quick delivery, constant feedback, and continuous improvement.",
+    desc: "Continuous optimisation and monitoring for sustained efficiency gains",
   },
-  {
-    number: "4",
-    title: "Quality Assurance",
-    desc: "Rigorous testing ensures security, performance, and reliability.",
-  },
-  {
-    number: "5",
-    title: "Deployment & Support",
-    desc: "We launch with confidence and provide ongoing support to keep your systems running smoothly.",
-  },
+  // {
+  //   number: "4",
+  //   title: "Quality Assurance",
+  //   desc: "Rigorous testing ensures security, performance, and reliability.",
+  // },
+  // {
+  //   number: "5",
+  //   title: "Deployment & Support",
+  //   desc: "We launch with confidence and provide ongoing support to keep your systems running smoothly.",
+  // },
 ];
 
 const AppDevApproach = () => {

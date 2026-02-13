@@ -10,10 +10,9 @@ const AppDevExpertise = () => {
       <div className="appdev-expertise-container">
         {/* Heading */}
         <div className="appdev-expertise-header">
-          <span className="section-label">What We Do</span>
+          <span className="section-label">Consulting & Advisory</span>
           <h2>
-            Our Application <br />
-            Development Expertise
+            Strategic guidance and roadmap planning for Australian businesses.
           </h2>
         </div>
 

@@ -8,7 +8,7 @@ import ServicesDropdown from "./ServicesDropdown";
 import SolutionsDropdown from "./SolutionsDropdown";
 import PlatformsDropdown from "./PlatformsDropdown";
 import InsightDropdown from "./InsightDropdown";
-import ContactDropdown from "./ContactDropdown";
+// import ContactDropdown from "./ContactDropdown";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
@@ -17,7 +17,7 @@ const Header = () => {
   const [solutionsOpen, setSolutionsOpen] = useState(false);
   const [platformsOpen, setPlatformsOpen] = useState(false);
   const [insightOpen, setInsightOpen] = useState(false);
-  const [contactOpen, setContactOpen] = useState(false);
+  // const [contactOpen, setContactOpen] = useState(false);
 
   return (
     <header className="header">
@@ -107,8 +107,8 @@ const Header = () => {
             )}
           </div>
 
-          {/* <Link to="/contact">Contact</Link> */}
-          <div
+          <Link to="/contact-us">Contact</Link>
+          {/* <div
             className="nav-item"
             onMouseEnter={() => setContactOpen(true)}
             onMouseLeave={() => setContactOpen(false)}
@@ -117,7 +117,7 @@ const Header = () => {
             {contactOpen && (
               <ContactDropdown closeMenu={() => setContactOpen(false)} />
             )}
-          </div>
+          </div> */}
         </nav>
         <div className="quote-wrapper">
           <Link to="/request-quote" className="quote-btn desktop-only">

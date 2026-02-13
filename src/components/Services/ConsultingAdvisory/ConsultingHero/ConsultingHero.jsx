@@ -13,15 +13,16 @@ const AppDevHero = () => {
         {/* LEFT CONTENT */}
 
         <div className="appdev-left">
-          <h1>Applied Artificial Intelligence</h1>
+          <h1>Strategy That Works</h1>
 
           <p>
-            Practical AI embedded into applications, automation, and
-            analytics—secure, responsible, and business-ready.
+            Australian digital transformation consulting and platform strategy
+            advisory helping organisations choose and roadmap Microsoft, Zoho,
+            or Odoo solutions.
           </p>
 
           <div className="appdev-buttons">
-            <button className="primary-btn">Get Your FREE Consultation</button>
+            <button className="primary-btn">Book Advisory Session </button>
 
             <button className="secondary-btn">
               Talk to an Expert <span>↗</span>

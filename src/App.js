@@ -4,6 +4,7 @@ import ScrollToTop from "./components/ScrollTop/ScrollToTop";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Products from "./pages/Products/Products";
+import Contact from "./pages/Contact/Contact";
 import GetinTouch from "./pages/Contact/GetinTouch/GetinTouch";
 import GlobalLocations from "./pages/Contact/GlobalLocations/GlobalLocations";
 import ImplementationIntegration from "./pages/Services/ImplementationIntegration/ImplementationIntegration";
@@ -54,6 +55,7 @@ function App() {
           <Route path="/careers" element={<Career />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-conditions" element={<TermsConditions />} />
+          <Route path="/contact-us" element={<Contact />} />
           <Route
             path="/products/stock-management-system"
             element={<IgxStock />}

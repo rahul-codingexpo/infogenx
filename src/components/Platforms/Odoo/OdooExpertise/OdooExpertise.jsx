@@ -10,10 +10,9 @@ const AppDevExpertise = () => {
       <div className="appdev-expertise-container">
         {/* Heading */}
         <div className="appdev-expertise-header">
-          <span className="section-label">What We Do</span>
+          <span className="section-label">Odoo ERP Partners</span>
           <h2>
-            Our Application <br />
-            Development Expertise
+            Full Odoo deployment and customisation for Australian enterprises.
           </h2>
         </div>
 

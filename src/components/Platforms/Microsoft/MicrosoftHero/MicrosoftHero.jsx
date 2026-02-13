@@ -13,15 +13,18 @@ const AppDevHero = () => {
         {/* LEFT CONTENT */}
 
         <div className="appdev-left">
-          <h1>AI-enabled Application Development</h1>
+          <h1>Microsoft Excellence Delivered</h1>
 
           <p>
-            Cloud-native, secure, and scalable business applications across web,
-            mobile, and enterprise platforms.
+            Microsoft Power Platform automation, Azure AI solutions, and
+            Dynamics implementation tailored for Australian enterprises seeking
+            governance and growth.
           </p>
 
           <div className="appdev-buttons">
-            <button className="primary-btn">Get Your FREE Consultation</button>
+            <button className="primary-btn">
+              Explore Microsoft Solutions{" "}
+            </button>
 
             <button className="secondary-btn">
               Talk to an Expert <span>↗</span>
