@@ -107,7 +107,7 @@ const Header = () => {
             )}
           </div>
 
-          <Link to="/contact-us">Contact</Link>
+          <Link to="/contact-us">Contact Us</Link>
           {/* <div
             className="nav-item"
             onMouseEnter={() => setContactOpen(true)}
