@@ -239,10 +239,134 @@
 //=========================updated code ======================
 
 // StrategicContact.jsx
-import React from "react";
 import "./Contact.css";
+import React, { useState } from "react";
 
 const StrategicContact = () => {
+  const [showThankYou, setShowThankYou] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [formData, setFormData] = useState({
+    fullName: "",
+    company: "",
+    contactEmail: "",
+    contactPhone: "",
+    designation: "",
+    orgSize: "",
+    objective: "",
+    ecosystem: [],
+    budget: "",
+    challenge: "",
+  });
+
+  // ✅ Text + dropdown change
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  // ✅ Checkbox change
+  const handleCheckbox = (e) => {
+    const { value, checked } = e.target;
+
+    if (checked) {
+      setFormData({
+        ...formData,
+        ecosystem: [...formData.ecosystem, value],
+      });
+    } else {
+      setFormData({
+        ...formData,
+        ecosystem: formData.ecosystem.filter((item) => item !== value),
+      });
+    }
+  };
+
+  // ✅ Submit
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // if (!formData.fullName || !formData.contact) {
+    //   alert("Please fill Full Name and Email/Phone");
+    //   return;
+    // }
+
+    setLoading(true);
+
+    const fd = new FormData();
+
+    // Zoho hidden
+    fd.append(
+      "xnQsjsdp",
+      "7312cd03445ee78b709bfbc6cb14150090b922896223c38c5f4f14d874cfedd9",
+    );
+    fd.append(
+      "xmIwtLD",
+      "0add789db63115e56bb6a38e9d40fa603e73a23a36c2c83eccd1cd60f6d3cdb715d4f89b2855898858ccff31d0acee55",
+    );
+    fd.append("actionType", "TGVhZHM=");
+    fd.append("returnURL", "https://infogenx.vercel.app/contact-us");
+
+    // Main Zoho fields
+    fd.append("Last Name", formData.fullName || "Strategic Lead");
+    fd.append("Company", formData.company || "Not Provided");
+
+    fd.append(
+      "Description",
+      `
+Designation: ${formData.designation}
+Organisation Size: ${formData.orgSize}
+Primary Objective: ${formData.objective}
+Budget: ${formData.budget}
+Challenge: ${formData.challenge}
+Ecosystem: ${formData.ecosystem.join(", ")}
+      `,
+    );
+
+    // Email or Phone
+    // const isEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.contact);
+    if (formData.contactEmail) {
+      fd.append("Email", formData.contactEmail);
+    }
+
+    if (formData.contactPhone) {
+      fd.append("Phone", formData.contactPhone);
+    }
+
+    try {
+      await fetch("https://crm.zoho.com/crm/WebToLeadForm", {
+        method: "POST",
+        body: fd,
+        mode: "no-cors",
+      });
+
+      // Popup
+      setShowThankYou(true);
+      document.body.style.overflow = "hidden";
+
+      // Reset
+      setFormData({
+        fullName: "",
+        company: "",
+        contactEmail: "",
+        contactPhone: "",
+        designation: "",
+        orgSize: "",
+        objective: "",
+        ecosystem: [],
+        budget: "",
+        challenge: "",
+      });
+
+      setTimeout(() => {
+        window.location.href = "/contact-us";
+      }, 3000);
+    } catch (err) {
+      alert("Something went wrong");
+    }
+
+    setLoading(false);
+  };
+
   return (
     <section className="strategy-section">
       <div className="strategy-container">
@@ -298,102 +422,155 @@ const StrategicContact = () => {
         </div>
 
         {/* RIGHT FORM */}
-        <div className="strategy-form-card">
-          <h2>Request a Confidential Strategy Consultation</h2>
+        <form onSubmit={handleSubmit}>
+          <div className="strategy-form-card">
+            <h2>Request a Confidential Strategy Consultation</h2>
 
-          {/* STEP 1 */}
-          <div className="form-step">
-            {/* <h5>Step 1 — Identity & Authority</h5> */}
-            <div className="grid-2">
-              <input type="text" placeholder="Full Name" />
-              <input type="email" placeholder="Business Email" />
-              <input type="text" placeholder="Company Name" />
-              <select>
-                <option>Designation / Role</option>
-                <option>CEO</option>
-                <option>COO</option>
-                <option>CIO</option>
-                <option>Director</option>
-                <option>Other</option>
+            {/* STEP 1 */}
+            <div className="form-step">
+              {/* <h5>Step 1 — Identity & Authority</h5> */}
+              <div className="grid-2">
+                <input
+                  name="fullName"
+                  value={formData.fullName}
+                  onChange={handleChange}
+                  placeholder="Full Name"
+                />
+                <input
+                  type="email"
+                  name="contactEmail"
+                  value={formData.contactEmail}
+                  placeholder="Business Email"
+                  onChange={handleChange}
+                />
+                <input
+                  name="company"
+                  value={formData.company}
+                  onChange={handleChange}
+                  placeholder="Company Name"
+                />
+                <select
+                  name="designation"
+                  value={formData.designation}
+                  onChange={handleChange}
+                >
+                  <option value="">Designation / Role</option>
+                  <option>CEO</option>
+                  <option>COO</option>
+                  <option>CIO</option>
+                  <option>Director</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+
+            {/* STEP 2 */}
+            <div className="form-step">
+              {/* <h5>Step 2 — Ecosystem & Transformation Goals</h5> */}
+
+              <select
+                name="orgSize"
+                value={formData.orgSize}
+                onChange={handleChange}
+              >
+                <option>Organisation Size</option>
+                <option>10–50</option>
+                <option>50–200</option>
+                <option>200–1000</option>
+                <option>1000+</option>
+              </select>
+
+              <select
+                style={{ marginTop: "20px" }}
+                name="objective"
+                value={formData.objective}
+                onChange={handleChange}
+              >
+                <option>Primary Business Objective</option>
+                <option>Operational Efficiency</option>
+                <option>Revenue Growth</option>
+                <option>Cost Optimisation</option>
+                <option>AI Adoption</option>
+                <option>System Consolidation</option>
+              </select>
+
+              {/* Ecosystem */}
+              <div className="checkbox-group">
+                {[
+                  "Microsoft",
+                  "Zoho",
+                  "Shopify",
+                  "Odoo",
+                  "Salesforce",
+                  "Custom-built",
+                  "Manual / Excel",
+                ].map((item) => (
+                  <label key={item}>
+                    <input
+                      type="checkbox"
+                      value={item}
+                      checked={formData.ecosystem.includes(item)}
+                      onChange={handleCheckbox}
+                    />
+                    {item}
+                  </label>
+                ))}
+              </div>
+
+              <select
+                style={{ marginTop: "20px" }}
+                name="budget"
+                value={formData.budget}
+                onChange={handleChange}
+              >
+                <option>Estimated Transformation Budget (AUD)</option>
+                <option>Under $100k</option>
+                <option>$100k – $250k</option>
+                <option>$250k – $500k</option>
+                <option>$500k+</option>
               </select>
             </div>
-          </div>
 
-          {/* STEP 2 */}
-          <div className="form-step">
-            {/* <h5>Step 2 — Ecosystem & Transformation Goals</h5> */}
-
-            <select>
-              <option>Organisation Size</option>
-              <option>10–50</option>
-              <option>50–200</option>
-              <option>200–1000</option>
-              <option>1000+</option>
-            </select>
-
-            <select style={{ marginTop: "20px" }}>
-              <option>Primary Business Objective</option>
-              <option>Operational Efficiency</option>
-              <option>Revenue Growth</option>
-              <option>Cost Optimisation</option>
-              <option>AI Adoption</option>
-              <option>System Consolidation</option>
-            </select>
-
-            <div className="checkbox-group">
-              <label>
-                <input type="checkbox" /> Microsoft
-              </label>
-              <label>
-                <input type="checkbox" /> Zoho
-              </label>
-              <label>
-                <input type="checkbox" /> Shopify
-              </label>
-              <label>
-                <input type="checkbox" /> Odoo
-              </label>
-              <label>
-                <input type="checkbox" /> Salesforce
-              </label>
-              <label>
-                <input type="checkbox" /> Custom-built
-              </label>
-              <label>
-                <input type="checkbox" /> Manual / Excel
-              </label>
+            {/* STEP 3 */}
+            <div className="form-step">
+              {/* <h5>Step 3 — Strategic Context</h5> */}
+              <textarea
+                placeholder="Describe your current transformation challenge"
+                rows="4"
+                name="challenge"
+                value={formData.challenge}
+                onChange={handleChange}
+              ></textarea>
+              <input
+                type="text"
+                placeholder="Phone Number (International Format)"
+                style={{ marginTop: "20px" }}
+                name="contactPhone"
+                value={formData.contactPhone}
+                onChange={handleChange}
+              />
             </div>
 
-            <select style={{ marginTop: "20px" }}>
-              <option>Estimated Transformation Budget (AUD)</option>
-              <option>Under $100k</option>
-              <option>$100k – $250k</option>
-              <option>$250k – $500k</option>
-              <option>$500k+</option>
-            </select>
+            {/* <button className="strategy-btn">Request Strategy Briefing</button> */}
+            <button disabled={loading} className="strategy-btn">
+              {loading ? "Submitting..." : "Request Strategy Briefing"}
+            </button>
+
+            <p className="confidential-note">
+              All consultations are conducted under strict NDA protocols to
+              safeguard proprietary operational data and competitive advantage.
+            </p>
           </div>
-
-          {/* STEP 3 */}
-          <div className="form-step">
-            {/* <h5>Step 3 — Strategic Context</h5> */}
-            <textarea
-              placeholder="Describe your current transformation challenge"
-              rows="4"
-            ></textarea>
-            <input
-              type="text"
-              placeholder="Phone Number (International Format)"
-              style={{ marginTop: "20px" }}
-            />
+        </form>
+        {showThankYou && (
+          <div className="thankyou-overlay">
+            <div className="thankyou-popup">
+              <h2>🎉 Thank You!</h2>
+              <p>Your request has been submitted...</p>
+              <p>Our team will contact you shortly.</p>
+            </div>
           </div>
-
-          <button className="strategy-btn">Request Strategy Briefing</button>
-
-          <p className="confidential-note">
-            All consultations are conducted under strict NDA protocols to
-            safeguard proprietary operational data and competitive advantage.
-          </p>
-        </div>
+        )}
       </div>
     </section>
   );
