@@ -120,8 +120,8 @@ const Header = () => {
           </div> */}
         </nav>
         <div className="quote-wrapper">
-          <Link to="/request-quote" className="quote-btn desktop-only">
-            Architect your Intelligence
+          <Link to="/contact-us" className="quote-btn desktop-only">
+            Request Strategy Briefing
           </Link>
           <span className="quote-tooltip">
             Request a tailored quote for smart app Automation and Analytics

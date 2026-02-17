@@ -1,4 +1,4 @@
-.audit-section {
+/* .audit-section {
     background: #fff6f0;
     padding: 150px 20px;
 }
@@ -13,7 +13,7 @@
 }
 
 /* LEFT */
-.audit-left h1 {
+/* .audit-left h1 {
     font-size: 34px;
     font-weight: 700;
     color: #00123c;
@@ -47,10 +47,10 @@
 .audit-left li {
     margin-bottom: 8px;
     color: #444;
-}
+} */
 
 /* RIGHT */
-.audit-right {
+/* .audit-right {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
@@ -108,10 +108,10 @@
                 #f36b2a 100%);
         background-origin: border-box;
         background-clip: padding-box, border-box;
-}
+} */
 
 /* SIDE CARDS */
-.audit-side-cards {
+/* .audit-side-cards {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -152,10 +152,10 @@
     font-size: 13px;
     font-weight: 500;
     color: #333;
-}
+} */
 
 /* 📱 RESPONSIVE */
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
     .audit-container {
         grid-template-columns: 1fr;
     }
@@ -196,5 +196,215 @@
     to {
         transform: scale(1);
         opacity: 1;
+    }
+}  */
+
+/* ================= StrategicContact.css ================= */
+
+.strategy-section {
+    background: radial-gradient(circle at 20% 20%, #1e293b, #0f172a 60%);
+    padding: 120px 24px;
+    color: #fff;
+    font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+.strategy-container {
+    max-width: 1280px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.eyebrow {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #94a3b8;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.strategy-left h1 {
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 28px;
+}
+
+.strategy-left h1 span {
+    color: #d33e00;
+}
+
+.subtitle {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #cbd5e1;
+    margin-bottom: 40px;
+    max-width: 540px;
+}
+
+.lux-divider {
+    height: 1px;
+    /* width: 80px; */
+    background: linear-gradient(to right, #d33e00, transparent);
+    margin-bottom: 40px;
+}
+
+.fast-facts,
+.did-you-know {
+    background: rgba(255, 255, 255, 0.04);
+    padding: 28px;
+    border-radius: 18px;
+    margin-bottom: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.fast-facts h3,
+.did-you-know h3 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+    color: #f1f5f9;
+}
+
+.fast-facts ul {
+    padding-left: 18px;
+    line-height: 1.7;
+    color: #cbd5e1;
+}
+
+.did-you-know p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #cbd5e1;
+}
+
+.strategy-form-card {
+    background: rgba(255, 255, 255, 0.06);
+    padding: 50px;
+    border-radius: 24px;
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.strategy-form-card h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.form-step {
+    margin-bottom: 36px;
+}
+
+.form-step h5 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #94a3b8;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+input,
+textarea,select {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+select option{
+    width: 100%;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        background: rgba(255, 255, 255, 0.05) !important;
+        color: blue;
+        font-size: 14px;
+        transition: all 0.3s ease;
+
+}
+.checkbox-group input{
+    width: auto;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #d33e00;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #94a3b8;
+}
+
+.checkbox-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #cbd5e1;
+}
+
+.strategy-btn {
+    width: 100%;
+    padding: 16px;
+    border-radius: 40px;
+    border: none;
+    background: conic-gradient(at 50% 0%, #AC3300 0deg, #EB632A 90deg, #a53606 110deg, #00123C 150deg, #00123C 180deg);;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 30px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.strategy-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(249, 115, 22, 0.3);
+}
+
+.confidential-note {
+    font-size: 12px;
+    margin-top: 20px;
+    color: #94a3b8;
+    line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+    .strategy-container {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .strategy-form-card {
+        padding: 36px;
     }
 }
