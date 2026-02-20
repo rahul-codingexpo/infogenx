@@ -231,8 +231,8 @@ margin-top: 0;
 }
 .float-icon4 {
     position: absolute;
-    width: 64px;
-    height: 64px;
+    width: 50px;
+    height: 50px;
     opacity: 1;
 
 }
@@ -288,8 +288,8 @@ margin-top: 0;
 }
 
 .icon-4 {
-    top: 150px;
-    left: 4%;
+    top: 160px;
+    left: 20%;
 }
 
 /* Responsive Design for tablet */

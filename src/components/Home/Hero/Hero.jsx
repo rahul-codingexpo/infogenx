@@ -2,7 +2,7 @@ import "./Hero.css";
 import aiIcon from "../../../assets/images/aiIcon.png";
 import automationIcon from "../../../assets/images/automationIcon.png";
 import analyticsIcon from "../../../assets/images/analyticalIcon.png";
-import AiSetting from "../../../assets/images/Ai-setting.png";
+import AiSetting from "../../../assets/images/ICONinfogenx1.png";
 import heroVideo from "../../../assets/videos/herovideobg.mp4";
 import MicrosoftImg from "../../../assets/images/microsoft (2).png";
 import ZohoImg from "../../../assets/images/zoho (2).png";
@@ -97,7 +97,7 @@ const Hero = () => {
         <img
           src={AiSetting}
           alt="Automation"
-          className="float-icon2 float-horizontal icon-4"
+          className="float-icon4 float-horizontal icon-4"
         />
       </div>
     </section>

@@ -1,6 +1,8 @@
 import "./HealthcareImpactCTA.css";
+import { useNavigate } from "react-router-dom";
 import Correct from "../../../../assets/images/correct.png";
 const AppDevImpactCTA = () => {
+  const navigate = useNavigate();
   return (
     <section className="impact-cta-section">
       <div className="impact-cta-container">
@@ -16,8 +18,16 @@ const AppDevImpactCTA = () => {
           </p>
 
           <div className="impact-buttons">
-            <button className="primary-btn">Get Your FREE Consultation</button>
-            <button className="secondary-btn">
+            <button
+              className="primary-btn"
+              onClick={() => navigate("/contact-us")}
+            >
+              Get Your FREE Consultation
+            </button>
+            <button
+              className="secondary-btn"
+              onClick={() => navigate("/contact-us")}
+            >
               Talk to an Expert <span>↗</span>
             </button>
           </div>
