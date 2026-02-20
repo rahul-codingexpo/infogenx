@@ -241,6 +241,8 @@
 // StrategicContact.jsx
 import "./Contact.css";
 import React, { useState } from "react";
+import Header from "../../components/header/Header";
+import Footer from "../../components/Footer/Footer";
 
 const StrategicContact = () => {
   const [showThankYou, setShowThankYou] = useState(false);
@@ -368,211 +370,216 @@ Ecosystem: ${formData.ecosystem.join(", ")}
   };
 
   return (
-    <section className="strategy-section">
-      <div className="strategy-container">
-        {/* LEFT CONTENT */}
-        <div className="strategy-left">
-          <span className="eyebrow">GLOBAL AI STRATEGY ALLIANCE</span>
+    <>
+      <Header />
+      <section className="strategy-section">
+        <div className="strategy-container">
+          {/* LEFT CONTENT */}
+          <div className="strategy-left">
+            <span className="eyebrow">GLOBAL AI STRATEGY ALLIANCE</span>
 
-          <h1>
-            Orchestrate Growth:
-            <br />
-            <span>Strategic AI Integration</span>
-            <br />
-            for Modern Ecosystems.
-          </h1>
+            <h1>
+              Orchestrate Growth:
+              <br />
+              <span>Strategic AI Integration</span>
+              <br />
+              for Modern Ecosystems.
+            </h1>
 
-          <p className="subtitle">
-            Partner with Infogenx to architect high-yield, AI-integrated
-            roadmaps across Microsoft, Zoho, and Global SaaS ecosystems.
-            Tailored for executive leaders in Australia and India seeking
-            capital efficiency, operational clarity, and defensible market
-            dominance.
-          </p>
-
-          <div className="lux-divider" />
-
-          <div className="fast-facts">
-            <h3>Fast Facts</h3>
-            <ul>
-              <li>
-                Cross-Border Capability: Australia & India delivery teams
-                ensuring 24/7 continuity.
-              </li>
-              <li>
-                High-Yield Architecture: $100k–$500k+ enterprise transformations
-                prioritizing ROI.
-              </li>
-              <li>
-                Ecosystem Neutrality: Microsoft, Zoho, Shopify & Odoo
-                integration expertise.
-              </li>
-            </ul>
-          </div>
-
-          <div className="did-you-know">
-            <h3>Strategic Insight</h3>
-            <p>
-              Enterprises that fail to embed AI into core operational
-              architecture by 2026 may face up to 30% higher cost-of-capital
-              versus AI-native competitors. We don’t automate tasks — we
-              engineer valuation leverage.
+            <p className="subtitle">
+              Partner with Infogenx to architect high-yield, AI-integrated
+              roadmaps across Microsoft, Zoho, and Global SaaS ecosystems.
+              Tailored for executive leaders in Australia and India seeking
+              capital efficiency, operational clarity, and defensible market
+              dominance.
             </p>
+
+            <div className="lux-divider" />
+
+            <div className="fast-facts">
+              <h3>Fast Facts</h3>
+              <ul>
+                <li>
+                  Cross-Border Capability: Australia & India delivery teams
+                  ensuring 24/7 continuity.
+                </li>
+                <li>
+                  High-Yield Architecture: $100k–$500k+ enterprise
+                  transformations prioritizing ROI.
+                </li>
+                <li>
+                  Ecosystem Neutrality: Microsoft, Zoho, Shopify & Odoo
+                  integration expertise.
+                </li>
+              </ul>
+            </div>
+
+            <div className="did-you-know">
+              <h3>Strategic Insight</h3>
+              <p>
+                Enterprises that fail to embed AI into core operational
+                architecture by 2026 may face up to 30% higher cost-of-capital
+                versus AI-native competitors. We don’t automate tasks — we
+                engineer valuation leverage.
+              </p>
+            </div>
           </div>
-        </div>
 
-        {/* RIGHT FORM */}
-        <form onSubmit={handleSubmit}>
-          <div className="strategy-form-card">
-            <h2>Request a Confidential Strategy Consultation</h2>
+          {/* RIGHT FORM */}
+          <form onSubmit={handleSubmit}>
+            <div className="strategy-form-card">
+              <h2>Request a Confidential Strategy Consultation</h2>
 
-            {/* STEP 1 */}
-            <div className="form-step">
-              {/* <h5>Step 1 — Identity & Authority</h5> */}
-              <div className="grid-2">
-                <input
-                  name="fullName"
-                  value={formData.fullName}
-                  onChange={handleChange}
-                  placeholder="Full Name"
-                />
-                <input
-                  type="email"
-                  name="contactEmail"
-                  value={formData.contactEmail}
-                  placeholder="Business Email"
-                  onChange={handleChange}
-                />
-                <input
-                  name="company"
-                  value={formData.company}
-                  onChange={handleChange}
-                  placeholder="Company Name"
-                />
+              {/* STEP 1 */}
+              <div className="form-step">
+                {/* <h5>Step 1 — Identity & Authority</h5> */}
+                <div className="grid-2">
+                  <input
+                    name="fullName"
+                    value={formData.fullName}
+                    onChange={handleChange}
+                    placeholder="Full Name"
+                  />
+                  <input
+                    type="email"
+                    name="contactEmail"
+                    value={formData.contactEmail}
+                    placeholder="Business Email"
+                    onChange={handleChange}
+                  />
+                  <input
+                    name="company"
+                    value={formData.company}
+                    onChange={handleChange}
+                    placeholder="Company Name"
+                  />
+                  <select
+                    name="designation"
+                    value={formData.designation}
+                    onChange={handleChange}
+                  >
+                    <option value="">Designation / Role</option>
+                    <option>CEO</option>
+                    <option>COO</option>
+                    <option>CIO</option>
+                    <option>Director</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+
+              {/* STEP 2 */}
+              <div className="form-step">
+                {/* <h5>Step 2 — Ecosystem & Transformation Goals</h5> */}
+
                 <select
-                  name="designation"
-                  value={formData.designation}
+                  name="orgSize"
+                  value={formData.orgSize}
                   onChange={handleChange}
                 >
-                  <option value="">Designation / Role</option>
-                  <option>CEO</option>
-                  <option>COO</option>
-                  <option>CIO</option>
-                  <option>Director</option>
-                  <option>Other</option>
+                  <option>Organisation Size</option>
+                  <option>10–50</option>
+                  <option>50–200</option>
+                  <option>200–1000</option>
+                  <option>1000+</option>
+                </select>
+
+                <select
+                  style={{ marginTop: "20px" }}
+                  name="objective"
+                  value={formData.objective}
+                  onChange={handleChange}
+                >
+                  <option>Primary Business Objective</option>
+                  <option>Operational Efficiency</option>
+                  <option>Revenue Growth</option>
+                  <option>Cost Optimisation</option>
+                  <option>AI Adoption</option>
+                  <option>System Consolidation</option>
+                </select>
+
+                {/* Ecosystem */}
+                <div className="checkbox-group">
+                  {[
+                    "Microsoft",
+                    "Zoho",
+                    "Shopify",
+                    "Odoo",
+                    "Salesforce",
+                    "Custom-built",
+                    "Manual / Excel",
+                  ].map((item) => (
+                    <label key={item}>
+                      <input
+                        type="checkbox"
+                        value={item}
+                        checked={formData.ecosystem.includes(item)}
+                        onChange={handleCheckbox}
+                      />
+                      {item}
+                    </label>
+                  ))}
+                </div>
+
+                <select
+                  style={{ marginTop: "20px" }}
+                  name="budget"
+                  value={formData.budget}
+                  onChange={handleChange}
+                >
+                  <option>Estimated Transformation Budget (AUD)</option>
+                  <option>Under $100k</option>
+                  <option>$100k – $250k</option>
+                  <option>$250k – $500k</option>
+                  <option>$500k+</option>
                 </select>
               </div>
-            </div>
 
-            {/* STEP 2 */}
-            <div className="form-step">
-              {/* <h5>Step 2 — Ecosystem & Transformation Goals</h5> */}
-
-              <select
-                name="orgSize"
-                value={formData.orgSize}
-                onChange={handleChange}
-              >
-                <option>Organisation Size</option>
-                <option>10–50</option>
-                <option>50–200</option>
-                <option>200–1000</option>
-                <option>1000+</option>
-              </select>
-
-              <select
-                style={{ marginTop: "20px" }}
-                name="objective"
-                value={formData.objective}
-                onChange={handleChange}
-              >
-                <option>Primary Business Objective</option>
-                <option>Operational Efficiency</option>
-                <option>Revenue Growth</option>
-                <option>Cost Optimisation</option>
-                <option>AI Adoption</option>
-                <option>System Consolidation</option>
-              </select>
-
-              {/* Ecosystem */}
-              <div className="checkbox-group">
-                {[
-                  "Microsoft",
-                  "Zoho",
-                  "Shopify",
-                  "Odoo",
-                  "Salesforce",
-                  "Custom-built",
-                  "Manual / Excel",
-                ].map((item) => (
-                  <label key={item}>
-                    <input
-                      type="checkbox"
-                      value={item}
-                      checked={formData.ecosystem.includes(item)}
-                      onChange={handleCheckbox}
-                    />
-                    {item}
-                  </label>
-                ))}
+              {/* STEP 3 */}
+              <div className="form-step">
+                {/* <h5>Step 3 — Strategic Context</h5> */}
+                <textarea
+                  placeholder="Describe your current transformation challenge"
+                  rows="4"
+                  name="challenge"
+                  value={formData.challenge}
+                  onChange={handleChange}
+                ></textarea>
+                <input
+                  type="text"
+                  placeholder="Phone Number (International Format)"
+                  style={{ marginTop: "20px" }}
+                  name="contactPhone"
+                  value={formData.contactPhone}
+                  onChange={handleChange}
+                />
               </div>
 
-              <select
-                style={{ marginTop: "20px" }}
-                name="budget"
-                value={formData.budget}
-                onChange={handleChange}
-              >
-                <option>Estimated Transformation Budget (AUD)</option>
-                <option>Under $100k</option>
-                <option>$100k – $250k</option>
-                <option>$250k – $500k</option>
-                <option>$500k+</option>
-              </select>
-            </div>
+              {/* <button className="strategy-btn">Request Strategy Briefing</button> */}
+              <button disabled={loading} className="strategy-btn">
+                {loading ? "Submitting..." : "Request Strategy Briefing"}
+              </button>
 
-            {/* STEP 3 */}
-            <div className="form-step">
-              {/* <h5>Step 3 — Strategic Context</h5> */}
-              <textarea
-                placeholder="Describe your current transformation challenge"
-                rows="4"
-                name="challenge"
-                value={formData.challenge}
-                onChange={handleChange}
-              ></textarea>
-              <input
-                type="text"
-                placeholder="Phone Number (International Format)"
-                style={{ marginTop: "20px" }}
-                name="contactPhone"
-                value={formData.contactPhone}
-                onChange={handleChange}
-              />
+              <p className="confidential-note">
+                All consultations are conducted under strict NDA protocols to
+                safeguard proprietary operational data and competitive
+                advantage.
+              </p>
             </div>
-
-            {/* <button className="strategy-btn">Request Strategy Briefing</button> */}
-            <button disabled={loading} className="strategy-btn">
-              {loading ? "Submitting..." : "Request Strategy Briefing"}
-            </button>
-
-            <p className="confidential-note">
-              All consultations are conducted under strict NDA protocols to
-              safeguard proprietary operational data and competitive advantage.
-            </p>
-          </div>
-        </form>
-        {showThankYou && (
-          <div className="thankyou-overlay">
-            <div className="thankyou-popup">
-              <h2>🎉 Thank You!</h2>
-              <p>Your request has been submitted...</p>
-              <p>Our team will contact you shortly.</p>
+          </form>
+          {showThankYou && (
+            <div className="thankyou-overlay">
+              <div className="thankyou-popup">
+                <h2>🎉 Thank You!</h2>
+                <p>Your request has been submitted...</p>
+                <p>Our team will contact you shortly.</p>
+              </div>
             </div>
-          </div>
-        )}
-      </div>
-    </section>
+          )}
+        </div>
+      </section>
+      <Footer />
+    </>
   );
 };
 
