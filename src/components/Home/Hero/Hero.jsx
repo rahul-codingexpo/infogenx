@@ -2,6 +2,7 @@ import "./Hero.css";
 import aiIcon from "../../../assets/images/aiIcon.png";
 import automationIcon from "../../../assets/images/automationIcon.png";
 import analyticsIcon from "../../../assets/images/analyticalIcon.png";
+import AiSetting from "../../../assets/images/Ai-setting.png";
 import heroVideo from "../../../assets/videos/herovideobg.mp4";
 import MicrosoftImg from "../../../assets/images/microsoft (2).png";
 import ZohoImg from "../../../assets/images/zoho (2).png";
@@ -44,14 +45,14 @@ const Hero = () => {
           <div className="hero-buttons">
             <button
               className="primary-btn"
-              onClick={() => navigate("/request-quote")}
+              onClick={() => navigate("/contact-us")}
             >
               Start Your Transformation
             </button>
 
             <button
               className="secondary-btn"
-              onClick={() => navigate("/contact-us/get-in-touch")}
+              onClick={() => navigate("/contact-us")}
             >
               Talk to an Expert
             </button>
@@ -91,6 +92,12 @@ const Hero = () => {
           src={analyticsIcon}
           alt="Analytics"
           className="float-icon3 float-horizontal icon-3"
+        />
+        {/*another Left-right */}
+        <img
+          src={AiSetting}
+          alt="Automation"
+          className="float-icon2 float-horizontal icon-4"
         />
       </div>
     </section>

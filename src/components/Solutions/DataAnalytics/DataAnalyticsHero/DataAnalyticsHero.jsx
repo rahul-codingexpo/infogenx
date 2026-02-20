@@ -1,7 +1,17 @@
 import "./DataAnalyticsHero.css";
-import appDevVideo from "../../../../assets/videos/app-dev-hero.mp4";
+import { useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
+import appDevVideo from "../../../../assets/videos/data-analytics-ai.mp4";
 import AboutCornerAccent from "../../../../assets/images/about-corner-accent.png";
 const AppDevHero = () => {
+  const navigate = useNavigate();
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.7; // slow speed
+    }
+  }, []);
   return (
     <section className="appdev-hero">
       <img
@@ -24,9 +34,17 @@ const AppDevHero = () => {
           </p>
 
           <div className="appdev-buttons">
-            <button className="primary-btn">Unlock Analytics & AI </button>
+            <button
+              className="primary-btn"
+              onClick={() => navigate("/contact-us")}
+            >
+              Unlock Analytics & AI{" "}
+            </button>
 
-            <button className="secondary-btn">
+            <button
+              className="secondary-btn"
+              onClick={() => navigate("/contact-us")}
+            >
               Talk to an Expert <span>↗</span>
             </button>
           </div>
@@ -38,6 +56,7 @@ const AppDevHero = () => {
             <div className="bg"></div>
             <video
               src={appDevVideo}
+              ref={videoRef}
               autoPlay
               muted
               loop

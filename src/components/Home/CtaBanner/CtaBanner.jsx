@@ -14,14 +14,14 @@ const CtaBanner = () => {
         <div className="cta-buttons">
           <button
             className="cta-primary"
-            onClick={() => navigate("/request-quote")}
+            onClick={() => navigate("/contact-us")}
           >
             Get Your FREE Consultation
           </button>
 
           <button
             className="cta-secondary"
-            onClick={() => navigate("/contact-us/get-in-touch")}
+            onClick={() => navigate("/contact-us")}
           >
             Talk to an Expert
           </button>

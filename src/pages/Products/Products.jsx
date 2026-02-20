@@ -3,7 +3,7 @@ import "./Products.css";
 import Header from "../../components/header/Header";
 import AppcornerAssent from "../../assets/images/appcorner.png";
 import { AiOutlineStock } from "react-icons/ai";
-
+import { useNavigate } from "react-router-dom";
 import { FaLaptopCode } from "react-icons/fa";
 import { FaChartBar } from "react-icons/fa";
 import { FaUserGear } from "react-icons/fa6";
@@ -14,6 +14,7 @@ import { useState } from "react";
 import DemoPopup from "./DemoPopup";
 import { Helmet } from "react-helmet-async";
 const Products = () => {
+  const navigate = useNavigate();
   const steps = [
     {
       number: "1",
@@ -106,10 +107,16 @@ const Products = () => {
           </p>
 
           <div className="WebDev-hero-buttons">
-            <button className="product-WebDev-primary-btn">
+            <button
+              className="product-WebDev-primary-btn"
+              onClick={() => navigate("/contact-us")}
+            >
               Transform your product
             </button>
-            <button className="product-WebDev-secondary-btn">
+            <button
+              className="product-WebDev-secondary-btn"
+              onClick={() => navigate("/contact-us")}
+            >
               Talk to an Expert
             </button>
           </div>

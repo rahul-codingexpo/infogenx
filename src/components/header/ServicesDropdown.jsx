@@ -1,13 +1,16 @@
 import { Link } from "react-router-dom";
 import "./ServicesDropdown.css";
-import CodeBox from "../../assets/images/codebox.png";
+import CodeBox1 from "../../assets/images/Implementation & Integration.png";
+import CodeBox2 from "../../assets/images/Managed Services.png";
+import CodeBox3 from "../../assets/images/Consulting & Advisory.png";
+import CodeBox4 from "../../assets/images/Support & Optimization.png";
 const ServicesDropdown = ({ closeMenu }) => {
   return (
     <div className="services-dropdown">
       <div className="services-grid">
         <Link to="/services/implementation-integration" onClick={closeMenu}>
           <div className="service-img">
-            <img src={CodeBox} alt="Service-img" />
+            <img src={CodeBox1} alt="Service-img" />
           </div>
           <div className="service-info">
             <h4>Implementation & Integration</h4>
@@ -20,7 +23,7 @@ const ServicesDropdown = ({ closeMenu }) => {
 
         <Link to="/services/managed-services" onClick={closeMenu}>
           <div className="service-img">
-            <img src={CodeBox} alt="Service-img" />
+            <img src={CodeBox2} alt="Service-img" />
           </div>
           <div className="service-info">
             <h4>Managed Services</h4>
@@ -33,7 +36,7 @@ const ServicesDropdown = ({ closeMenu }) => {
 
         <Link to="/services/consulting-advisory" onClick={closeMenu}>
           <div className="service-img">
-            <img src={CodeBox} alt="Service-img" />
+            <img src={CodeBox3} alt="Service-img" />
           </div>
           <div className="service-info">
             <h4>Consulting & Advisory</h4>
@@ -46,7 +49,7 @@ const ServicesDropdown = ({ closeMenu }) => {
 
         <Link to="/services/support-optimization" onClick={closeMenu}>
           <div className="service-img">
-            <img src={CodeBox} alt="Service-img" />
+            <img src={CodeBox4} alt="Service-img" />
           </div>
           <div className="service-info">
             <h4>Support & Optimization</h4>

@@ -160,7 +160,7 @@ const ServiceHighlight = () => {
                   {isActive && (
                     <button
                       className="service-btn"
-                      onClick={() => navigate("/contact-us/get-in-touch")}
+                      onClick={() => navigate("/contact-us")}
                     >
                       Talk to our Experts <span className="arrow">→</span>
                     </button>

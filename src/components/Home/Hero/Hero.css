@@ -229,6 +229,13 @@ margin-top: 0;
     height: 64px;
     opacity: 1;
 }
+.float-icon4 {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    opacity: 1;
+
+}
 
 @keyframes floatVertical {
     0% {
@@ -278,6 +285,11 @@ margin-top: 0;
 .icon-3 {
     top: 540px;
     right: 10%;
+}
+
+.icon-4 {
+    top: 150px;
+    left: 4%;
 }
 
 /* Responsive Design for tablet */

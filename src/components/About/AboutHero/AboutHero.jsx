@@ -1,7 +1,9 @@
 import "./AboutHero.css";
+import { useNavigate } from "react-router-dom";
 import aboutHeroBg from "../../../assets/images/about-hero-bg.jpg";
 import AboutCornerAccent from "../../../assets/images/about-corner-accent.png";
 const AboutHero = () => {
+  const navigate = useNavigate();
   return (
     <section
       className="about-hero"
@@ -24,9 +26,17 @@ const AboutHero = () => {
           </h1>
 
           <div className="about-hero-buttons">
-            <button className="about-primary-btn">Meet Our Team </button>
+            <button
+              className="about-primary-btn"
+              onClick={() => navigate("/contact-us")}
+            >
+              Meet Our Team{" "}
+            </button>
 
-            <button className="about-secondary-btn">
+            <button
+              className="about-secondary-btn"
+              onClick={() => navigate("/contact-us")}
+            >
               Contact Us <span>↗</span>
             </button>
           </div>

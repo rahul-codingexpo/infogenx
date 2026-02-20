@@ -26,6 +26,7 @@ import LogoImg3 from "../../assets/images/infogenx-logos-images-3.png";
 import LogoImg4 from "../../assets/images/infogenx-logos-images-4.png";
 import LogoImg5 from "../../assets/images/infogenx-logos-images-5.png";
 import { Helmet } from "react-helmet-async";
+import { useNavigate } from "react-router-dom";
 const projects = [
   {
     id: 1,
@@ -136,6 +137,7 @@ const projects = [
 
 const filters = ["All", "Application", "Website", "Logos"];
 const Portfolio = () => {
+  const navigate = useNavigate();
   const [activeFilter, setActiveFilter] = useState("All");
 
   const filteredProjects =
@@ -175,11 +177,17 @@ const Portfolio = () => {
             </p>
 
             <div className="appdev-buttons">
-              <button className="primary-btn">
+              <button
+                className="primary-btn"
+                onClick={() => navigate("/contact-us")}
+              >
                 Get Your FREE Consultation
               </button>
 
-              <button className="secondary-btn">
+              <button
+                className="secondary-btn"
+                onClick={() => navigate("/contact-us")}
+              >
                 Talk to an Expert <span>↗</span>
               </button>
             </div>
